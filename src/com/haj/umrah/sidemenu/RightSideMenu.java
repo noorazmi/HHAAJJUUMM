@@ -1,6 +1,5 @@
 package com.haj.umrah.sidemenu;
 
-public class RightSideMenu
-{
+public class RightSideMenu {
 
 }
