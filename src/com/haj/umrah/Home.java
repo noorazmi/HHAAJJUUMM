@@ -23,7 +23,7 @@ public class Home extends Activity
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_home);
 	container = (FrameLayout) findViewById(R.id.container);
-	contentWindow = (ContentWindow) findViewById(R.id.content_window);
+	contentWindow = (ContentWindow) findViewById(R.id.contnet_window);
 	// LeftSideMenu leftSideMenu = new
     }
 
