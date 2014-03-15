@@ -14,10 +14,4 @@
             android:valueTo="300"
             android:valueType="intType" />
     </set>
-<!-- 
-    <objectAnimator
-        android:duration="500"
-        android:propertyName="alpha"
-        android:valueTo="1f" />
- -->
-</set>
+</set>
