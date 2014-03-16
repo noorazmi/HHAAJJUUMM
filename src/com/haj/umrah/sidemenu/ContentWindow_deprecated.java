@@ -14,15 +14,15 @@ import com.haj.umrah.R;
 import com.haj.umrah.util.LogType;
 import com.haj.umrah.util.Util;
 
-public class ContentWindow extends LinearLayout
+public class ContentWindow_deprecated extends LinearLayout
 {
-    private static final String TAG = ContentWindow.class.getName();
+    private static final String TAG = ContentWindow_deprecated.class.getName();
     private GestureDetectorCompat leftMenuButtonGestureDetectorCompat;
     private GestureDetectorCompat gestureDetectorCompat;
     private static final int ANIMATION_DURATION = 150;
     private ImageButton leftMenuHandle;
 
-    public ContentWindow(Context context, AttributeSet attrs)
+    public ContentWindow_deprecated(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
 	LayoutInflater.from(getContext()).inflate(R.layout.content_window, this);
@@ -30,25 +30,31 @@ public class ContentWindow extends LinearLayout
 	leftMenuButtonGestureDetectorCompat = new GestureDetectorCompat(getContext(), new LeftMenuButtonGestureListener());
 	setOnTouchListener(new MyViewTouchListener());
 	leftMenuHandle = (ImageButton) findViewById(R.id.left_menu_handle);
+	//leftMenuHandle.setOnTouchListener(new MyViewTouchListener());
 	leftMenuHandle.setOnTouchListener(new MenuButtonOnTouchListener());
     }
+    
+    class MenuButtonOnTouchListener implements OnTouchListener{
 
-    class MenuButtonOnTouchListener implements OnTouchListener
-    {
+	
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event)
 	{
 	    Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called", LogType.LOG_TYPE_DEBUG);
+	    //animateRight();
 	    leftMenuButtonGestureDetectorCompat.onTouchEvent(event);
 	    return false;
 	}
 
+	
+	
     }
-
+    
     class MyViewTouchListener implements OnTouchListener
     {
 
+	
 	@Override
 	public boolean onTouch(View v, MotionEvent event)
 	{
@@ -59,14 +65,14 @@ public class ContentWindow extends LinearLayout
 
     }
 
-    class LeftMenuButtonGestureListener extends GestureDetector.SimpleOnGestureListener
-    {
+    
+    class LeftMenuButtonGestureListener extends GestureDetector.SimpleOnGestureListener{
 	@Override
 	public boolean onDown(MotionEvent e)
 	{
 	    if (canAnimateToRight())
 	    {
-		animateRight();
+		    animateRight();
 
 	    }
 	    else
@@ -76,14 +82,13 @@ public class ContentWindow extends LinearLayout
 	    }
 	    return super.onDown(e);
 	}
-
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY)
 	{
 	    return super.onFling(e1, e2, velocityX, velocityY);
 	}
     }
-
+    
     class MenuGestureListener extends GestureDetector.SimpleOnGestureListener
     {
 	private static final int SWIPE_THRESHOLD = 100;
@@ -92,11 +97,11 @@ public class ContentWindow extends LinearLayout
 	@Override
 	public boolean onDown(MotionEvent e)
 	{
-
+	   
 	    Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called", LogType.LOG_TYPE_DEBUG);
 	    if (canAnimateToRight())
 	    {
-		// animateRight();
+		    //animateRight();
 
 	    }
 	    else
@@ -178,33 +183,34 @@ public class ContentWindow extends LinearLayout
     }
 
     // Animate the left menu back to original position.
-    public void animateLeft()
+    private void animateLeft()
     {
 	animate().x(0f).setDuration(ANIMATION_DURATION);
     }
 
-    // Animate the window to right to show the right menu list
+    // Animate the left menu to right to show the menu list
     private void animateRight()
     {
 
 	animate().x(400f).setDuration(ANIMATION_DURATION);
     }
 
-    // If the x position of the window in the parent is not zero it means the
-    // left menu is closed and subject to open by animating right.
-    public boolean canAnimateToRight()
+    private boolean canAnimateToRight()
     {
-	Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called:", LogType.LOG_TYPE_DEBUG);
-	return getTranslationX() == 0;
+	boolean b = getTranslationX() == 0;
+	Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called:" + b, LogType.LOG_TYPE_DEBUG);
+	return b;
     }
 
-    public void onBackPressed()
-    {
-	if (!canAnimateToRight())
-	{
-	    animateLeft();
-	    return;
-	}
-    }
+//    @Override
+//    public void onBackPressed()
+//    {
+//	if (!canAnimateToRight())
+//	{
+//	    animateLeft();
+//	    return;
+//	}
+//	super.onBackPressed();
+//    }
 
 }

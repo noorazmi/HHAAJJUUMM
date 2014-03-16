@@ -9,7 +9,7 @@ public class Util
     {}
 
     //Global log printing method with global application name APP_TAG
-    public void printLog(String tag, String message, LogType logType)
+    public static void printLog(String tag, String message, LogType logType)
     {
 	StringBuffer mMessage = new StringBuffer("[");
 	mMessage.append(tag).append("] ").append(message);
