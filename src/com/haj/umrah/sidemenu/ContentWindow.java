@@ -22,6 +22,17 @@ public class ContentWindow extends LinearLayout
     private static final int ANIMATION_DURATION = 150;
     private ImageButton leftMenuHandle;
 
+    
+//    public ContentWindow(Context context)
+//    {
+//	super(context);
+//	LayoutInflater.from(getContext()).inflate(R.layout.content_window, this);
+//	gestureDetectorCompat = new GestureDetectorCompat(getContext(), new MenuGestureListener());
+//	leftMenuButtonGestureDetectorCompat = new GestureDetectorCompat(getContext(), new LeftMenuButtonGestureListener());
+//	setOnTouchListener(new MyViewTouchListener());
+//	leftMenuHandle = (ImageButton) findViewById(R.id.left_menu_handle);
+//	leftMenuHandle.setOnTouchListener(new MenuButtonOnTouchListener());
+//    }
     public ContentWindow(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
@@ -184,7 +195,7 @@ public class ContentWindow extends LinearLayout
     }
 
     // Animate the window to right to show the right menu list
-    private void animateRight()
+    public void animateRight()
     {
 
 	animate().x(400f).setDuration(ANIMATION_DURATION);
