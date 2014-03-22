@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import com.haj.umrah.Home;
 import com.haj.umrah.R;
 import com.haj.umrah.fragments.UmrahIntroFragment;
+import com.haj.umrah.fragments.UmrahPriorToDepartureFragment;
 import com.haj.umrah.util.LogType;
 import com.haj.umrah.util.Util;
 
@@ -37,7 +38,7 @@ public class UmrahView extends LinearLayout
 	umrahViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
 	umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
 	umrahViewPager.setAdapter(umrahPageAdapter);
-	umrahViewPager.setOffscreenPageLimit(5);
+	umrahViewPager.setOffscreenPageLimit(6);
 	//umrahViewPager.setCurrentItem(1);
     }
 
@@ -52,6 +53,7 @@ public class UmrahView extends LinearLayout
 	List<Fragment> fList = new ArrayList<Fragment>();
 
 	fList.add(new UmrahIntroFragment());
+	fList.add(new UmrahPriorToDepartureFragment());
 	fList.add(new UmrahIntroFragment());
 	fList.add(new UmrahIntroFragment());
 	fList.add(new UmrahIntroFragment());
@@ -93,19 +95,22 @@ public class UmrahView extends LinearLayout
 	    switch (position)
 	    {
 	    case 0:
-		title = res.getString(R.string.introduction);
+		title = res.getString(R.string.introduction).toUpperCase();
 		break;
 	    case 1:
-		title = res.getString(R.string.ihraam);
-		break;
+		title = res.getString(R.string.prior_to_departure).toUpperCase();
+		break;	
 	    case 2:
-		title = res.getString(R.string.tawaaf);
+		title = res.getString(R.string.ihraam).toUpperCase();
 		break;
 	    case 3:
-		title = res.getString(R.string.sai);
+		title = res.getString(R.string.tawaaf).toUpperCase();
 		break;
 	    case 4:
-		title = res.getString(R.string.halaq);
+		title = res.getString(R.string.sai).toUpperCase();
+		break;
+	    case 5:
+		title = res.getString(R.string.halaq).toUpperCase();
 		break;
 	    }
 	    return title;

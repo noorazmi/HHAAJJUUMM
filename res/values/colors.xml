@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="app_theme">#015c65</color>
+    <color name="heading_bkg">#99bdc1</color>
+    <color name="heading_umrah">#000000</color>
+  
     
 </resources>

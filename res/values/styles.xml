@@ -15,7 +15,31 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:background">@color/app_theme</item>
+        <item name="android:textColor">@android:color/white</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="umrah_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/heading_bkg</item>
+        <item name="android:textColor">@color/heading_umrah</item>
+        <item name="android:paddingLeft">@dimen/heading_left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="umrah_description">
+        <item name="android:layout_width">match_parent</item>umrah_description
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/heading_left</item>
+        <item name="android:paddingTop">@dimen/desc_top</item>
+        <item name="android:paddingBottom">@dimen/desc_bottom</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
 </resources>

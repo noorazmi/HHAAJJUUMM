@@ -4,11 +4,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Intro Fragment"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:paddingTop="20dp">
+			
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/umrah" >
+            </TextView>
+             <TextView
+                style="@style/umrah_description"
+                android:text="@string/umrah_first" >
+            </TextView>
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/virtues_of_umrah" >
+            </TextView>
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/virtues_of_umrah_desc">
+            </TextView>
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/farz_act_umrah">
+            </TextView>
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/farz_act_umrah_desc">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
