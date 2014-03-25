@@ -29,9 +29,9 @@
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">bold</item>
     </style>
-    
+
     <style name="umrah_description">
-        <item name="android:layout_width">match_parent</item>umrah_description
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:paddingLeft">@dimen/heading_left</item>
@@ -40,6 +40,40 @@
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dua_head">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/dua_head_background</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dua_head_padding</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/dua_head_foreground</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dua_pronounce">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/dua_pronounce_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/dua_pronounce_foreground</item>
+    </style>
+
+    <style name="dua_meaning">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/dua_meaning_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dua_meaning_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dua_meaning_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/dua_meaning_padding_left</item>
+        <item name="android:paddingRight">@dimen/dua_meaning_padding_right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 
 </resources>

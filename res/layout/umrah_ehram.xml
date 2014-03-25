@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/ihraam"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/ihram_desc_1" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dua_margin_left"
+                android:layout_marginRight="@dimen/dua_margin_right"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/umrah_niyyat" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/umrah_niyyat" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_umrah_niyyat" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/umrah_niyyat_meaning" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dua_margin_left"
+                android:layout_marginRight="@dimen/dua_margin_right"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" 
+                android:layout_marginTop="@dimen/dua_container_margin_top">
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_after_niyyah" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_2" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_after_niyyah_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_after_niyyah_meaning" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

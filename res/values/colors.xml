@@ -3,6 +3,12 @@
     <color name="app_theme">#015c65</color>
     <color name="heading_bkg">#99bdc1</color>
     <color name="heading_umrah">#000000</color>
+    <color name="dua_head_foreground">#000000</color>
+    <color name="dua_head_background">@color/heading_bkg</color>
+    <color name="dua_pronounce_foreground">#3366FF</color>
+    <color name="dua_pronounce_background">#ffffff</color>
+    <color name="dua_meaning_foreground">#ffffff</color>
+    <color name="dua_meaning_background">#000000</color>
   
     
 </resources>
