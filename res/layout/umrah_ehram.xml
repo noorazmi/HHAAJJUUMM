@@ -86,6 +86,35 @@
                     style="@style/dua_meaning"
                     android:text="@string/dua_after_niyyah_meaning" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dua_margin_left"
+                android:layout_marginRight="@dimen/dua_margin_right"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" 
+                android:layout_marginTop="@dimen/dua_container_margin_top">
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_after_salatul_ihram" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_salatul_iharm" />
+               
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_after_salatul_ihram_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_after_salatul_ihram_meaning" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
