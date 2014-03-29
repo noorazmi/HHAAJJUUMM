@@ -30,6 +30,17 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="dua_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dua_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/dua_margin_right</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/dua_container_margin_top</item>
+    </style>
+    
     <style name="umrah_description">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

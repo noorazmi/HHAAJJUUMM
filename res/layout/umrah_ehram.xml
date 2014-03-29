@@ -25,14 +25,22 @@
                 android:text="@string/ihram_desc_1" >
             </TextView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dua_margin_left"
-                android:layout_marginRight="@dimen/dua_margin_right"
-                android:background="@android:color/white"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/enter_iharam_state" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/ihram_niyyah" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/niyyah_making" >
+            </TextView>
+
+            <LinearLayout style="@style/dua_container" >
 
                 <TextView
                     style="@style/dua_head"
@@ -53,15 +61,7 @@
                     android:text="@string/umrah_niyyat_meaning" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dua_margin_left"
-                android:layout_marginRight="@dimen/dua_margin_right"
-                android:background="@android:color/white"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" 
-                android:layout_marginTop="@dimen/dua_container_margin_top">
+            <LinearLayout style="@style/dua_container" >
 
                 <TextView
                     style="@style/dua_head"
@@ -72,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:src="@drawable/dua_after_niyyah_part_1" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -86,15 +87,8 @@
                     style="@style/dua_meaning"
                     android:text="@string/dua_after_niyyah_meaning" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dua_margin_left"
-                android:layout_marginRight="@dimen/dua_margin_right"
-                android:background="@android:color/white"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" 
-                android:layout_marginTop="@dimen/dua_container_margin_top">
+
+            <LinearLayout style="@style/dua_container" >
 
                 <TextView
                     style="@style/dua_head"
@@ -105,7 +99,6 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:src="@drawable/dua_after_salatul_iharm" />
-               
 
                 <TextView
                     style="@style/dua_pronounce"
@@ -115,6 +108,38 @@
                     style="@style/dua_meaning"
                     android:text="@string/dua_after_salatul_ihram_meaning" />
             </LinearLayout>
+			
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/talbiyah" 
+                android:layout_marginTop="@dimen/dua_container_margin_top">
+            </TextView>
+            
+            <LinearLayout style="@style/dua_container" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/talbiyah_instr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_salatul_iharm" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/talbiyah_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/talbiyah_meaning" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/now_recite" >
+            </TextView>
         </LinearLayout>
     </ScrollView>
 
