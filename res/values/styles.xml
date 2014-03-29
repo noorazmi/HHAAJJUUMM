@@ -25,6 +25,7 @@
         <item name="android:background">@color/heading_bkg</item>
         <item name="android:textColor">@color/heading_umrah</item>
         <item name="android:paddingLeft">@dimen/heading_left</item>
+        <item name="android:paddingRight">@dimen/heading_padding_right</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">bold</item>

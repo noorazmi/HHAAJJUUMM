@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="dua_styleable">
+        <attr name="dua_heading" format="string" localization="suggested" />
+        <attr name="dua_image" format="reference" />
+        <attr name="dua_pronunciation" format="string" localization="suggested" />
+        <attr name="dua_meaning" format="string" localization="suggested" />
+    </declare-styleable>
+
+</resources>
