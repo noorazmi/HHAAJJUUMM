@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.haj.umrah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/tawaf"
+                android:textAllCaps="true" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/tawaf_intro" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_intention_tawaf"
+                hajumrah:dua_image="@drawable/umrah_niyyat"
+                hajumrah:dua_meaning="@string/dua_intention_tawaf_meaning"
+                hajumrah:dua_pronunciation="@string/dua_intention_tawaf_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/proceed_to_black_line" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_facing_hajarul_aswad"
+                hajumrah:dua_image="@drawable/umrah_niyyat"
+                hajumrah:dua_meaning="@string/dua_facin_hajarul_aswad_meaning"
+                hajumrah:dua_pronunciation="@string/dua_facin_hajarul_aswad_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/place_both_palm" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_before_kissing_palm"
+                hajumrah:dua_image="@drawable/umrah_niyyat"
+                hajumrah:dua_meaning="@string/dua_before_kissing_palm_meaning"
+                hajumrah:dua_pronunciation="@string/dua_before_kissing_palm_pronounce" />
+            
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/this_is_known_as_istilam" />
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/now_moving_towards_the_right" />
+            
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/tawaf_adiyah"
+                android:textAllCaps="true" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
