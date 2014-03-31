@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.haj.umrah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/sai"
+                android:textAllCaps="true" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/sai_meaning" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/sai_start_desc" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/while_facing_kaba"
+                hajumrah:dua_image="@drawable/dua_seeing_kaba"
+                hajumrah:dua_meaning="@string/dua_seeing_kabah_meaning"
+                hajumrah:dua_pronunciation="@string/dua_seeing_kabah_pronounce" />
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/recite_durud" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

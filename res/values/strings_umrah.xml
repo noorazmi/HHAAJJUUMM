@@ -69,4 +69,19 @@
     <string name="this_is_known_as_istilam">This is known as Istilam. (Under no circumstances should anyone be caused difficulty to get to it). It is to be performed after each circuit while standing on the black / brown line facing Al Hajarul Aswad.</string>
     <string name="now_moving_towards_the_right"><b>8</b>. Now moving towards the right, and keeping the Ka\’bah on the left one must walk around the Ka\’bah anti-clockwise until you return to Al Hajarul Aswad. Here, perform Istilam. One circuit has now been completed. Complete seven circuits in this manner to complete the Tawaaf.\n\n <u><b>Mas\’alah</b></u>: There is no fixed set of Adiyah(plural of Du\'a) for Tawaaf. One should make Du\’a for the fulfilment of one’s needs of this world and the hereafter. (Recommended Adiyah have been printed)</string>
     <string name="tawaf_adiyah">TAWAAF ADIYAH(Du\'a during Tawaf)</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--================================================ Sai ======================================================-->
+    <string name="sai">SA\'I</string>
+    <string name="sai_meaning">To walk between Safa and Marwah seven times (i.e. From Safa to Marwah four times and back thrice). It is performed walking, except for a portion in the middle marked by green lights, where in the pace is quickened to a fast walk (not run).</string>
+    <string name="sai_start_desc"><b>1</b>. After the Istilam proceed to Safa.\n\n <b>2</b>. Climb Safa and face Ka’bah and make Niyyah for Sa’i.\n\n <b>3</b>. Whilst facing the Ka’bah, both hands should be raised up to the shoulders in the manner of Du’a. Then say thrice the follwing:</string>
+    <string name="while_facing_kaba">facing the Ka\’ba and hand raised in du\'a manner</string>
+    <string name="recite_durud"><b>4</b>. Recite Durud and make Du’a for the fulfilment of your own correct wishes and the wishes of others also. Remain engaged in Du’a for as long as possible, for this is also a place where Du’a is accepted.</string>
 </resources>
