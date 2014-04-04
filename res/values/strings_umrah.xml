@@ -41,7 +41,7 @@
     <string name="dua_entering_masjid">DU\'A ON ENTERING MASJID AL HARAM</string>
     <string name="dua_entering_masjid_pronounce">BISMILLAHI WAS-SALATU WAS-SALAMU ALA RASULIL-LAH.\nALLAHUM-MAFTA LI ABWABA RAHMATIK.</string>
     <string name="dua_entering_masjid_meaning">“In the name of Allah. May the Peace and Salutations (of Allah) be upon the Messenger of Allah. O Allah, open for me the doors of Your Mercies”.</string>
-    <string name="dua_leaving_masjid">DU’A ON LEAVING AL MASJIDUL HARAM</string> 
+    <string name="dua_leaving_masjid">DU’A ON LEAVING AL MASJIDUL HARAM</string>
     <string name="dua_leaving_masjid_pronounce">BISMILLAHI ALLAHUMMA SALLI ALA MUHAMMADIN, ALLAHUMMA INNI ASALUKA MIN FADLIK.</string>
     <string name="dua_leaving_masjid_meaning">\"In the name of Allah. O Allah! Send Your salutation upon Muhammad. O Allah! I ask You for Your grace\".</string>
     <string name="on_seeing_kaba">When you see Ka’bah, say the following thrice:</string>
@@ -67,21 +67,24 @@
     <string name="dua_before_kissing_palm_pronounce">BISMILLAHI ALLAHU AKBAR</string>
     <string name="dua_before_kissing_palm_meaning">“In the Name of Allah, Allah is the Greatest”.</string>
     <string name="this_is_known_as_istilam">This is known as Istilam. (Under no circumstances should anyone be caused difficulty to get to it). It is to be performed after each circuit while standing on the black / brown line facing Al Hajarul Aswad.</string>
-    <string name="now_moving_towards_the_right"><b>8</b>. Now moving towards the right, and keeping the Ka\’bah on the left one must walk around the Ka\’bah anti-clockwise until you return to Al Hajarul Aswad. Here, perform Istilam. One circuit has now been completed. Complete seven circuits in this manner to complete the Tawaaf.\n\n <u><b>Mas\’alah</b></u>: There is no fixed set of Adiyah(plural of Du\'a) for Tawaaf. One should make Du\’a for the fulfilment of one’s needs of this world and the hereafter. (Recommended Adiyah have been printed)</string>
+    <string name="now_moving_towards_the_right"><b>8</b>. Now moving towards the right, and keeping the Ka\’bah on the left one must walk around the Ka\’bah anti-clockwise until you return to Al Hajarul Aswad. Here, perform Istilam. One circuit has now been completed. Complete seven circuits in this manner to complete the Tawaaf.</string>
     <string name="tawaf_adiyah">TAWAAF ADIYAH(Du\'a during Tawaf)</string>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--================================================ Sai ======================================================-->
+    <string name="tawaf_adiya_desc"><u><b>Mas\’alah</b></u>: There is no fixed set of Adiyah(Supplications) for Tawaaf.\nOne should make Du\’a for the fulfilment of one’s needs of this world and the hereafter.\nHere are few Adiyah(Supplications) that can be read during Tawaaf, try to memorise some as it may be difficult to read these in the crowd.</string>
+    <string name="dua_rabbana_atina">Du\'a Rabbana Atina…</string>
+    <string name="dua_rabbana_atina_pronounce">RABBANA ATINA FID-DUNYA HASANATAW WA FIL AKHIRATI HASANATAW WA QINA ADHABAN NAR.</string>
+    <string name="dua_rabbana_atina_meaning">\"O all-sustaining being! Grant us all good in this world, and all good in the hereafter, and save us from the fire\".</string>
+    <string name="dua_subhanallahi">Du\'a SUBHANAL-LAHI…</string>
+    <string name="dua_subhanallahi_pronounce">SUBHANAL-LAHI WAL HAMDU LILLAHI WA LA ILAHA ILLAL-LAHU WAL-LAHU AKBAR. WALA HAWLA WA LA QUWATA ILLA BILLAHIL ALIYUL AZIM.</string>
+    <string name="dua_subhanallahi_meaning">\"Glorified is Allah. All praise be to Allah. There is no god but Allah. Allah is the greatest. There is no power, no might besides that of Allah, the High, the Exalted\".</string>
+    <string name="dua_ya_rabbal_baiti">Du\'a ya rabbal baiti…</string>
+    <string name="dua_ya_rabbal_baiti_pronounce">YA RABBAL-BAYTIL-ATIQI ATIQ RIQABANA WARIQABA ABAA INA WA UMMAHATINA MINANIR.</string>
+    <string name="dua_ya_rabbal_baiti_meaning">\"O Lord of the this venerable house, free us and our fathers and mothers from the Fire\".</string>
+
+    <!-- ================================================ Sai ====================================================== -->
     <string name="sai">SA\'I</string>
     <string name="sai_meaning">To walk between Safa and Marwah seven times (i.e. From Safa to Marwah four times and back thrice). It is performed walking, except for a portion in the middle marked by green lights, where in the pace is quickened to a fast walk (not run).</string>
     <string name="sai_start_desc"><b>1</b>. After the Istilam proceed to Safa.\n\n <b>2</b>. Climb Safa and face Ka’bah and make Niyyah for Sa’i.\n\n <b>3</b>. Whilst facing the Ka’bah, both hands should be raised up to the shoulders in the manner of Du’a. Then say thrice the follwing:</string>
     <string name="while_facing_kaba">facing the Ka\’ba and hand raised in du\'a manner</string>
     <string name="recite_durud"><b>4</b>. Recite Durud and make Du’a for the fulfilment of your own correct wishes and the wishes of others also. Remain engaged in Du’a for as long as possible, for this is also a place where Du’a is accepted.</string>
+
 </resources>
