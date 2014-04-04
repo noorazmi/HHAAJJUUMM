@@ -115,7 +115,19 @@
                 hajumrah:dua_image="@drawable/dua_ya_rabbal_baiti"
                 hajumrah:dua_meaning="@string/dua_ya_rabbal_baiti_meaning"
                 hajumrah:dua_pronunciation="@string/dua_ya_rabbal_baiti_pronounce" />
+        <TextView
+                style="@style/umrah_description"
+                android:text="@string/on_completing_seventh_circuit" />
+         <TextView
+                style="@style/umrah_description"
+                android:text="@string/in_no_place_available" />
+         
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/proceed_towards_the_well" />
+         
         </LinearLayout>
+        
     </ScrollView>
 
 </LinearLayout>
