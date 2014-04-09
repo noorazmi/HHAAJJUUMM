@@ -86,8 +86,9 @@
     <!-- ================================================ Sai ====================================================== -->
     <string name="sai">SA\'I</string>
     <string name="sai_meaning">To walk between Safa and Marwah seven times (i.e. From Safa to Marwah four times and back thrice). It is performed walking, except for a portion in the middle marked by green lights, where in the pace is quickened to a fast walk (not run).</string>
-    <string name="sai_start_desc"><b>1</b>. After the Istilam proceed to Safa.\n\n <b>2</b>. Climb Safa and face Ka’bah and make Niyyah for Sa’i.\n\n <b>3</b>. Whilst facing the Ka’bah, both hands should be raised up to the shoulders in the manner of Du’a. Then say thrice the follwing:</string>
+    <string name="sai_start_desc"><b>1</b>.Before starting Sa\'i, perform Istilam of Hajr-e-Aswad again and then proceed to Safa.\n\n <b>2</b>. Climb Safa and face Ka’bah and make Niyyah for Sa’i.\n\n <b>3</b>. Whilst facing the Ka’bah, both hands should be raised up to the shoulders in the manner of Du’a. Then say thrice the follwing:</string>
     <string name="while_facing_kaba">facing the Ka\’ba and hand raised in du\'a manner</string>
     <string name="recite_durud"><b>4</b>. Recite Durud and make Du’a for the fulfilment of your own correct wishes and the wishes of others also. Remain engaged in Du’a for as long as possible, for this is also a place where Du’a is accepted.</string>
+    <string name="you_must_now_proceed"><b>5</b>.You must now proceed at a walking pace towards Marwah. Whilst walking between Safa and Marwah you should engage your time in Dhikr and Du\’a.\n\n <b>6</b>. When you reach the green lights, you must quicken your pace and march briskly until you reach the other set of green lights. Thereafter, you should resume the normal speed of walking till you reach Marwah. Women, should walk at their normal pace throughout.</string>
 
 </resources>

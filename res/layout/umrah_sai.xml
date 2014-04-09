@@ -38,6 +38,9 @@
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/recite_durud" />
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/you_must_now_proceed" />
         </LinearLayout>
     </ScrollView>
 
