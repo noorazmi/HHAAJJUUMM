@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 
 import com.haj.umrah.Home;
 import com.haj.umrah.R;
+import com.haj.umrah.fragments.UmrahHalaq;
 import com.haj.umrah.fragments.UmrahIhramFragment;
 import com.haj.umrah.fragments.UmrahIntroFragment;
 import com.haj.umrah.fragments.UmrahPriorToDepartureFragment;
@@ -60,7 +61,7 @@ public class UmrahView extends LinearLayout
 	fList.add(new UmrahIhramFragment());
 	fList.add(new UmrahTawafFragment());
 	fList.add(new UmrahSai());
-	fList.add(new UmrahIntroFragment());
+	fList.add(new UmrahHalaq());
 
 	return fList;
     }

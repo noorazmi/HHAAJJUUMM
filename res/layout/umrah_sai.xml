@@ -35,12 +35,59 @@
                 hajumrah:dua_image="@drawable/dua_seeing_kaba"
                 hajumrah:dua_meaning="@string/dua_seeing_kabah_meaning"
                 hajumrah:dua_pronunciation="@string/dua_seeing_kabah_pronounce" />
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/recite_durud" />
+
+            <LinearLayout style="@style/dua_container" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_at_safa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_at_safa_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_at_safa_2" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_at_safa_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_at_safa_meaning" />
+            </LinearLayout>
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/you_must_now_proceed" />
+             <TextView
+                style="@style/umrah_heading"
+                android:text="@string/dua_between_safa_marwah"
+                android:textAllCaps="true" />
+             <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading=""
+                hajumrah:dua_image="@drawable/dua_between_safa_marwah_1"
+                hajumrah:dua_meaning="@string/dua_between_safa_marwah_1_meaning"
+                hajumrah:dua_pronunciation="@string/dua_between_safa_marwah_1_pronounce" />
+             <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading=""
+                hajumrah:dua_image="@drawable/dua_between_safa_marwah_2"
+                hajumrah:dua_meaning="@string/dua_between_safa_marwah_2_meaning"
+                hajumrah:dua_pronunciation="@string/dua_between_safa_marwah_2_pronounce" />
         </LinearLayout>
     </ScrollView>
 
