@@ -37,8 +37,8 @@ public class Splash extends Activity
 	public void onFinish()
 	{
 	    Intent intent = new Intent(getBaseContext(), Home.class);
-	    //startActivity(intent);
-	    //finish();
+	    startActivity(intent);
+	    finish();
 	}
 
 	@Override

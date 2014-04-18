@@ -2,11 +2,14 @@ package com.haj.umrah;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.haj.umrah.fragments.UmrahViewFragment;
 import com.haj.umrah.sidemenu.ContentWindow;
 import com.haj.umrah.views.UmrahView;
 
@@ -26,8 +29,12 @@ public class Home extends FragmentActivity
 	container = (FrameLayout) findViewById(R.id.container);
 	contentWindow = (ContentWindow) findViewById(R.id.contnet_window);
 	contentHolder = (LinearLayout) contentWindow.findViewById(R.id.content_holder);
-	umrahView = new UmrahView(this);
-	contentHolder.addView(umrahView);
+	FragmentManager fragmentManager = getSupportFragmentManager();
+	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+	fragmentTransaction.add(R.id.contnet_window, new UmrahViewFragment());
+	fragmentTransaction.commit();
+	//umrahView = new UmrahView(this);
+	//contentHolder.addView(umrahView);
     }
 
     @Override

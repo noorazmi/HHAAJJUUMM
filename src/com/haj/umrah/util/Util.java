@@ -1,6 +1,8 @@
 package com.haj.umrah.util;
 
+import android.content.res.Resources;
 import android.util.Log;
+import android.util.TypedValue;
 
 public class Util
 {
@@ -25,5 +27,10 @@ public class Util
 	}
 
     };
+    
+    /** Convert from dp to pixels **/
+    public static final float getPixels(int dp, Resources res){
+	return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, res.getDisplayMetrics());
+    }
 
 }

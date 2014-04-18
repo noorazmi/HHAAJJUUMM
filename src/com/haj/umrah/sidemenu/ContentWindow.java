@@ -197,8 +197,7 @@ public class ContentWindow extends LinearLayout
     // Animate the window to right to show the right menu list
     public void animateRight()
     {
-
-	animate().x(400f).setDuration(ANIMATION_DURATION);
+	animate().x(Util.getPixels(270, getResources())).setDuration(ANIMATION_DURATION);
     }
 
     // If the x position of the window in the parent is not zero it means the
