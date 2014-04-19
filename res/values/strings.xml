@@ -8,5 +8,11 @@
     <string name="ihraam">Ihraam</string>
     <string name="tawaaf">Tawaaf</string>
     <string name="halaq">Halaq or Qasr</string>
+    
+    <string-array name="left_menu_titles">
+        <item>Updates</item>
+        <item>Umrah</item>
+        <item>Hajj</item>
+    </string-array>
 
 </resources>

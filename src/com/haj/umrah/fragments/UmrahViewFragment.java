@@ -37,11 +37,27 @@ public class UmrahViewFragment extends Fragment
         //return super.onCreateView(inflater, container, savedInstanceState);
 	umrahView = inflater.inflate(R.layout.umrah, container, false);
 	umrahViewPager = (ViewPager) umrahView.findViewById(R.id.umrah_viewpager);
-	umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
-	umrahViewPager.setAdapter(umrahPageAdapter);
-	umrahViewPager.setOffscreenPageLimit(6);
+//	umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
+//	umrahViewPager.setAdapter(umrahPageAdapter);
+//	umrahViewPager.setOffscreenPageLimit(6);
 	
         return umrahView;
+    }
+    
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        setRetainInstance(true);
+    }
+    
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
+	umrahViewPager.setAdapter(umrahPageAdapter);
+	umrahViewPager.setOffscreenPageLimit(6);
     }
     private List<Fragment> getFragments()
     {

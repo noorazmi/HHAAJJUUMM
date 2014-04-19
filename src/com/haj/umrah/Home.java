@@ -29,12 +29,12 @@ public class Home extends FragmentActivity
 	container = (FrameLayout) findViewById(R.id.container);
 	contentWindow = (ContentWindow) findViewById(R.id.contnet_window);
 	contentHolder = (LinearLayout) contentWindow.findViewById(R.id.content_holder);
-	FragmentManager fragmentManager = getSupportFragmentManager();
-	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-	fragmentTransaction.add(R.id.contnet_window, new UmrahViewFragment());
-	fragmentTransaction.commit();
-	//umrahView = new UmrahView(this);
-	//contentHolder.addView(umrahView);
+//	FragmentManager fragmentManager = getSupportFragmentManager();
+//	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//	fragmentTransaction.add(R.id.content_holder, new UmrahViewFragment());
+//	fragmentTransaction.commit();
+	umrahView = new UmrahView(this);
+	contentHolder.addView(umrahView);
     }
 
     @Override

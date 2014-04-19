@@ -7,9 +7,12 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.haj.umrah.R;
+import com.haj.umrah.leftmenu.LeftMenuItem;
+import com.haj.umrah.views.Divider;
 
 public class LeftSideMenu extends LinearLayout
 {
@@ -26,9 +29,17 @@ public class LeftSideMenu extends LinearLayout
     //Create left side menu list 
     private void setMenu()
     {
-	LinearLayout item = (LinearLayout) LayoutInflater.from(getContext()).inflate(R.layout.left_side_menu_item, null);
-	scrollViewContainer.addView(item);
-        	
+	
+	String[] menuItemTitles = getResources().getStringArray(R.array.left_menu_titles);
+	int[] menuItemIcons = {R.drawable.info_update, R.drawable.kaba,R.drawable.hajj};
+	View menuItem;
+	View divider;
+	for (int i = 0; i < menuItemTitles.length; i++)
+	{
+	    menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i]);
+	    scrollViewContainer.addView(menuItem);
+	    divider = new Divider(getContext(), R.drawable.divider);
+	}
     }
 
     private String getXml(String path)
