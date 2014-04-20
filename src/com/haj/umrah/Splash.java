@@ -21,7 +21,7 @@ public class Splash extends Activity
 	setContentView(R.layout.splash);
 	// if(Utility.isThemed)
 	// setTheme(R.style.AppTheme);
-	timer = new SplashTimer(3000, 1000);
+	timer = new SplashTimer(1000, 1000);
 	timer.start();
     }
 

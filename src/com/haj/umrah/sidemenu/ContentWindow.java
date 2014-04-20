@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.haj.umrah.R;
+import com.haj.umrah.util.Const;
 import com.haj.umrah.util.LogType;
 import com.haj.umrah.util.Util;
 
@@ -196,8 +197,8 @@ public class ContentWindow extends LinearLayout
 
     // Animate the window to right to show the right menu list
     public void animateRight()
-    {
-	animate().x(Util.getPixels(270, getResources())).setDuration(ANIMATION_DURATION);
+    {	
+	animate().x(Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources())).setDuration(ANIMATION_DURATION);
     }
 
     // If the x position of the window in the parent is not zero it means the

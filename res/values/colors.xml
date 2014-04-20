@@ -9,6 +9,7 @@
     <color name="dua_pronounce_background">#ffffff</color>
     <color name="dua_meaning_foreground">#ffffff</color>
     <color name="dua_meaning_background">#000000</color>
+    <color name="menu_divider">#2d2d2d</color>
   
     
 </resources>

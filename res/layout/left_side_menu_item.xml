@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal" 
-    android:gravity="center_vertical">
-
-    <ImageView
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+	 <LinearLayout
+	     android:id="@+id/image_view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded" 
+        android:orientation="vertical"/>
+    <!-- <ImageView
         android:id="@+id/menu_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/menu_item_icon" />
+        android:src="@drawable/menu_item_icon" /> -->
+
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded" >
+
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+
+        android:background="@drawable/index" />
+
+        <com.haj.umrah.views.RoundedImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hajj"
+            app:border_color="#3399FF"
+            app:border_width="4dip"
+            app:corner_radius="100dip" />
+    </LinearLayout>
+    -->
 
     <TextView
         android:id="@+id/menu_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:text="Umrah"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:layout_marginLeft="10dp"/>
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>
