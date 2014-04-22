@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff0000"
-    android:id="@+id/left_side_menu">
+    android:id="@+id/left_side_menu"
+    android:background="@color/left_side_menu_item_background">
 
     <ScrollView
         android:id="@+id/menu_scroll_view"

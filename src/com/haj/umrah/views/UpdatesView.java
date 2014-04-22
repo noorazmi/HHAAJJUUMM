@@ -7,10 +7,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
-public class InfoUpdatesView extends LinearLayout
+public class UpdatesView extends LinearLayout
 {
 
-    public InfoUpdatesView(Context context, AttributeSet attrs)
+    public UpdatesView(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
 	LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);

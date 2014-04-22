@@ -35,7 +35,7 @@ public class LeftSideMenu extends LinearLayout
     {
 	
 	String[] menuItemTitles = getResources().getStringArray(R.array.left_menu_titles);
-	int[] menuItemIcons = {R.drawable.info_update, R.drawable.kaba,R.drawable.hajj};
+	int[] menuItemIcons = {R.drawable.info_update, R.drawable.kaba,R.drawable.hajj,R.drawable.about};
 	View menuItem;
 	View divider;
 	LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -44,10 +44,10 @@ public class LeftSideMenu extends LinearLayout
 	   // menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i]);
 	    //(Context context, int iconResId, String title,ImageView.ScaleType scaleType, int cornerRadius,int borderWidth, int borderColorStateList,boolean roundBackgroud, boolean isOval)
 
-	    menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i], ImageView.ScaleType.FIT_CENTER, (int)Util.getPixels(100, getResources()), (int)Util.getPixels(4, getResources()), R.color.dua_head_background, true, false);
+	    menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i]);
 		
 	    scrollViewContainer.addView(menuItem);
-	    divider = new Divider(getContext(), R.color.menu_divider, (int)Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources()),2,10/*padding left*/,10/* padding right*/);
+	    divider = new Divider(getContext(), R.color.menu_divider, (int)Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources()),2,0/*padding left*/,0/* padding right*/);
 	    scrollViewContainer.addView(divider);
 	}
     }

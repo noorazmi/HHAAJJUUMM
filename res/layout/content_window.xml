@@ -2,18 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ff00"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/holo_blue_bright" >
+        android:background="@color/action_bar_background" 
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/left_menu_handle"
-            android:layout_width="70dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_menu" />
     </LinearLayout>
 
@@ -22,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#0000ff" 
+        android:background="@color/content_holder_background" 
         android:orientation="vertical">
     </LinearLayout>
 

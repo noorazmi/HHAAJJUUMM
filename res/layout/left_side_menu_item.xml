@@ -4,49 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:orientation="horizontal" >
-	 <LinearLayout
-	     android:id="@+id/image_view_holder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded" 
-        android:orientation="vertical"/>
-    <!-- <ImageView
+    android:orientation="horizontal" 
+    android:background="@color/left_side_menu_item_background">
+
+    <com.haj.umrah.views.RoundedImageView
         android:id="@+id/menu_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/menu_item_icon" /> -->
-
-    <!--
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded" >
-
-        <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-
-
-        android:background="@drawable/index" />
-
-        <com.haj.umrah.views.RoundedImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/hajj"
-            app:border_color="#3399FF"
-            app:border_width="4dip"
-            app:corner_radius="100dip" />
-    </LinearLayout>
-    -->
+        android:clickable="true"
+        android:padding="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hajj"
+        app:border_color="@color/border"
+        app:border_width="2dip"
+        app:corner_radius="100dip" />
 
     <TextView
         android:id="@+id/menu_title"

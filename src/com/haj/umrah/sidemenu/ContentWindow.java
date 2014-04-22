@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.haj.umrah.R;
@@ -21,7 +22,7 @@ public class ContentWindow extends LinearLayout
     private GestureDetectorCompat leftMenuButtonGestureDetectorCompat;
     private GestureDetectorCompat gestureDetectorCompat;
     private static final int ANIMATION_DURATION = 150;
-    private ImageButton leftMenuHandle;
+    private ImageView leftMenuHandle;
 
     
 //    public ContentWindow(Context context)
@@ -41,7 +42,7 @@ public class ContentWindow extends LinearLayout
 	gestureDetectorCompat = new GestureDetectorCompat(getContext(), new MenuGestureListener());
 	leftMenuButtonGestureDetectorCompat = new GestureDetectorCompat(getContext(), new LeftMenuButtonGestureListener());
 	setOnTouchListener(new MyViewTouchListener());
-	leftMenuHandle = (ImageButton) findViewById(R.id.left_menu_handle);
+	leftMenuHandle = (ImageView) findViewById(R.id.left_menu_handle);
 	leftMenuHandle.setOnTouchListener(new MenuButtonOnTouchListener());
     }
 
