@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
@@ -20,6 +21,7 @@ public class Home extends FragmentActivity
     private LinearLayout contentHolder;
     private LinearLayout contentView;
     private UmrahView umrahView;
+    private View currentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

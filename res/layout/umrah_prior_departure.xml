@@ -15,7 +15,8 @@
 
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/prior_to_departure" >
+                android:text="@string/prior_to_departure" 
+                android:textAllCaps="true">
             </TextView>
 
             <TextView

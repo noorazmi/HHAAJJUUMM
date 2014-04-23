@@ -13,7 +13,7 @@ public class UpdatesView extends LinearLayout
     public UpdatesView(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
-	LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
+	LayoutInflater.from(getContext()).inflate(R.layout.updates, this);
     }
 
 }
