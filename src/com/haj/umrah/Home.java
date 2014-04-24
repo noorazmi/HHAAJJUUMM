@@ -2,17 +2,17 @@ package com.haj.umrah;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import com.haj.umrah.fragments.UmrahViewFragment;
 import com.haj.umrah.sidemenu.ContentWindow;
+import com.haj.umrah.sidemenu.LeftSideMenu;
 import com.haj.umrah.views.UmrahView;
+import com.haj.umrah.views.UpdatesView;
 
 public class Home extends FragmentActivity
 {
@@ -21,7 +21,14 @@ public class Home extends FragmentActivity
     private LinearLayout contentHolder;
     private LinearLayout contentView;
     private UmrahView umrahView;
+    private UpdatesView updatesView;
+    private LeftSideMenu leftSideMenu;
     private View currentView;
+    
+    private static final String UPDATES = "Updates";
+    private static final String UMRAH = "Umrah";
+    private static final String HAJJ = "Hajj";
+    private static final String ABOUT = "About";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,12 +38,17 @@ public class Home extends FragmentActivity
 	container = (FrameLayout) findViewById(R.id.container);
 	contentWindow = (ContentWindow) findViewById(R.id.contnet_window);
 	contentHolder = (LinearLayout) contentWindow.findViewById(R.id.content_holder);
+	leftSideMenu = (LeftSideMenu) findViewById(R.id.left_side_menu);
+	leftSideMenu.setOnLeftMenuItemSeletedListener(new CustomLeftMenuItemSlelectedListener());
 //	FragmentManager fragmentManager = getSupportFragmentManager();
 //	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 //	fragmentTransaction.add(R.id.content_holder, new UmrahViewFragment());
 //	fragmentTransaction.commit();
-	umrahView = new UmrahView(this);
-	contentHolder.addView(umrahView);
+	
+	//umrahView = new UmrahView(this);
+	updatesView = new UpdatesView(this);
+	
+	contentHolder.addView(updatesView);
     }
 
     @Override
@@ -87,4 +99,34 @@ public class Home extends FragmentActivity
     {
 	return contentView;
     }
+    
+    
+    /** This class will listen the click events of LeftSideMenu items and will change the views on the content holder accordingly. **/
+    private class CustomLeftMenuItemSlelectedListener implements LeftSideMenu.OnLeftMenuItemSeletedListener{
+
+	@Override
+	public void onLeftMenuItemSelected(String menuTitle)
+	{
+	    Toast.makeText(Home.this, menuTitle, Toast.LENGTH_SHORT).show();
+	    contentHolder.removeAllViews();
+	    if(menuTitle.equalsIgnoreCase(UPDATES)){
+		contentHolder.addView(updatesView);
+		currentView = updatesView;
+	    }else if(menuTitle.equalsIgnoreCase(UMRAH)){
+		if(umrahView == null){
+		    umrahView = new UmrahView(Home.this);
+		}
+		contentHolder.addView(umrahView);
+		currentView = umrahView;
+		
+	    }else if(menuTitle.equalsIgnoreCase(HAJJ)){
+		
+	    }else if(menuTitle.equalsIgnoreCase(ABOUT)){
+		
+	    }
+	}
+	
+    }
+    
+    
 }

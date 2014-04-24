@@ -10,6 +10,13 @@ import android.widget.LinearLayout;
 public class UpdatesView extends LinearLayout
 {
 
+    public UpdatesView(Context context)
+    {
+	super(context);
+	LayoutInflater.from(getContext()).inflate(R.layout.updates, this);
+    }
+
+    /** Will be called only when the layout is inflated in xml layout file. **/
     public UpdatesView(Context context, AttributeSet attrs)
     {
 	super(context, attrs);

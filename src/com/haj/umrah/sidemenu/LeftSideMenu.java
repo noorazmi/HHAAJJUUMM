@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.haj.umrah.R;
 import com.haj.umrah.leftmenu.LeftMenuItem;
@@ -20,20 +21,22 @@ import com.haj.umrah.views.RoundedImageView;
 
 public class LeftSideMenu extends LinearLayout
 {
-    private LinearLayout scrollViewContainer;
+    private final LinearLayout scrollViewContainer;
+    public final LeftMenuItemClickListener leftMenuItemClickListener;
+    private OnLeftMenuItemSeletedListener onLeftMenuItemSeletedListener;
 
     public LeftSideMenu(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
 	LayoutInflater.from(context).inflate(R.layout.left_side_menu, this);
 	scrollViewContainer = (LinearLayout) findViewById(R.id.scroll_view_container);
+	leftMenuItemClickListener = new LeftMenuItemClickListener();
 	setMenu();
     }
 
     //Create left side menu list 
     private void setMenu()
     {
-	
 	String[] menuItemTitles = getResources().getStringArray(R.array.left_menu_titles);
 	int[] menuItemIcons = {R.drawable.info_update, R.drawable.kaba,R.drawable.hajj,R.drawable.about};
 	View menuItem;
@@ -45,13 +48,39 @@ public class LeftSideMenu extends LinearLayout
 	    //(Context context, int iconResId, String title,ImageView.ScaleType scaleType, int cornerRadius,int borderWidth, int borderColorStateList,boolean roundBackgroud, boolean isOval)
 
 	    menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i]);
-		
+	    menuItem.setOnClickListener(leftMenuItemClickListener);
 	    scrollViewContainer.addView(menuItem);
 	    divider = new Divider(getContext(), R.color.menu_divider, (int)Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources()),2,0/*padding left*/,0/* padding right*/);
 	    scrollViewContainer.addView(divider);
 	}
     }
+    
+    
+    /** Listener to listen to clicks on left side menu item.These events will be sent to Home.java Home screen to change the views according to selections. **/
+    private class LeftMenuItemClickListener implements OnClickListener{
 
+	@Override
+	public void onClick(View v)
+	{
+	    if(onLeftMenuItemSeletedListener != null){
+		onLeftMenuItemSeletedListener.onLeftMenuItemSelected(v.getTag().toString());
+	    }
+	}
+	
+    }
+    
+    
+    /** This interface will be implemented by the Home.java Home screen to get informed about the  left menu item selection. Method of this listener will called from {@link LeftMenuItemClickListener}**/
+    public static interface OnLeftMenuItemSeletedListener{
+	abstract public void onLeftMenuItemSelected(String menuTitle);
+    }
+    
+    
+    /** Set the  OnLeftMenuItemSeletedListener.Will be called from Home.js Home screen.**/
+    public void setOnLeftMenuItemSeletedListener(OnLeftMenuItemSeletedListener onLeftMenuItemSeletedListener){
+	this.onLeftMenuItemSeletedListener = onLeftMenuItemSeletedListener;
+    }
+    
     private String getXml(String path)
     {
 	String xmlString = null;

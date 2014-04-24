@@ -58,7 +58,8 @@ public class ContentWindow extends LinearLayout
 	}
 
     }
-
+    
+    
     class MyViewTouchListener implements OnTouchListener
     {
 

@@ -16,6 +16,7 @@ public class LeftMenuItem extends LinearLayout
 	LayoutInflater.from(getContext()).inflate(R.layout.left_side_menu_item, this);
 	((ImageView) findViewById(R.id.menu_icon)).setImageResource(iconResId);
 	((TextView) findViewById(R.id.menu_title)).setText(title);
+	setTag(title);
     }
 
 }
