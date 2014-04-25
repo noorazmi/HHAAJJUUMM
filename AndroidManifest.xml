@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
          <activity
-            android:name="com.haj.umrah.Home">
+            android:name="com.haj.umrah.Home" >
         </activity>
     </application>
 

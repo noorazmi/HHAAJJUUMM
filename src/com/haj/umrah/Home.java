@@ -47,7 +47,6 @@ public class Home extends FragmentActivity
 	
 	//umrahView = new UmrahView(this);
 	updatesView = new UpdatesView(this);
-	
 	contentHolder.addView(updatesView);
     }
 
@@ -124,6 +123,9 @@ public class Home extends FragmentActivity
 	    }else if(menuTitle.equalsIgnoreCase(ABOUT)){
 		
 	    }
+	    
+	    //Now close the menu
+	    contentWindow.animateLeft();
 	}
 	
     }
