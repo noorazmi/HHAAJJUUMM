@@ -13,6 +13,8 @@
     <color name="left_side_menu_item_background">#004839</color>
     <color name="content_holder_background">#005946</color>
     <color name="action_bar_background">#003227</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
   
     
 </resources>

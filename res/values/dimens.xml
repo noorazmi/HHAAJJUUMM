@@ -20,5 +20,6 @@
     <dimen name="dua_meaning_padding_left">8dp</dimen>
     <dimen name="dua_meaning_padding_right">8dp</dimen>
     <dimen name="dua_container_margin_top">12dp</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
 
 </resources>

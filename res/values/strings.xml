@@ -8,6 +8,10 @@
     <string name="ihraam">Ihraam</string>
     <string name="tawaaf">Tawaaf</string>
     <string name="halaq">Halaq or Qasr</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
     
     <string-array name="left_menu_titles">
         <item>Updates</item>
