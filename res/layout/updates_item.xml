@@ -40,16 +40,16 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
-                android:id="@+id/date_and_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19 April 2014 at 9:30 pm" />
-
-            <TextView
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Makkah" />
+
+            <TextView
+                android:id="@+id/date_and_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19 April 2014 at 9:30 pm" />
         </LinearLayout>
 
         <LinearLayout
