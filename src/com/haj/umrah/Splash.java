@@ -1,9 +1,13 @@
 package com.haj.umrah;
 
+import com.haj.umrah.util.AppInfo;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Display;
 import android.view.WindowManager;
 
 public class Splash extends Activity
@@ -46,7 +50,20 @@ public class Splash extends Activity
 	{}
 
     }
-
+    
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        
+        AppInfo.setScreenWidth(size.x);
+        AppInfo.setScreenHeight(size.y);
+        
+    }
+    
     @Override
     protected void onDestroy()
     {

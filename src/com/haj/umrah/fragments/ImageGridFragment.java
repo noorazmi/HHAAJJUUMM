@@ -41,6 +41,7 @@ import com.haj.umrah.ImageDetailActivity;
 import com.haj.umrah.R;
 import com.haj.umrah.bitmap.ImageCache.ImageCacheParams;
 import com.haj.umrah.bitmap.ImageFetcher;
+import com.haj.umrah.util.AppInfo;
 import com.haj.umrah.util.Images;
 import com.haj.umrah.util.Util;
 
@@ -84,9 +85,9 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	cacheParams.setMemCacheSizePercent(0.25f); // Set memory cache to 25% of
 						   // app memory
 
-	// The ImageFetcher takes care of loading images into our ImageView
-	// children asynchronously
-	mImageFetcher = new ImageFetcher(getActivity(), 20);
+	// The ImageFetcher takes care of loading images into our ImageView children asynchronously
+	//This (second parameter:AppInfo.getScreenWidth()) parameter is important.If the size is not coming according to parameter, uninstall and reinstall the application*/
+	mImageFetcher = new ImageFetcher(getActivity(), AppInfo.getScreenWidth());	
 	mImageFetcher.setLoadingImage(R.drawable.empty_photo);
 	mImageFetcher.addImageCache(getActivity().getSupportFragmentManager(), cacheParams);
     }
@@ -236,7 +237,7 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	{
 	    super();
 	    mContext = context;
-	    mImageViewLayoutParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+	    mImageViewLayoutParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 	    inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 	    // Calculate ActionBar height
@@ -325,10 +326,10 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	    imageView.setLayoutParams(mImageViewLayoutParams);
 
 	    // Check the height matches our calculated column width
-	    if (imageView.getLayoutParams().height != mItemHeight)
-	    {
-		imageView.setLayoutParams(mImageViewLayoutParams);
-	    }
+//	    if (imageView.getLayoutParams().height != mItemHeight)
+//	    {
+//		imageView.setLayoutParams(mImageViewLayoutParams);
+//	    }
 
 	    // Finally load the image asynchronously into the ImageView, this
 	    // also takes care of
@@ -343,26 +344,26 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	 * 
 	 * @param height
 	 */
-	public void setItemHeight(int height)
-	{
-	    if (height == mItemHeight)
-	    {
-		return;
-	    }
-	    mItemHeight = height;
-	    mImageViewLayoutParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, mItemHeight);
-	    mImageFetcher.setImageSize(height);
-	    notifyDataSetChanged();
-	}
+//	public void setItemHeight(int height)
+//	{
+//	    if (height == mItemHeight)
+//	    {
+//		return;
+//	    }
+//	    mItemHeight = height;
+//	    mImageViewLayoutParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, mItemHeight);
+//	    mImageFetcher.setImageSize(height);
+//	    notifyDataSetChanged();
+//	}
 
 	// public void setNumColumns(int numColumns)
 	// {
 	// mNumColumns = numColumns;
 	// }
 	//
-	public int getNumColumns()
-	{
-	    return 1;
-	}
+//	public int getNumColumns()
+//	{
+//	    return 1;
+//	}
     }
 }

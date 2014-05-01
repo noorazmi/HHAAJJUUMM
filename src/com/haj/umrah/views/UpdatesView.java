@@ -26,7 +26,9 @@ public class UpdatesView extends LinearLayout
 	if (home.getSupportFragmentManager().findFragmentByTag(TAG) == null)
 	{
 	    final FragmentTransaction ft = home.getSupportFragmentManager().beginTransaction();
-	    ft.add(android.R.id.content, new ImageGridFragment(), TAG);
+	    //ft.add(android.R.id.content, new ImageGridFragment(), TAG);
+	    ft.add(R.id.upates_holder, new ImageGridFragment(), TAG);
+	    
 	    ft.commit();
 	}
     }
