@@ -31,11 +31,12 @@
         <activity
             android:name="com.haj.umrah.ImageDetailActivity"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.android.bitmapfun.ImageGridActivity"
-            android:theme="@style/AppTheme.FullScreen" >
+            android:parentActivityName="com.haj.umrah.Home"
+            android:theme="@style/AppTheme.FullScreen" 
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ImageGridActivity" />
+                android:value="com.haj.umrah.Home" />
         </activity>
     </application>
 

@@ -62,6 +62,7 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
     //private int mImageThumbSpacing;
     private ImageAdapter mAdapter;
     private ImageFetcher mImageFetcher;
+    private final int LIST_VIEW_DIVIDER_HEIGHT = 20;
 
     /**
      * Empty constructor as per the Fragment documentation
@@ -99,6 +100,8 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	final View v = inflater.inflate(R.layout.image_grid_fragment, container, false);
 	final ListView mGridView = (ListView) v.findViewById(R.id.gridView);
 	mGridView.setAdapter(mAdapter);
+	mGridView.setDivider(this.getResources().getDrawable(R.drawable.transperent_color));
+	mGridView.setDividerHeight((int)Util.getPixels(LIST_VIEW_DIVIDER_HEIGHT, getResources()));
 	mGridView.setOnItemClickListener(this);
 	mGridView.setOnScrollListener(new AbsListView.OnScrollListener()
 	{

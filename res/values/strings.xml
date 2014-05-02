@@ -12,7 +12,10 @@
     <string name="clear_cache_menu">Clear Caches</string>
     <string name="clear_cache_complete_toast">Caches have been cleared</string>
     <string name="imageview_description">Image Thumbnail</string>
-    
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+    <string name="comment">Comment</string>
+
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>
