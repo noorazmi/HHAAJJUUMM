@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.haj.umrah.sidemenu.ContentWindow;
 import com.haj.umrah.sidemenu.LeftSideMenu;
+import com.haj.umrah.views.HajjView;
 import com.haj.umrah.views.UmrahView;
 import com.haj.umrah.views.UpdatesView;
 
@@ -22,6 +23,7 @@ public class Home extends FragmentActivity
     private LinearLayout contentView;
     private UmrahView umrahView;
     private UpdatesView updatesView;
+    private HajjView hajjView;
     private LeftSideMenu leftSideMenu;
     private View currentView;
     
@@ -119,6 +121,11 @@ public class Home extends FragmentActivity
 		currentView = umrahView;
 		
 	    }else if(menuTitle.equalsIgnoreCase(HAJJ)){
+		if(hajjView == null){
+		    hajjView = new HajjView(Home.this);
+		}
+		contentHolder.addView(hajjView);
+		currentView = hajjView;
 		
 	    }else if(menuTitle.equalsIgnoreCase(ABOUT)){
 		

@@ -12,51 +12,53 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.haj.umrah.Home;
 import com.haj.umrah.R;
+import com.haj.umrah.fragments.HajjIntroFragment;
 import com.haj.umrah.fragments.UmrahHalaq;
 import com.haj.umrah.fragments.UmrahIhramFragment;
-import com.haj.umrah.fragments.UmrahIntroFragment;
 import com.haj.umrah.fragments.UmrahPriorToDepartureFragment;
 import com.haj.umrah.fragments.UmrahSai;
 import com.haj.umrah.fragments.UmrahTawafFragment;
 import com.haj.umrah.util.LogType;
 import com.haj.umrah.util.Util;
 
-public class UmrahView extends LinearLayout
+public class HajjView extends LinearLayout
 {
-    private ViewPager umrahViewPager;
-    private PagerAdapter umrahPageAdapter;
+    private ViewPager hajjViewPager;
+    private PagerAdapter hajjPageAdapter;
     private Home homeActivity;
     private Resources res;
-    private static final String TAG = UmrahView.class.getName();
+    private static final String TAG = HajjView.class.getName();
 
-    public UmrahView(Context context)
+    public HajjView(Context context)
     {
 	super(context, null);
 	homeActivity = (Home) context;
 	res = homeActivity.getResources();
 	LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
-	umrahViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
-	umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
-	umrahViewPager.setAdapter(umrahPageAdapter);
-	umrahViewPager.setOffscreenPageLimit(0);
-	//umrahViewPager.setCurrentItem(1);
+	hajjViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
+	hajjPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
+	hajjViewPager.setAdapter(hajjPageAdapter);
+	hajjViewPager.setOffscreenPageLimit(0);
+	//hajjViewPager.setCurrentItem(1);
     }
 
-    public UmrahView(Context context, AttributeSet attrs)
+    public HajjView(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
-	LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
+	//LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
     }
 
     private List<Fragment> getFragments()
     {
 	List<Fragment> fList = new ArrayList<Fragment>();
 
-	fList.add(new UmrahIntroFragment());
+	fList.add(new HajjIntroFragment());
 	fList.add(new UmrahPriorToDepartureFragment());
 	fList.add(new UmrahIhramFragment());
 	fList.add(new UmrahTawafFragment());
@@ -95,7 +97,13 @@ public class UmrahView extends LinearLayout
 	{
 	    return POSITION_NONE;
 	}
-
+	
+	@Override
+	public Object instantiateItem(ViewGroup container, int position)
+	{
+	    return super.instantiateItem(container, position);
+	}
+	
 	@Override
 	public CharSequence getPageTitle(int position) 
 	{
