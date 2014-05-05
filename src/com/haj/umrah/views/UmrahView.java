@@ -86,8 +86,8 @@ public class UmrahView extends LinearLayout
 	@Override
 	public Fragment getItem(int position)
 	{
-	    //return this.fragments.get(position);
-	    return getFragments().get(position);
+	    return this.fragments.get(position);
+	    //return getFragments().get(position);
 	}
 	
 	@Override

@@ -13,7 +13,7 @@ public class UmrahIhramFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        return inflater.from(getActivity()).inflate(R.layout.umrah_ehram, container, false);
+        return inflater.from(getActivity()).inflate(R.layout.umrah_ihram, container, false);
     }
 
 }

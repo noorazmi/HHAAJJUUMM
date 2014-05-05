@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.haj.umrah"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -11,31 +12,154 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-			
+            android:orientation="vertical" >
+
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/umrah" >
+                android:text="@string/types_of_hajj"
+                android:textAllCaps="true" >
             </TextView>
-             <TextView
+
+            <TextView
                 style="@style/umrah_description"
-                android:text="@string/umrah_first" >
+                android:text="@string/there_are_three" >
             </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/types_of_hajj_desc" >
+            </TextView>
+
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/virtues_of_umrah" >
+                android:text="@string/hajj_qiraan" >
             </TextView>
+
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/virtues_of_umrah_desc">
+                android:text="@string/one_must_wear" >
             </TextView>
+
+            <LinearLayout style="@style/dua_container" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_after_niyyah" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_2" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_after_niyyah_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_after_niyyah_meaning" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/upon_arriving_in" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_after_umrah_one_must_not_shave" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_this_umrah" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/now_one_remains" >
+            </TextView>
+
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/farz_act_umrah">
+                android:text="@string/hajj_tamattu" >
             </TextView>
+
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/farz_act_umrah_desc">
+                android:text="@string/one_will_wear" >
+            </TextView>
+
+            <LinearLayout style="@style/dua_container" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_after_niyyah" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_2" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_after_niyyah_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_after_niyyah_meaning" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/upon_arriving_in" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_halaq_all_requlations" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/hajj_ifrad" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/you_will_enter_the_state_of_hajj" >
+            </TextView>
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/intention_hajj"
+                hajumrah:dua_image="@drawable/dua_seeing_kaba"
+                hajumrah:dua_meaning="@string/intention_hajj_meaning"
+                hajumrah:dua_pronunciation="@string/intention_hajj_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_if_one_choose_to_perform" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_sai_of_hajj" >
             </TextView>
         </LinearLayout>
     </ScrollView>

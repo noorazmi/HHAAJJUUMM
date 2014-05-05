@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+    <string name="types_of_hajj">Types of Hajj</string>
+    <string name="there_are_three">There are following three types of Hajj:</string>
+    <string name="types_of_hajj_desc">1.<b>Qiraan</b>: \nThe pilgrim wears the Ihraam with the intention of performing both Umrah and Hajj together.The pilgrim, on arriving in Makkah, first performs Umrah followed by Hajj in the same Ihraam. This is difficult but more rewarding.\n\n 2.<b>Tamattu</b>:\n The pilgrim wears Ihraam with the sole intention of Umrah. After its completion, the Ihraam is removed and another Ihraam is worn before 8th Dhul Hijjah for Hajj.\n\n 3.<b>Ifraad</b>:\n The pilgrim, intending Hajj only, enters the state of Ihraam. He does not wish to combine it with Umrah. </string>
+    <string name="hajj_qiraan">HAJJ QIRAAN</string>
+    <string name="one_must_wear"><b>1.</b> One must wear the Ihraam and enter it’s state, with the intention of performing both Umrah and Hajj upon or prior to reaching the Meeqat. One must perform Umrah first, thereafter Hajj. </string>
+    <string name="upon_arriving_in"><b>2.</b>Upon arriving in Makkah, one should then proceed to Al Masjidul Haram and perform Umrah.\nFollow the section on Tawaaf and Sa’i in the section of "Umrah".</string>
+    <string name="masalah_after_umrah_one_must_not_shave"> <u>Mas’alah:</u><font color="#ff0000">After Umrah one must not shave or trim the hair , or assume that one is no longer in Ihraam after Umrah.</font></string>
+    <string name="after_this_umrah"><b>3</b>. After this Umrah, perform a second Tawaaf. This second Tawaaf is Tawaaful Qudum which is Sunnah. Follow this with Sa’i once again. This is the Sa’i for Hajj.\n\n <b>Mas’alah</b>: If one chooses to perform Sa’i of Hajj after this Tawaaf, then this Tawaaf needs to be performed with Idhtiba (keeping the right shoulder uncovered) in all seven circuits and Ramal in the first three only. Sa’i of Hajj can also be performed later, after Tawaafuz Ziyarah, but in Hajj Qiraan, it is preferable after Tawaaful Qudum.</string>
+    <string name="now_one_remains"><b>4</b>. Now one remains in Makkah Mukarramah in the state of Ihraam. One will not adopt another Ihraam for Hajj.\n\n <b>5</b>. Follow the guidelines for the five days of Hajj.</string>
+    <string name="hajj_tamattu">HAJJ TAMATTU</string>
+    <string name="one_will_wear"><b>1</b>. One will wear the Ihraam and enter into it’s state with the intention of performing Umrah, upon or prior to reaching the Meeqat. Thereafter, upon the completion of Umrah when the time for Hajj arrives, the Ihraam will have to be donned again. The intention for Ihraam will be:</string>
+    <string name="after_halaq_all_requlations"><b>3</b>. After Halaq/Qasr (shaving/trimming), all regulations of Ihraam will end. One can remain in Makkah Mukarramah without Ihraam until the five days of Hajj.\n\n <b>4</b>. Now follow the guidelines of the five days of Hajj.</string>
+    <string name="hajj_ifrad">HAJJ IFRAAD</string>
+    <string name="you_will_enter_the_state_of_hajj"> <b>1</b>. You will enter the state of Ihraam with the intention of performing Hajj on or prior to reaching Meeqat.</string>
+    <string name="masalah_if_one_choose_to_perform"><b>Mas’alah</b>: If one chooses to perform Sa’i of Hajj after this Tawaaf, then this Tawaaf needs to be performed with Idhtiba in all seven circuits and Ramal in the first three only.</string>
+    <string name="masalah_sai_of_hajj"><b>Mas’alah</b>: Sa’i of Hajj for those performing Hajj Ifraad is best after Tawaafuz Ziyarah.</string>
+    <string name="intention_hajj_pronounce">ALLAHUMMA INNI URDUL HAJJA FAYASSIR HU LI WA TAQAB-BALHU MINNI</string>
+    <string name="intention_hajj_meaning">O Allah! I intend Hajj. Make it easy for me and accept it from me.</string>
+    <string name="intention_hajj">DU’A FOR INTENTION FOR HAJJ</string>
 </resources>
