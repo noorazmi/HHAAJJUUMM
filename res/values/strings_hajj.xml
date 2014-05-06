@@ -16,7 +16,12 @@
     <string name="you_will_enter_the_state_of_hajj"> <b>1</b>. You will enter the state of Ihraam with the intention of performing Hajj on or prior to reaching Meeqat.</string>
     <string name="masalah_if_one_choose_to_perform"><b>Mas’alah</b>: If one chooses to perform Sa’i of Hajj after this Tawaaf, then this Tawaaf needs to be performed with Idhtiba in all seven circuits and Ramal in the first three only.</string>
     <string name="masalah_sai_of_hajj"><b>Mas’alah</b>: Sa’i of Hajj for those performing Hajj Ifraad is best after Tawaafuz Ziyarah.</string>
-    <string name="intention_hajj_pronounce">ALLAHUMMA INNI URDUL HAJJA FAYASSIR HU LI WA TAQAB-BALHU MINNI</string>
+    <string name="intention_hajj_pronounce">ALLAHUMMA INNI URIDUL HAJJA FAYASSIR HU LI WA TAQAB-BALHU MINNI</string>
     <string name="intention_hajj_meaning">O Allah! I intend Hajj. Make it easy for me and accept it from me.</string>
     <string name="intention_hajj">DU’A FOR INTENTION FOR HAJJ</string>
+    <string name="now_you_will_remain"><b>3</b>. Now you will remain in Makkah Mukarramah in the state of this Ihraam for Hajj too. \n\n<b>4</b>.Now follow the guidelines for the five days of Hajj.</string>
+    <string name="first_day_8th_dhul_hijjah">FIRST DAY (8th DHUL HIJJAH)</string>
+    <string name="on_the_8th_dhulhijja"><b>1</b>.On the 8th Dhul Hijjah, leave for Mina after sunrise reciting Talbiyah.</string>
+    <string name="if_you_are_performing"> <b>2</b>. If you are performing Hajj Tamattu, then perform ghusl, i.e. clean up, before the morning of 8th Dhul Hijjah and put on the sheets of Ihraam. Women are to wear concealing Islamic clothes. The performers of Hajj Tamattu will proceed to al Masjidul Haram and perform two Raka’at with the head covered, intending Ihraam and Hajj, with the recitation of Talbiyah.</string>
+    <string name="masalah_sai_of_hajj_which_is_normnally"><b>Mas’alah</b>: Sa’i of Hajj, which is normally performed after Tawaafuz Ziyarah, may be performed at this point if desired. but, a Sa’i cannot be performed independently of Tawaaf, thus, a Nafl Tawaaf must be performed prior to the Sa’i. \n\n<b>Mas’alah</b>: The Nafl Tawaaf before Sa’i will be performed with Idhtiba in all seven circuits and Ramal in the first three circuits only. This is the general rule, that all those Tawaaf that accompany Sa’i will be performed with Idhtiba in all seven circuits and Raml in the first three. \n\n<b>Mas’alah</b>: A person performing Hajj Tamattu can enter into the state of Ihraam for Hajj anytime prior to the 8th Dhul Hijjah. \n\n<b>Mas’alah</b>: It is better (Mustahab) to make the intention of Ihraam in al Masjidul Haram.</string>
 </resources>

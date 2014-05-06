@@ -78,8 +78,8 @@
             <com.haj.umrah.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                hajumrah:dua_heading="@string/dua_after_salatul_ihram"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_image="@drawable/talbiyah"
                 hajumrah:dua_meaning="@string/dua_after_salatul_ihram_meaning"
                 hajumrah:dua_pronunciation="@string/dua_after_salatul_ihram_pronounce" />
 

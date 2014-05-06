@@ -16,18 +16,31 @@
 
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/types_of_hajj"
+                android:text="@string/first_day_8th_dhul_hijjah"
                 android:textAllCaps="true" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/there_are_three" >
+                android:text="@string/on_the_8th_dhulhijja" >
+            </TextView>
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_meaning="@string/dua_after_salatul_ihram_meaning"
+                hajumrah:dua_pronunciation="@string/dua_after_salatul_ihram_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/if_you_are_performing" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/types_of_hajj_desc" >
+                android:text="@string/masalah_sai_of_hajj_which_is_normnally" >
             </TextView>
 
             <TextView
@@ -123,13 +136,11 @@
                 style="@style/umrah_description"
                 android:text="@string/masalah_sai_of_hajj" >
             </TextView>
-            
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/now_you_will_remain" >
             </TextView>
-            
-            
         </LinearLayout>
     </ScrollView>
 
