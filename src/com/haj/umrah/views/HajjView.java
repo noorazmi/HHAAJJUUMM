@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import com.haj.umrah.Home;
 import com.haj.umrah.R;
 import com.haj.umrah.fragments.HajjDayOneFragment;
+import com.haj.umrah.fragments.HajjDayTwoFragment;
 import com.haj.umrah.fragments.HajjIntroFragment;
 import com.haj.umrah.fragments.UmrahHalaq;
 import com.haj.umrah.fragments.UmrahIhramFragment;
@@ -61,7 +62,7 @@ public class HajjView extends LinearLayout
 
 	fList.add(new HajjIntroFragment());
 	fList.add(new HajjDayOneFragment());
-	fList.add(new UmrahIhramFragment());
+	fList.add(new HajjDayTwoFragment());
 	fList.add(new UmrahTawafFragment());
 	fList.add(new UmrahSai());
 	fList.add(new UmrahHalaq());
@@ -121,7 +122,7 @@ public class HajjView extends LinearLayout
 		title = res.getString(R.string.first_day_8th_dhul_hijjah).toUpperCase();
 		break;	
 	    case 2:
-		title = res.getString(R.string.ihraam).toUpperCase();
+		title = res.getString(R.string.second_day).toUpperCase();
 		break;
 	    case 3:
 		title = res.getString(R.string.tawaaf).toUpperCase();

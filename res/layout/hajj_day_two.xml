@@ -16,13 +16,18 @@
 
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/first_day_8th_dhul_hijjah"
+                android:text="@string/second_day"
                 android:textAllCaps="true" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/on_the_8th_dhulhijja" >
+                android:text="@string/second_day_subah_sadiq" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_sunrise" >
             </TextView>
 
             <com.haj.umrah.views.DuaView
@@ -35,32 +40,26 @@
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/if_you_are_performing" >
+                android:text="@string/masalah_to_leave" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/masalah_sai_of_hajj_which_is_normnally" >
+                android:text="@string/wuquf_in_arafat" >
             </TextView>
 
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/this_day" >
-            </TextView>
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_enrout_to_arafat"
+                hajumrah:dua_image="@drawable/dua_enrout_to_arafat"
+                hajumrah:dua_meaning="@string/dua_enrout_to_arafat_meaning"
+                hajumrah:dua_pronunciation="@string/dua_enrout_to_arafat_pronounce" />
 
             <TextView
-                style="@style/umrah_description"
-                android:text="@string/masalah_it_is_desirable" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/masalah_if_the_total" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/masalah_takbirat_of_tashriq" >
+                style="@style/umrah_heading"
+                android:text="@string/dua_at_arafat"
+                android:textAllCaps="true" >
             </TextView>
         </LinearLayout>
     </ScrollView>

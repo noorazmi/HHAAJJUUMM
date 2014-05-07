@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:src="@drawable/dua_after_salatul_iharm" />
+        android:src="@drawable/dua_after_salatul_ihram" />
 
     <TextView
         android:id="@+id/dua_pronumciation"

@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah"
-                hajumrah:dua_image="@drawable/talbiyah"
+                hajumrah:dua_image="@drawable/dua_after_salatul_ihram"
                 hajumrah:dua_meaning="@string/dua_after_salatul_ihram_meaning"
                 hajumrah:dua_pronunciation="@string/dua_after_salatul_ihram_pronounce" />
 
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah_instr"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_image="@drawable/dua_after_salatul_ihram"
                 hajumrah:dua_meaning="@string/talbiyah_meaning"
                 hajumrah:dua_pronunciation="@string/talbiyah_pronounce" />
 
@@ -108,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_outside_makkah"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_image="@drawable/dua_outside_makkah"
                 hajumrah:dua_meaning="@string/dua_outside_makkah_meaning"
                 hajumrah:dua_pronunciation="@string/dua_outside_makkah_pronounce" />
 
@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_entering_masjid"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_image="@drawable/dua_outside_makkah"
                 hajumrah:dua_meaning="@string/dua_entering_masjid_meaning"
                 hajumrah:dua_pronunciation="@string/dua_entering_masjid_pronounce" />
 
@@ -140,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_seeing_kabah"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_image="@drawable/dua_seeing_kaba"
                 hajumrah:dua_meaning="@string/dua_seeing_kabah_meaning"
                 hajumrah:dua_pronunciation="@string/dua_seeing_kabah_pronounce" />
 
@@ -153,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_on_sigting_heading"
-                hajumrah:dua_image="@drawable/dua_after_salatul_iharm"
+                hajumrah:dua_image="@drawable/dua_on_sighting_kaba"
                 hajumrah:dua_meaning="@string/dua_on_sigting_meaning"
                 hajumrah:dua_pronunciation="@string/dua_on_sigting_pronounce" />
 
