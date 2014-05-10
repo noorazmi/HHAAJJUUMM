@@ -16,7 +16,7 @@
 
             <TextView
                 style="@style/umrah_heading"
-                android:text="@string/second_day"
+                android:text="@string/hajj_second_day"
                 android:textAllCaps="true" >
             </TextView>
 
@@ -58,8 +58,111 @@
 
             <TextView
                 style="@style/umrah_heading"
+                android:layout_marginTop="8dp"
                 android:text="@string/dua_at_arafat"
                 android:textAllCaps="true" >
+            </TextView>
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/fourth_kalima_1"
+                hajumrah:dua_image="@drawable/kalima_4_small"
+                hajumrah:dua_meaning="@string/kalima_4_small_meaning"
+                hajumrah:dua_pronunciation="@string/kalima_4_small_pronounce" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/fourth_kalima_2"
+                hajumrah:dua_image="@drawable/kalima_4_big"
+                hajumrah:dua_meaning="@string/kalima_4_big_meaning"
+                hajumrah:dua_pronunciation="@string/kalima_4_big_pronounce" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_rabbana_atina"
+                hajumrah:dua_image="@drawable/dua_rabbana"
+                hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
+                hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua"
+                hajumrah:dua_image="@drawable/dua_allahummainni_zalamtunafsi"
+                hajumrah:dua_meaning="@string/dua_allahummainni_zalamtunafsi_meaning"
+                hajumrah:dua_pronunciation="@string/dua_allahummainni_zalamtunafsi_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/upon_the_time_of_zuhar" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/it_is_extremely" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/to_muzdalifa"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_sunset_leave_for" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/it_is_not_permissible" >
+            </TextView>
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_to_muzdalifa"
+                hajumrah:dua_image="@drawable/dua_to_muzdalifa"
+                hajumrah:dua_meaning="@string/dua_to_muzdalifa_meaning"
+                hajumrah:dua_pronunciation="@string/dua_to_muzdalifa_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_it_is_wajib" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/in_muzdalifa"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/perform_maghrib_and_isha" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/to_remain_in_muzdalifa" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/collect_small_peasized_pebbles" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/pebbles_for_defferent_days" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/it_is_permissible" >
             </TextView>
         </LinearLayout>
     </ScrollView>

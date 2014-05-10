@@ -15,6 +15,7 @@
     <string name="like">Like</string>
     <string name="share">Share</string>
     <string name="comment">Comment</string>
+    <string name="exit_message">Do you want to exit the application</string>
 
     <string-array name="left_menu_titles">
         <item>Updates</item>

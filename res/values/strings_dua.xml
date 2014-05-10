@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fourth_kalima_1">FOURTH KALIMA 1</string>
+    <string name="fourth_kalima_2">FOURTH KALIMA 2</string>
+    <string name="dua">DU\'A</string>
+    <string name="dua_allahummainni_zalamtunafsi_pronounce">ALLAHUMMA INNI ZALAMTU NAFSI ZULMAN KATHIRAW-WA INNAHU LA YAGHFIRUDH-DHUNUBA ILLA ANTA FAGHFIRLI MAGHFIRATAM-MIN `INDIKA WARHAMNI. INNAKA ANTAL GHAFURUR-RAHIM.</string>
+    <string name="dua_allahummainni_zalamtunafsi_meaning">\"O Allah! I have wronged (oppressed) myself with many wrongs. And there are none who can forgive sins besides You. Forgive me with Your forgiveness. Have mercy upon me. You alone are the All-forgiving, the All-merciful\".</string>
+    <string name="dua_to_muzdalifa">DU\’A TO MUZDALIFAH</string>
+    <string name="dua_to_muzdalifa_pronounce">ALLAHUMMA ILAYKA AFADTU WA FI RAHMATIKA RAGHIBTU WA MIN SAKHATIKA RAHIBTU WA MIN ADHHBIKA ASHFAQTU FAQBAL NUSUKI WA AAZIM AJRI WA TAQABBAL TAWBATI WARHAM TAZARRUI WASTAJIB DU`AI WA A`ZINI SULI.</string>
+    <string name="dua_to_muzdalifa_meaning">\"O Allah! To You I turn. To (enter) Your mercy I am eager. Your anger I dread. From Your punishment I am fearful. Accept my sacrifice, and increase my reward. Accept my repentance and have mercy on my sorry state. Accept my du`a and grant me my request\".</string>
+</resources>

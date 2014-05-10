@@ -71,34 +71,15 @@
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/tawaf_adiya_desc" />
-
-            <LinearLayout style="@style/dua_container" >
-
-                <TextView
-                    style="@style/dua_head"
-                    android:text="@string/dua_rabbana_atina" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/white"
-                    android:src="@drawable/dua_rabbana_1" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/white"
-                    android:src="@drawable/dua_rabbana_2" />
-
-                <TextView
-                    style="@style/dua_pronounce"
-                    android:text="@string/dua_rabbana_atina_pronounce" />
-
-                <TextView
-                    style="@style/dua_meaning"
-                    android:text="@string/dua_rabbana_atina_meaning" />
-            </LinearLayout>
-
+		
+             <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_rabbana_atina"
+                hajumrah:dua_image="@drawable/dua_rabbana"
+                hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
+                hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
+            
             <com.haj.umrah.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

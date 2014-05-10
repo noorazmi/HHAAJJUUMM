@@ -1,5 +1,7 @@
 package com.haj.umrah;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
@@ -26,7 +28,7 @@ public class Home extends FragmentActivity
     private HajjView hajjView;
     private LeftSideMenu leftSideMenu;
     private View currentView;
-    
+
     private static final String UPDATES = "Updates";
     private static final String UMRAH = "Umrah";
     private static final String HAJJ = "Hajj";
@@ -42,12 +44,14 @@ public class Home extends FragmentActivity
 	contentHolder = (LinearLayout) contentWindow.findViewById(R.id.content_holder);
 	leftSideMenu = (LeftSideMenu) findViewById(R.id.left_side_menu);
 	leftSideMenu.setOnLeftMenuItemSeletedListener(new CustomLeftMenuItemSlelectedListener());
-//	FragmentManager fragmentManager = getSupportFragmentManager();
-//	FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//	fragmentTransaction.add(R.id.content_holder, new UmrahViewFragment());
-//	fragmentTransaction.commit();
-	
-	//umrahView = new UmrahView(this);
+	// FragmentManager fragmentManager = getSupportFragmentManager();
+	// FragmentTransaction fragmentTransaction =
+	// fragmentManager.beginTransaction();
+	// fragmentTransaction.add(R.id.content_holder, new
+	// UmrahViewFragment());
+	// fragmentTransaction.commit();
+
+	// umrahView = new UmrahView(this);
 	updatesView = new UpdatesView(this);
 	contentHolder.addView(updatesView);
     }
@@ -68,7 +72,21 @@ public class Home extends FragmentActivity
 	    contentWindow.animateLeft();
 	    return;
 	}
-	super.onBackPressed();
+	else
+	{
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    builder.setTitle("Exit").setMessage(getResources().getString(R.string.exit_message)).setIcon(R.drawable.app_icon).setPositiveButton("Yes", new DialogInterface.OnClickListener()
+	    {
+		public void onClick(DialogInterface dialog, int which)
+		{
+		    // Yes button clicked, do something
+		    Toast.makeText(getApplicationContext(), "Yes button pressed", Toast.LENGTH_SHORT).show();
+		   finish();
+		}
+	    }).setNegativeButton("No", null) // Do nothing on no
+	    .show();
+	}
+	
     }
 
     public boolean onKeyUp(int keyCode, KeyEvent event)
@@ -78,7 +96,7 @@ public class Home extends FragmentActivity
 	    if (contentWindow.canAnimateToRight())
 	    {
 		contentWindow.animateRight();
-		
+
 	    }
 	    else
 	    {
@@ -100,42 +118,53 @@ public class Home extends FragmentActivity
     {
 	return contentView;
     }
-    
-    
-    /** This class will listen the click events of LeftSideMenu items and will change the views on the content holder accordingly. **/
-    private class CustomLeftMenuItemSlelectedListener implements LeftSideMenu.OnLeftMenuItemSeletedListener{
+
+    /**
+     * This class will listen the click events of LeftSideMenu items and will
+     * change the views on the content holder accordingly.
+     **/
+    private class CustomLeftMenuItemSlelectedListener implements LeftSideMenu.OnLeftMenuItemSeletedListener
+    {
 
 	@Override
 	public void onLeftMenuItemSelected(String menuTitle)
 	{
 	    Toast.makeText(Home.this, menuTitle, Toast.LENGTH_SHORT).show();
 	    contentHolder.removeAllViews();
-	    if(menuTitle.equalsIgnoreCase(UPDATES)){
+	    if (menuTitle.equalsIgnoreCase(UPDATES))
+	    {
 		contentHolder.addView(updatesView);
 		currentView = updatesView;
-	    }else if(menuTitle.equalsIgnoreCase(UMRAH)){
-		if(umrahView == null){
+	    }
+	    else if (menuTitle.equalsIgnoreCase(UMRAH))
+	    {
+		if (umrahView == null)
+		{
 		    umrahView = new UmrahView(Home.this);
 		}
 		contentHolder.addView(umrahView);
 		currentView = umrahView;
-		
-	    }else if(menuTitle.equalsIgnoreCase(HAJJ)){
-		if(hajjView == null){
+
+	    }
+	    else if (menuTitle.equalsIgnoreCase(HAJJ))
+	    {
+		if (hajjView == null)
+		{
 		    hajjView = new HajjView(Home.this);
 		}
 		contentHolder.addView(hajjView);
 		currentView = hajjView;
-		
-	    }else if(menuTitle.equalsIgnoreCase(ABOUT)){
-		
+
 	    }
-	    
-	    //Now close the menu
+	    else if (menuTitle.equalsIgnoreCase(ABOUT))
+	    {
+
+	    }
+
+	    // Now close the menu
 	    contentWindow.animateLeft();
 	}
-	
+
     }
-    
-    
+
 }
