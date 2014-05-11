@@ -22,22 +22,179 @@
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/second_day_subah_sadiq" >
+                android:text="@string/day_three_subhsadiq" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/after_sunrise" >
+                android:text="@string/fajr_salah_should" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_wuquf_at_muzdalifa" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/try_to_remain" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/just_before_sunrise" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_if_performing_hajj" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/nahr_is_not_wajib" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/the_duties_of" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/pelting_only"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/on_this_day" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_it_is_an_act_of_bidah" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/when_to_perform_rami"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/rami_on_10th_can_be_performed" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_women_infants_and_the_sick" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_note_one_must_try" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/how_to_perform_rami"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/reciting_talbiya_approach" >
             </TextView>
 
             <com.haj.umrah.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_heading="@string/dua_while_stoning"
                 hajumrah:dua_image="@drawable/talbiyah"
-                hajumrah:dua_meaning="@string/talbiyah_meaning"
-                hajumrah:dua_pronunciation="@string/talbiyah_pronounce" />
+                hajumrah:dua_meaning="@string/dua_bismillahi_allahu_akbar_meaning"
+                hajumrah:dua_pronunciation="@string/dua_bismillahi_allahu_akbar_pronounce" />
 
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_whilst_performing_rami" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_whoever_is_able_to_reach" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_the_rush_is_not" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/nahr"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_the_rami" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_this_sacrifice" >
+            </TextView>
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_before_slaughtering"
+                hajumrah:dua_image="@drawable/talbiyah"
+                hajumrah:dua_meaning="@string/dua_before_slaughtering_meaning"
+                hajumrah:dua_pronunciation="@string/dua_before_slaughtering_pronounce" />
+
+            <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_while_slaughtering"
+                hajumrah:dua_image="@drawable/talbiyah"
+                hajumrah:dua_meaning="@string/dua_bismillahi_allahu_akbar_meaning"
+                hajumrah:dua_pronunciation="@string/dua_bismillahi_allahu_akbar_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_if_performing_hajj_qiraan" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/when_to_perform_nahr"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/the_sacrifice_can_take" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/halaq_and_or_qasr"
+                android:textAllCaps="true" >
+            </TextView>
+            
+             <com.haj.umrah.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_for_halaqa_or_qasr"
+                hajumrah:dua_image="@drawable/talbiyah"
+                hajumrah:dua_meaning="@string/dua_bismillahi_allahu_akbar_meaning"
+                hajumrah:dua_pronunciation="@string/dua_bismillahi_allahu_akbar_pronounce" />
         </LinearLayout>
     </ScrollView>
 

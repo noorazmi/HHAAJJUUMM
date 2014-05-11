@@ -8,4 +8,11 @@
     <string name="dua_to_muzdalifa">DU\’A TO MUZDALIFAH</string>
     <string name="dua_to_muzdalifa_pronounce">ALLAHUMMA ILAYKA AFADTU WA FI RAHMATIKA RAGHIBTU WA MIN SAKHATIKA RAHIBTU WA MIN ADHHBIKA ASHFAQTU FAQBAL NUSUKI WA AAZIM AJRI WA TAQABBAL TAWBATI WARHAM TAZARRUI WASTAJIB DU`AI WA A`ZINI SULI.</string>
     <string name="dua_to_muzdalifa_meaning">\"O Allah! To You I turn. To (enter) Your mercy I am eager. Your anger I dread. From Your punishment I am fearful. Accept my sacrifice, and increase my reward. Accept my repentance and have mercy on my sorry state. Accept my du`a and grant me my request\".</string>
+    <string name="dua_bismillahi_allahu_akbar_pronounce">BISMILLAHI ALLAHU AKBAR</string>
+    <string name="dua_bismillahi_allahu_akbar_meaning">“In the Name of Allah, Allah is the Greatest”.</string>
+    <string name="dua_before_slaughtering">DU’A BEFORE SLAUGHTERING</string>
+    <string name="dua_before_slaughtering_pronounce">INNI WAJ-JAHTU WAJHIYA LIL-LADHI FATARAS SAMAWATI WAL ’ARDHA HANIFAW WA MA ANA MINAL MUSHRIKIN. INNA SALATI WA NUSUKI WA MAH YAYA WA MAMATI LILLAHI RABBIL `ALAMIN. LA SHARIKA LAH. WA BI-DHALIKA UMIRTU WA ANA MINAL MUSLIMIN. ALLAHUMMA TAQABBAL MINNI HADHAN NUSUKA WAJ-`ALHU QURBANAN LI WAJ-HIKA WA `AZ-ZIM ’AJR `ALAYHA.</string>
+    <string name="dua_before_slaughtering_meaning">\"I turn to firmly face the creator of the heavens and earth, in this state that I am not of the polytheists. Indeed my salaah and sacrifice, and my living and dying are solely for Allah, the Lord of the worlds, who has no equal. This is what I have been ordered and I am a Muslim (I submit my will to this). O Allah! Accept from me my sacrifice and make it a means of close proximity to You. (O Allah!) Increase my rewards for it\".</string>
+    <string name="dua_while_slaughtering">DU’A WHILE SLAUGHTERING</string>
+    <string name="dua_for_halaqa_or_qasr">DU’A FOR HALAQ OR QASR</string>
 </resources>
