@@ -81,7 +81,12 @@
     <string name="masalah_if_performing_hajj_qiraan"><b>Mas’alah</b> : If performing Hajj Qiraan or Tamattu, one must have the intention that one’s sacrifice is Damush-Shukr, otherwise it will not suffice. \n\n<b>Mas’alah</b>: It is better to perform the slaughter one’s self. If unable for whatever reason, then it is Mustahab to witness the slaughtering.\nIt is also Mustahab to eat from, one’s own sacrificial meat.</string>
     <string name="when_to_perform_nahr">WHEN TO PERFORM NAHR</string>
     <string name="the_sacrifice_can_take">The sacrifice can take place at any time after Rami, as long as it is done before the sunset of 12th Dhul Hijjah. If performing Hajj Qiraan or Tamattu one can not shave one’s head until the slaughtering has been performed.</string>
-    <string name="halaq_and_or_qasr">HALAQ AND/OR QASR</string>
-        
+    <string name="halaq_and_or_qasr">3. HALAQ AND/OR QASR</string>
+    <string name="after_the_sacrifice"><b>1</b>. After the sacrifice one should shave or trim their hair. This should be done facing the Qiblah and preferably starting with the right hand side.\nTo trim slightly more than an inch from the end of the plaits is sufficient for women. To shave the head is haram for them.</string>
+    <string name="masalah_it_is_wajib_to_shave"><b>Mas’alah</b>: It is Wajib to shave or trim a quarter of your head to come out of Ihraam, but it is necessary to shave the rest of your head as to keep it in accordance to Islamic requirement \n\n<b>Mas’alah</b>: Qasr means to trim at least an inch of every hair. If one’s hair is already shorter than an inch, then shaving it is necessary.</string>
+    <string name="masalah_if_one_has_completed_the_rites"><b>Mas’alah</b>: If one has completed the rites of Hajj, which must be performed before Halaq, then he is allowed to shave his own head. He may also shave another Muslim’s hair when in this situation.</string>
+    <string name="with_this_the_restriction_of_ihram"><b>2</b>. With this the restrictions of Ihraam end. Besides the prohibition of sexual relationship. This will only be permitted upon completion of Tawaafuz Ziyarah.</string>
+    <string name="tawafuz_ziyarah">4. TAWAAFUZ ZIYARAH</string>        
         
 </resources>
+

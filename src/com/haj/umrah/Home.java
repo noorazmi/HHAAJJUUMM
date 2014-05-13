@@ -75,7 +75,7 @@ public class Home extends FragmentActivity
 	else
 	{
 	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-	    builder.setTitle("Exit").setMessage(getResources().getString(R.string.exit_message)).setIcon(R.drawable.app_icon).setPositiveButton("Yes", new DialogInterface.OnClickListener()
+	    builder.setTitle("Exit").setMessage(getResources().getString(R.string.exit_message)).setIcon(R.drawable.app_icon_small).setPositiveButton("Yes", new DialogInterface.OnClickListener()
 	    {
 		public void onClick(DialogInterface dialog, int which)
 		{
