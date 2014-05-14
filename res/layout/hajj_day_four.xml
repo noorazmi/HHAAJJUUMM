@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.haj.umrah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/hajj_fourth_day"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/day_four_you_are" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/the_only_action_to_be" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_the_order_of_rami" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/when_to_perform_rami"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/rami_of_the_11th_and_12th" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_rami_is_not_permissible" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/how_to_perform_rami"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/approach_the_small_shaytan" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

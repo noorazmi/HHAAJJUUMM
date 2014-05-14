@@ -215,11 +215,63 @@
                 style="@style/umrah_description"
                 android:text="@string/with_this_the_restriction_of_ihram" >
             </TextView>
-            
+
             <TextView
                 style="@style/umrah_heading"
                 android:text="@string/tawafuz_ziyarah"
                 android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_halaq_qasr_perform_the" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/if_after_tawaful_qudum" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/when_to_perform_tawafuzziyarah"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/tawafuzziyarah_can_be_performed" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_to_perform_tawaafuzziyarah" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/note_it_is_better_for_women" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_tawaafuzziyarah_may_be_performed" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_tawafuzziyarah_is_a_fardh" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/offer_two_rakat_make_dua" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_it_is_sunnah" >
             </TextView>
         </LinearLayout>
     </ScrollView>
