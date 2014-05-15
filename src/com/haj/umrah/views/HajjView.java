@@ -21,9 +21,11 @@ import com.haj.umrah.R;
 import com.haj.umrah.fragments.HajjDayFifthFragment;
 import com.haj.umrah.fragments.HajjDayFourFragment;
 import com.haj.umrah.fragments.HajjDayOneFragment;
+import com.haj.umrah.fragments.HajjDaySixthFragment;
 import com.haj.umrah.fragments.HajjDayThreeFragment;
 import com.haj.umrah.fragments.HajjDayTwoFragment;
 import com.haj.umrah.fragments.HajjIntroFragment;
+import com.haj.umrah.fragments.HajjTawafulwidaFragment;
 import com.haj.umrah.fragments.UmrahHalaq;
 import com.haj.umrah.fragments.UmrahIhramFragment;
 import com.haj.umrah.fragments.UmrahPriorToDepartureFragment;
@@ -50,13 +52,13 @@ public class HajjView extends LinearLayout
 	hajjPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
 	hajjViewPager.setAdapter(hajjPageAdapter);
 	hajjViewPager.setOffscreenPageLimit(0);
-	//hajjViewPager.setCurrentItem(1);
+	// hajjViewPager.setCurrentItem(1);
     }
 
     public HajjView(Context context, AttributeSet attrs)
     {
 	super(context, attrs);
-	//LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
+	// LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
     }
 
     private List<Fragment> getFragments()
@@ -69,6 +71,8 @@ public class HajjView extends LinearLayout
 	fList.add(new HajjDayThreeFragment());
 	fList.add(new HajjDayFourFragment());
 	fList.add(new HajjDayFifthFragment());
+	fList.add(new HajjDaySixthFragment());
+	fList.add(new HajjTawafulwidaFragment());
 
 	return fList;
     }
@@ -94,28 +98,28 @@ public class HajjView extends LinearLayout
 	public Fragment getItem(int position)
 	{
 	    return this.fragments.get(position);
-	    //return getFragments().get(position);
+	    // return getFragments().get(position);
 	}
-	
+
 	@Override
 	public int getItemPosition(Object object)
 	{
 	    return POSITION_NONE;
 	}
-	
+
 	@Override
 	public Object instantiateItem(ViewGroup container, int position)
 	{
 	    return super.instantiateItem(container, position);
 	}
-	
+
 	@Override
-	public CharSequence getPageTitle(int position) 
+	public CharSequence getPageTitle(int position)
 	{
-	    Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called. positions::"+position, LogType.LOG_TYPE_DEBUG);
-		 
+	    Util.printLog(TAG, new Exception().getStackTrace()[0].getMethodName() + "() called. positions::" + position, LogType.LOG_TYPE_DEBUG);
+
 	    String title = null;
-	    
+
 	    switch (position)
 	    {
 	    case 0:
@@ -123,7 +127,7 @@ public class HajjView extends LinearLayout
 		break;
 	    case 1:
 		title = res.getString(R.string.first_day_8th_dhul_hijjah).toUpperCase();
-		break;	
+		break;
 	    case 2:
 		title = res.getString(R.string.hajj_second_day).toUpperCase();
 		break;
@@ -135,6 +139,12 @@ public class HajjView extends LinearLayout
 		break;
 	    case 5:
 		title = res.getString(R.string.hajj_fifth_day).toUpperCase();
+		break;
+	    case 6:
+		title = res.getString(R.string.hajj_sixth_day).toUpperCase();
+		break;
+	    case 7:
+		title = res.getString(R.string.tawaful_wida).toUpperCase();
 		break;
 	    }
 	    return title;

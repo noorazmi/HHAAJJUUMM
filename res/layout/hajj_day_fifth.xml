@@ -22,46 +22,16 @@
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/day_four_you_are" >
+                android:text="@string/the_procedures_of_this_day" >
             </TextView>
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/the_only_action_to_be" >
+                android:text="@string/masalah_if_one_does_not_leave_mina" >
             </TextView>
-
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/masalah_the_order_of_rami" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/when_to_perform_rami"
-                android:textSize="15sp"
-                android:textStyle="bold" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/rami_of_the_11th_and_12th" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/important_rami_is_not_permissible" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/how_to_perform_rami"
-                android:textSize="15sp"
-                android:textStyle="bold" >
-            </TextView>
-
-            <TextView
-                style="@style/umrah_description"
-                android:text="@string/approach_the_small_shaytan" >
+                android:text="@string/important_it_is_thought" >
             </TextView>
         </LinearLayout>
     </ScrollView>
