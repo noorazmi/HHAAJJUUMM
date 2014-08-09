@@ -25,7 +25,7 @@
                 android:text="@string/on_the_8th_dhulhijja" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah"

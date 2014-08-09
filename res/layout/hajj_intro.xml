@@ -40,7 +40,7 @@
                 android:text="@string/one_must_wear" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_after_niyyah"
@@ -78,7 +78,7 @@
                 android:text="@string/one_will_wear" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_after_niyyah"
@@ -106,7 +106,7 @@
                 android:text="@string/you_will_enter_the_state_of_hajj" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/intention_hajj"

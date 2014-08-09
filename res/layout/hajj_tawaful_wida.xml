@@ -20,7 +20,7 @@
             android:text="@string/tawafulwida_my_be_performed" >
         </TextView>
 
-        <com.haj.umrah.views.DuaView
+        <islamic.buzz.views.DuaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             hajumrah:dua_heading="@string/dua_tawafulwida"
@@ -33,7 +33,7 @@
             android:text="@string/after_drinking_water" >
         </TextView>
 
-        <com.haj.umrah.views.DuaView
+        <islamic.buzz.views.DuaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             hajumrah:dua_heading="@string/dua_after_tawafulwida"

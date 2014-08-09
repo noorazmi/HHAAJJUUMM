@@ -6,11 +6,11 @@
     tools:context=".Home" 
     android:layout_gravity="center">
 
-    <com.haj.umrah.sidemenu.LeftSideMenu
+    <islamic.buzz.sidemenu.LeftSideMenu
         android:id="@+id/left_side_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <com.haj.umrah.sidemenu.ContentWindow
+    <islamic.buzz.sidemenu.ContentWindow
         android:id="@+id/contnet_window"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

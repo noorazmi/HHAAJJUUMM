@@ -40,7 +40,7 @@
                 android:text="@string/niyyah_making" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/umrah_niyyat"
@@ -75,7 +75,7 @@
                     android:text="@string/dua_after_niyyah_meaning" />
             </LinearLayout>
  -->
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah"
@@ -89,7 +89,7 @@
                 android:text="@string/talbiyah" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah_instr"
@@ -104,7 +104,7 @@
 
             <include layout="@layout/imram_dos_and_donts" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_outside_makkah"
@@ -123,7 +123,7 @@
                 android:text="@string/upon_arrival_inst" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_entering_masjid"
@@ -136,7 +136,7 @@
                 android:text="@string/on_seeing_kaba" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_seeing_kabah"
@@ -149,7 +149,7 @@
                 android:text="@string/after_dua" >
             </TextView>
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_on_sigting_heading"

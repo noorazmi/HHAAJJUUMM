@@ -27,7 +27,7 @@
                 style="@style/umrah_description"
                 android:text="@string/sai_start_desc" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/while_facing_kaba"
@@ -73,14 +73,14 @@
                 style="@style/umrah_heading"
                 android:text="@string/dua_between_safa_marwah"
                 android:textAllCaps="true" />
-             <com.haj.umrah.views.DuaView
+             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading=""
                 hajumrah:dua_image="@drawable/dua_between_safa_marwah_1"
                 hajumrah:dua_meaning="@string/dua_between_safa_marwah_1_meaning"
                 hajumrah:dua_pronunciation="@string/dua_between_safa_marwah_1_pronounce" />
-             <com.haj.umrah.views.DuaView
+             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading=""

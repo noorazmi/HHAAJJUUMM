@@ -7,7 +7,7 @@
     android:orientation="horizontal" 
     android:background="@color/left_side_menu_item_background">
 
-    <com.haj.umrah.views.RoundedImageView
+    <islamic.buzz.views.RoundedImageView
         android:id="@+id/menu_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

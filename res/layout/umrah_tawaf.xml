@@ -23,7 +23,7 @@
                 style="@style/umrah_description"
                 android:text="@string/tawaf_intro" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_intention_tawaf"
@@ -35,7 +35,7 @@
                 style="@style/umrah_description"
                 android:text="@string/proceed_to_black_line" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_facing_hajarul_aswad"
@@ -47,7 +47,7 @@
                 style="@style/umrah_description"
                 android:text="@string/place_both_palm" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_before_kissing_palm"
@@ -72,7 +72,7 @@
                 style="@style/umrah_description"
                 android:text="@string/tawaf_adiya_desc" />
 		
-             <com.haj.umrah.views.DuaView
+             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_rabbana_atina"
@@ -80,7 +80,7 @@
                 hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
                 hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
             
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_subhanallahi"
@@ -88,7 +88,7 @@
                 hajumrah:dua_meaning="@string/dua_subhanallahi_meaning"
                 hajumrah:dua_pronunciation="@string/dua_subhanallahi_pronounce" />
 
-            <com.haj.umrah.views.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_ya_rabbal_baiti"
