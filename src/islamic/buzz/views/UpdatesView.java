@@ -4,7 +4,7 @@ package islamic.buzz.views;
 import islamic.buzz.fragments.ImageGridFragment;
 
 import com.bitstacksolutions.Home;
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 import android.content.Context;
 import android.support.v4.app.FragmentTransaction;

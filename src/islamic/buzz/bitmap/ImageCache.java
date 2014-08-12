@@ -43,7 +43,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import com.haj.umrah.BuildConfig;
+import com.bitstacksolutions.BuildConfig;
 
 /**
  * This class handles disk and memory caching of bitmaps in conjunction with the

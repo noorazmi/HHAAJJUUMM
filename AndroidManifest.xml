@@ -36,7 +36,7 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.haj.umrah.Home" />
+                android:value="com.bitstacksolutions.Home" />
         </activity>
     </application>
 

@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 public class LeftSideMenu extends LinearLayout
 {

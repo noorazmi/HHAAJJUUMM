@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 public class LeftMenuItem extends LinearLayout
 {

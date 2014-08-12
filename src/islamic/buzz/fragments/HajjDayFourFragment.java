@@ -1,6 +1,6 @@
 package islamic.buzz.fragments;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

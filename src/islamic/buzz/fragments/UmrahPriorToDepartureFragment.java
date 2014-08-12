@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 public class UmrahPriorToDepartureFragment extends Fragment
 {

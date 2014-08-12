@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.bitstacksolutions.Home;
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 import android.content.res.Resources;
 import android.os.Bundle;

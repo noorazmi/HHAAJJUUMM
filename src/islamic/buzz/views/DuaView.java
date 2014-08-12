@@ -1,6 +1,6 @@
 package islamic.buzz.views;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;

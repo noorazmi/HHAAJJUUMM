@@ -16,7 +16,7 @@
 
 package islamic.buzz.bitmap;
 
-import com.haj.umrah.BuildConfig;
+import com.bitstacksolutions.BuildConfig;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

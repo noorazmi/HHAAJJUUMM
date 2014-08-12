@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 public class ContentWindow extends LinearLayout
 {

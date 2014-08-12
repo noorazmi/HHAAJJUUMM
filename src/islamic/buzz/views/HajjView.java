@@ -24,6 +24,7 @@ import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -33,7 +34,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.bitstacksolutions.Home;
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 public class HajjView extends LinearLayout
 {
@@ -52,7 +53,7 @@ public class HajjView extends LinearLayout
 	hajjViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
 	hajjPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
 	hajjViewPager.setAdapter(hajjPageAdapter);
-	hajjViewPager.setOffscreenPageLimit(0);
+	hajjViewPager.setOffscreenPageLimit(6);
 	// hajjViewPager.setCurrentItem(1);
     }
 
@@ -78,7 +79,7 @@ public class HajjView extends LinearLayout
 	return fList;
     }
 
-    class UmrahPagerAdapter extends FragmentPagerAdapter
+    class UmrahPagerAdapter extends FragmentStatePagerAdapter
     {
 
 	private List<Fragment> fragments;

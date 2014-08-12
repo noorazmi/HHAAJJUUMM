@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hajj&amp;Umrah Services</string>
+    <string name="app_name">Islamic Buzz</string>
+    <string name="version">Version</string>
+    <string name="version_value">Version name - 1.0</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="introduction">Introduction</string>
     <string name="ihraam">Ihraam</string>
     <string name="tawaaf">Tawaaf</string>

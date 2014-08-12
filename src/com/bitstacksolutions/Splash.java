@@ -2,7 +2,7 @@ package com.bitstacksolutions;
 
 import islamic.buzz.util.AppInfo;
 
-import com.haj.umrah.R;
+import com.bitstacksolutions.R;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -2,6 +2,7 @@ package com.bitstacksolutions;
 
 import islamic.buzz.sidemenu.ContentWindow;
 import islamic.buzz.sidemenu.LeftSideMenu;
+import islamic.buzz.views.AboutView;
 import islamic.buzz.views.HajjView;
 import islamic.buzz.views.UmrahView;
 import islamic.buzz.views.UpdatesView;
@@ -16,8 +17,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.haj.umrah.R;
-
 public class Home extends FragmentActivity
 {
     private FrameLayout container;
@@ -27,6 +26,7 @@ public class Home extends FragmentActivity
     private UmrahView umrahView;
     private UpdatesView updatesView;
     private HajjView hajjView;
+    private AboutView aboutView;
     private LeftSideMenu leftSideMenu;
     private View currentView;
 
@@ -159,7 +159,13 @@ public class Home extends FragmentActivity
 	    }
 	    else if (menuTitle.equalsIgnoreCase(ABOUT))
 	    {
-
+		if(aboutView == null){
+		    aboutView = new AboutView(Home.this);
+		}
+		
+		contentHolder.addView(aboutView);
+		currentView = aboutView;
+		
 	    }
 
 	    // Now close the menu
