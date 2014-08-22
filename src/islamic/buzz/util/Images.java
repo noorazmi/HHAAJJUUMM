@@ -30,7 +30,16 @@ public class Images
      * https://plus.google.com/109538161516040592207/about
      * http://www.flickr.com/photos/romainguy
      */
-    public final static String[] imageUrls = new String[] { "https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s1024/A%252520Photographer.jpg",
+    
+    public final static String[] imageUrls = new String[] {
+	"http://www.madaniwallpaper.com/wallpapers/khana_kaba_31-1024x768.jpg",
+	"http://albabuldiin.com/uploads/content/photo/120.jpg",
+	"http://4.bp.blogspot.com/-HlqQ2EzTC4s/UFrHaxgWcYI/AAAAAAAAF0I/yGWYv0yX1m4/s1600/3d_khana_kaba_3-1024x768.jpg",
+	"http://1.bp.blogspot.com/-nYSDMneB5X4/UXKGuHmAZjI/AAAAAAAADQk/-QkfyN3-NtU/s1600/khana-kaba-allah-73497.jpg",
+	"http://4.bp.blogspot.com/-4kwCdQUiRJY/UJ5c5_tuBnI/AAAAAAAAFVk/2T-rLsNsIDc/s1600/Beautiful-View-KHANA-KAABA-%5Bislamic-stuff-corner.blogspot.com%5D+%281%29.jpg"
+    };
+    
+    /*public final static String[] imageUrls = new String[] { "https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s1024/A%252520Photographer.jpg",
 	    "https://lh4.googleusercontent.com/--dq8niRp7W4/URquVgmXvgI/AAAAAAAAAbs/-gnuLQfNnBA/s1024/A%252520Song%252520of%252520Ice%252520and%252520Fire.jpg",
 	    "https://lh5.googleusercontent.com/-7qZeDtRKFKc/URquWZT1gOI/AAAAAAAAAbs/hqWgteyNXsg/s1024/Another%252520Rockaway%252520Sunset.jpg",
 	    "https://lh3.googleusercontent.com/--L0Km39l5J8/URquXHGcdNI/AAAAAAAAAbs/3ZrSJNrSomQ/s1024/Antelope%252520Butte.jpg",
@@ -128,7 +137,7 @@ public class Images
 	    "https://lh5.googleusercontent.com/-biyiyWcJ9MU/URqvKculiAI/AAAAAAAAAbs/jyPsCplJOpE/s1024/Windmill.jpg",
 	    "https://lh4.googleusercontent.com/-PDT167_xRdA/URqvK36mLcI/AAAAAAAAAbs/oi2ik9QseMI/s1024/Windmills.jpg",
 	    "https://lh5.googleusercontent.com/-kI_QdYx7VlU/URqvLXCB6gI/AAAAAAAAAbs/N31vlZ6u89o/s1024/Yet%252520Another%252520Rockaway%252520Sunset.jpg",
-	    "https://lh4.googleusercontent.com/-e9NHZ5k5MSs/URqvMIBZjtI/AAAAAAAAAbs/1fV810rDNfQ/s1024/Yosemite%252520Tree.jpg", };
+	    "https://lh4.googleusercontent.com/-e9NHZ5k5MSs/URqvMIBZjtI/AAAAAAAAAbs/1fV810rDNfQ/s1024/Yosemite%252520Tree.jpg", };*/
 
     /**
      * This are PicasaWeb thumbnail URLs and could potentially change. Ideally
@@ -138,7 +147,7 @@ public class Images
      * https://plus.google.com/109538161516040592207/about
      * http://www.flickr.com/photos/romainguy
      */
-    public final static String[] imageThumbUrlss = new String[] { "https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s160-c/A%252520Photographer.jpg",
+    /*public final static String[] imageThumbUrlss = new String[] { "https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s160-c/A%252520Photographer.jpg",
 	    "https://lh4.googleusercontent.com/--dq8niRp7W4/URquVgmXvgI/AAAAAAAAAbs/-gnuLQfNnBA/s160-c/A%252520Song%252520of%252520Ice%252520and%252520Fire.jpg",
 	    "https://lh5.googleusercontent.com/-7qZeDtRKFKc/URquWZT1gOI/AAAAAAAAAbs/hqWgteyNXsg/s160-c/Another%252520Rockaway%252520Sunset.jpg",
 	    "https://lh3.googleusercontent.com/--L0Km39l5J8/URquXHGcdNI/AAAAAAAAAbs/3ZrSJNrSomQ/s160-c/Antelope%252520Butte.jpg",
@@ -236,5 +245,5 @@ public class Images
 	    "https://lh5.googleusercontent.com/-biyiyWcJ9MU/URqvKculiAI/AAAAAAAAAbs/jyPsCplJOpE/s160-c/Windmill.jpg",
 	    "https://lh4.googleusercontent.com/-PDT167_xRdA/URqvK36mLcI/AAAAAAAAAbs/oi2ik9QseMI/s160-c/Windmills.jpg",
 	    "https://lh5.googleusercontent.com/-kI_QdYx7VlU/URqvLXCB6gI/AAAAAAAAAbs/N31vlZ6u89o/s160-c/Yet%252520Another%252520Rockaway%252520Sunset.jpg",
-	    "https://lh4.googleusercontent.com/-e9NHZ5k5MSs/URqvMIBZjtI/AAAAAAAAAbs/1fV810rDNfQ/s160-c/Yosemite%252520Tree.jpg", };
+	    "https://lh4.googleusercontent.com/-e9NHZ5k5MSs/URqvMIBZjtI/AAAAAAAAAbs/1fV810rDNfQ/s160-c/Yosemite%252520Tree.jpg", };*/
 }
