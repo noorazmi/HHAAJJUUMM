@@ -1,4 +1,4 @@
-package com.bitstacksolutions;
+package com.eybsolutions;
 
 import islamic.buzz.util.AppInfo;
 

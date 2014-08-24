@@ -42,8 +42,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bitstacksolutions.ImageDetailActivity;
 import com.bitstacksolutions.R;
+import com.eybsolutions.ImageDetailActivity;
 
 /**
  * The main fragment that powers the ImageGridActivity screen. Fairly straight

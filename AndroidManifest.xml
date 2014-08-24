@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.bitstacksolutions.Splash"
+            android:name="com.eybsolutions.Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,12 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.bitstacksolutions.Home" >
+        <activity android:name="com.eybsolutions.Home" >
         </activity>
         <activity
-            android:name="com.bitstacksolutions.ImageDetailActivity"
+            android:name="com.eybsolutions.ImageDetailActivity"
             android:label="@string/app_name"
-            android:parentActivityName="com.bitstacksolutions.Home"
+            android:parentActivityName="com.eybsolutions.Home"
             android:theme="@style/AppTheme.FullScreen" 
             android:launchMode="singleTop">
             <meta-data
