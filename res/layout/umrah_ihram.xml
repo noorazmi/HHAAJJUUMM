@@ -75,14 +75,27 @@
                     android:text="@string/dua_after_niyyah_meaning" />
             </LinearLayout>
  -->
+ 
+ 			<TextView
+                style="@style/umrah_description"
+                android:text="@string/make_dual_after_salatul_Ihram" 
+                android:layout_marginTop="10dp">
+            </TextView>
+            
             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_heading="@string/dua_after_niyyah"
                 hajumrah:dua_image="@drawable/dua_after_salatul_ihram"
                 hajumrah:dua_meaning="@string/dua_after_salatul_ihram_meaning"
                 hajumrah:dua_pronunciation="@string/dua_after_salatul_ihram_pronounce" />
 
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/talbiyah_instr" 
+                android:layout_marginTop="10dp">
+            </TextView>
+            
             <TextView
                 style="@style/umrah_heading"
                 android:layout_marginTop="@dimen/dua_container_margin_top"
@@ -92,8 +105,8 @@
             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                hajumrah:dua_heading="@string/talbiyah_instr"
-                hajumrah:dua_image="@drawable/dua_after_salatul_ihram"
+                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_image="@drawable/talbiyah"
                 hajumrah:dua_meaning="@string/talbiyah_meaning"
                 hajumrah:dua_pronunciation="@string/talbiyah_pronounce" />
 
@@ -127,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_entering_masjid"
-                hajumrah:dua_image="@drawable/dua_outside_makkah"
+                hajumrah:dua_image="@drawable/dua_on_entring_masjid_al_haram"
                 hajumrah:dua_meaning="@string/dua_entering_masjid_meaning"
                 hajumrah:dua_pronunciation="@string/dua_entering_masjid_pronounce" />
 

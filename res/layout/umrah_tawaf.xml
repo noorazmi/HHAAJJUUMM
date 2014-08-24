@@ -43,6 +43,12 @@
                 hajumrah:dua_meaning="@string/dua_facin_hajarul_aswad_meaning"
                 hajumrah:dua_pronunciation="@string/dua_facin_hajarul_aswad_pronounce" />
 
+             <TextView
+                android:layout_marginTop="20dp"
+                style="@style/umrah_heading"
+                android:text="@string/istilam"
+                android:textAllCaps="true" />
+            
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/place_both_palm" />
@@ -51,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_before_kissing_palm"
-                hajumrah:dua_image="@drawable/umrah_niyyat"
+                hajumrah:dua_image="@drawable/dua_bismillahi_allahu_akbar"
                 hajumrah:dua_meaning="@string/dua_before_kissing_palm_meaning"
                 hajumrah:dua_pronunciation="@string/dua_before_kissing_palm_pronounce" />
 
