@@ -11,7 +11,7 @@
         android:paddingTop="3dp"
         android:paddingBottom="3dp">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/left_menu_handle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
