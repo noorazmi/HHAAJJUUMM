@@ -106,7 +106,6 @@
                     android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="3dp"
@@ -114,7 +113,6 @@
                         android:textSize="@dimen/update_item_LCS_up" />
 
                     <islamic.buzz.views.RoundedImageView
-                        android:id="@+id/menu_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:clickable="true"
@@ -133,7 +131,6 @@
                     android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="3dp"
@@ -141,7 +138,6 @@
                         android:textSize="@dimen/update_item_LCS_up" />
 
                     <islamic.buzz.views.RoundedImageView
-                        android:id="@+id/menu_icon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:clickable="true"
@@ -199,7 +195,6 @@
             android:orientation="horizontal" >
 
             <islamic.buzz.views.RoundedImageView
-                android:id="@+id/menu_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -210,7 +205,6 @@
                 app:corner_radius="100dip" />
 
             <TextView
-                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -226,7 +220,6 @@
             android:orientation="horizontal" >
 
             <islamic.buzz.views.RoundedImageView
-                android:id="@+id/menu_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -237,7 +230,6 @@
                 app:corner_radius="100dip" />
 
             <TextView
-                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -253,7 +245,6 @@
             android:orientation="horizontal" >
 
             <islamic.buzz.views.RoundedImageView
-                android:id="@+id/menu_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -264,7 +255,6 @@
                 app:corner_radius="100dip" />
 
             <TextView
-                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
