@@ -109,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             hajumrah:dua_heading="@string/dua_while_stoning"
-            hajumrah:dua_image="@drawable/talbiyah"
+            hajumrah:dua_image="@drawable/dua_bismillahi_allahu_akbar"
             hajumrah:dua_meaning="@string/dua_bismillahi_allahu_akbar_meaning"
             hajumrah:dua_pronunciation="@string/dua_bismillahi_allahu_akbar_pronounce" />
 

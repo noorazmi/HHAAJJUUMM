@@ -4,7 +4,7 @@ package islamic.buzz.views;
 import islamic.buzz.fragments.ImageGridFragment;
 
 import com.bitstacksolutions.R;
-import com.eybsolutions.Home;
+import com.eybsolution.islamic.buzz.Home;
 
 import android.content.Context;
 import android.support.v4.app.FragmentTransaction;

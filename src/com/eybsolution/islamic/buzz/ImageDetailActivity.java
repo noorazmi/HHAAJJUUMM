@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.eybsolutions;
+package com.eybsolution.islamic.buzz;
 
 import islamic.buzz.bitmap.ImageCache;
 import islamic.buzz.bitmap.ImageFetcher;

@@ -43,7 +43,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.bitstacksolutions.R;
-import com.eybsolutions.ImageDetailActivity;
+import com.eybsolution.islamic.buzz.ImageDetailActivity;
 
 /**
  * The main fragment that powers the ImageGridActivity screen. Fairly straight

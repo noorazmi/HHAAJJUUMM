@@ -28,7 +28,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bitstacksolutions.R;
-import com.eybsolutions.ImageDetailActivity;
+import com.eybsolution.islamic.buzz.ImageDetailActivity;
 
 /**
  * This fragment will populate the children of the ViewPager from

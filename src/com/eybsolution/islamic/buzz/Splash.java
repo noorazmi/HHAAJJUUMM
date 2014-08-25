@@ -1,4 +1,4 @@
-package com.eybsolutions;
+package com.eybsolution.islamic.buzz;
 
 import islamic.buzz.util.AppInfo;
 

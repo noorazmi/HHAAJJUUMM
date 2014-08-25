@@ -1,4 +1,4 @@
-package com.eybsolutions;
+package com.eybsolution.islamic.buzz;
 
 import com.bitstacksolutions.R;
 

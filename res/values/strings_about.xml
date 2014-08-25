@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="about_this_version_desc">This is the first version of the Islamic Buzz. It includeds the process of Hajj and Umrah only.InshaAllah In coming versions we will include more functionalites.</string>
+    <string name="about_this_version_desc">This is first version of the Islamic Buzz. It includes the process of Hajj and Umrah only.InshaAllah In coming versions we will include more features.</string>
     <string name="about_this_version">About this version</string>
     <string name="publisher">Publisher</string>
-    <string name="bitstacksolution">eybsolutions.com</string>
+    <string name="eybsolution"><a href="http://www.eybsolution.com"/>http://www.eybsolution.com</string>
 </resources>

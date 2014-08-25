@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.bitstacksolutions.R;
-import com.eybsolutions.Home;
+import com.eybsolution.islamic.buzz.Home;
 
 import android.content.res.Resources;
 import android.os.Bundle;
