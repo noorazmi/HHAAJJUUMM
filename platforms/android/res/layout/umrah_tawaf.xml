@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.bitstacksolutions"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -23,7 +23,7 @@
                 style="@style/umrah_description"
                 android:text="@string/tawaf_intro" />
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_intention_tawaf"
@@ -35,7 +35,7 @@
                 style="@style/umrah_description"
                 android:text="@string/proceed_to_black_line" />
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_facing_hajarul_aswad"
@@ -53,7 +53,7 @@
                 style="@style/umrah_description"
                 android:text="@string/place_both_palm" />
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_before_kissing_palm"
@@ -78,7 +78,7 @@
                 style="@style/umrah_description"
                 android:text="@string/tawaf_adiya_desc" />
 		
-             <islamic.buzz.views.DuaView
+             <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_rabbana_atina"
@@ -86,7 +86,7 @@
                 hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
                 hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
             
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_subhanallahi"
@@ -94,7 +94,7 @@
                 hajumrah:dua_meaning="@string/dua_subhanallahi_meaning"
                 hajumrah:dua_pronunciation="@string/dua_subhanallahi_pronounce" />
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_ya_rabbal_baiti"

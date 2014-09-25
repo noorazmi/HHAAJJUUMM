@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.bitstacksolutions"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -40,7 +40,7 @@
                 android:text="@string/niyyah_making" >
             </TextView>
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/umrah_niyyat"
@@ -82,7 +82,7 @@
                 android:layout_marginTop="10dp">
             </TextView>
             
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_after_niyyah"
@@ -102,7 +102,7 @@
                 android:text="@string/talbiyah" >
             </TextView>
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah"
@@ -117,7 +117,7 @@
 
             <include layout="@layout/imram_dos_and_donts" />
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_outside_makkah"
@@ -136,7 +136,7 @@
                 android:text="@string/upon_arrival_inst" >
             </TextView>
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_entering_masjid"
@@ -149,7 +149,7 @@
                 android:text="@string/on_seeing_kaba" >
             </TextView>
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_seeing_kabah"
@@ -162,7 +162,7 @@
                 android:text="@string/after_dua" >
             </TextView>
 
-            <islamic.buzz.views.DuaView
+            <com.eybsolution.islamic.buzz.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_on_sigting_heading"

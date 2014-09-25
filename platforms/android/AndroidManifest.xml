@@ -1,14 +1,43 @@
-<?xml version='1.0' encoding='utf-8'?>
-<manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="0.0.1" android:windowSoftInputMode="adjustPan" package="com.bitstacksolutions" xmlns:android="http://schemas.android.com/apk/res/android">
-    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eybsolution.islamic.buzz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:launchMode="singleTop" android:name="IslamicBuzz" android:theme="@android:style/Theme.Black.NoTitleBar">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.eybsolution.islamic.buzz.Splash"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.eybsolution.islamic.buzz.Home" >
+        </activity>
+        <activity
+            android:name="com.eybsolution.islamic.buzz.ImageDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.eybsolution.islamic.buzz.Home"
+            android:theme="@style/AppTheme.FullScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eybsolution.islamic.buzz.Home" />
+        </activity>
     </application>
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
+
 </manifest>
