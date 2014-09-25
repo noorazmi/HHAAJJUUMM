@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
+    xmlns:hajumrah="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -30,7 +30,7 @@
                 android:text="@string/after_sunrise" >
             </TextView>
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/talbiyah"
@@ -48,7 +48,7 @@
                 android:text="@string/wuquf_in_arafat" >
             </TextView>
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_enrout_to_arafat"
@@ -63,7 +63,7 @@
                 android:textAllCaps="true" >
             </TextView>
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/fourth_kalima_1"
@@ -71,7 +71,7 @@
                 hajumrah:dua_meaning="@string/kalima_4_small_meaning"
                 hajumrah:dua_pronunciation="@string/kalima_4_small_pronounce" />
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/fourth_kalima_2"
@@ -79,7 +79,7 @@
                 hajumrah:dua_meaning="@string/kalima_4_big_meaning"
                 hajumrah:dua_pronunciation="@string/kalima_4_big_pronounce" />
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_rabbana_atina"
@@ -87,7 +87,7 @@
                 hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
                 hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua"
@@ -121,7 +121,7 @@
                 android:text="@string/it_is_not_permissible" >
             </TextView>
 
-            <com.eybsolution.islamic.buzz.DuaView
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_to_muzdalifa"

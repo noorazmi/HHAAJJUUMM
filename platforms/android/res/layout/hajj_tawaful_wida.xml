@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
+    xmlns:hajumrah="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
@@ -20,7 +20,7 @@
             android:text="@string/tawafulwida_my_be_performed" >
         </TextView>
 
-        <com.eybsolution.islamic.buzz.DuaView
+        <islamic.buzz.views.DuaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             hajumrah:dua_heading="@string/dua_tawafulwida"
@@ -33,7 +33,7 @@
             android:text="@string/after_drinking_water" >
         </TextView>
 
-        <com.eybsolution.islamic.buzz.DuaView
+        <islamic.buzz.views.DuaView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             hajumrah:dua_heading="@string/dua_after_tawafulwida"
