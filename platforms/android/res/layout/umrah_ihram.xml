@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.bitstacksolutions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/ihraam"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/ihram_desc_1" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/enter_iharam_state" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/ihram_niyyah" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/niyyah_making" >
+            </TextView>
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/umrah_niyyat"
+                hajumrah:dua_image="@drawable/umrah_niyyat"
+                hajumrah:dua_meaning="@string/umrah_niyyat_meaning"
+                hajumrah:dua_pronunciation="@string/dua_umrah_niyyat" />
+
+            <!-- <LinearLayout style="@style/dua_container" >
+
+                <TextView
+                    style="@style/dua_head"
+                    android:text="@string/dua_after_niyyah" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:src="@drawable/dua_after_niyyah_part_2" />
+
+                <TextView
+                    style="@style/dua_pronounce"
+                    android:text="@string/dua_after_niyyah_pronounce" />
+
+                <TextView
+                    style="@style/dua_meaning"
+                    android:text="@string/dua_after_niyyah_meaning" />
+            </LinearLayout>
+ -->
+ 
+ 			<TextView
+                style="@style/umrah_description"
+                android:text="@string/make_dual_after_salatul_Ihram" 
+                android:layout_marginTop="10dp">
+            </TextView>
+            
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_after_niyyah"
+                hajumrah:dua_image="@drawable/dua_after_salatul_ihram"
+                hajumrah:dua_meaning="@string/dua_after_salatul_ihram_meaning"
+                hajumrah:dua_pronunciation="@string/dua_after_salatul_ihram_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/talbiyah_instr" 
+                android:layout_marginTop="10dp">
+            </TextView>
+            
+            <TextView
+                style="@style/umrah_heading"
+                android:layout_marginTop="@dimen/dua_container_margin_top"
+                android:text="@string/talbiyah" >
+            </TextView>
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/talbiyah"
+                hajumrah:dua_image="@drawable/talbiyah"
+                hajumrah:dua_meaning="@string/talbiyah_meaning"
+                hajumrah:dua_pronunciation="@string/talbiyah_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/now_recite" >
+            </TextView>
+
+            <include layout="@layout/imram_dos_and_donts" />
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_outside_makkah"
+                hajumrah:dua_image="@drawable/dua_outside_makkah"
+                hajumrah:dua_meaning="@string/dua_outside_makkah_meaning"
+                hajumrah:dua_pronunciation="@string/dua_outside_makkah_pronounce" />
+
+            <TextView
+                style="@style/umrah_heading"
+                android:layout_marginTop="@dimen/dua_container_margin_top"
+                android:text="@string/upon_arrival" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/upon_arrival_inst" >
+            </TextView>
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_entering_masjid"
+                hajumrah:dua_image="@drawable/dua_on_entring_masjid_al_haram"
+                hajumrah:dua_meaning="@string/dua_entering_masjid_meaning"
+                hajumrah:dua_pronunciation="@string/dua_entering_masjid_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/on_seeing_kaba" >
+            </TextView>
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_seeing_kabah"
+                hajumrah:dua_image="@drawable/dua_seeing_kaba"
+                hajumrah:dua_meaning="@string/dua_seeing_kabah_meaning"
+                hajumrah:dua_pronunciation="@string/dua_seeing_kabah_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/after_dua" >
+            </TextView>
+
+            <islamic.buzz.views.DuaView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hajumrah:dua_heading="@string/dua_on_sigting_heading"
+                hajumrah:dua_image="@drawable/dua_on_sighting_kaba"
+                hajumrah:dua_meaning="@string/dua_on_sigting_meaning"
+                hajumrah:dua_pronunciation="@string/dua_on_sigting_pronounce" />
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

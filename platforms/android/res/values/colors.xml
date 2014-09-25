@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme">#015c65</color>
+    <color name="heading_bkg">#99bdc1</color>
+    <color name="heading_umrah">#000000</color>
+    <color name="dua_head_foreground">#000000</color>
+    <color name="dua_head_background">@color/heading_bkg</color>
+    <color name="dua_pronounce_foreground">#3366FF</color>
+    <color name="dua_pronounce_background">#ffffff</color>
+    <color name="dua_meaning_foreground">#ffffff</color>
+    <color name="dua_meaning_background">#000000</color>
+    <color name="menu_divider">#2d2d2d</color>
+    <color name="left_side_menu_item_background">#004839</color>
+    <color name="content_holder_background">#005946</color>
+    <color name="action_bar_background">#003227</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+    <drawable name="transperent_color">#00000000</drawable>    
+  
+    
+</resources>

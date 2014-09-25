@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.bitstacksolutions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/umrah_heading"
+                android:text="@string/hajj_fifth_day"
+                android:textAllCaps="true" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/the_procedures_of_this_day" >
+            </TextView>
+
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/masalah_if_one_does_not_leave_mina" >
+            </TextView>
+            <TextView
+                style="@style/umrah_description"
+                android:text="@string/important_it_is_thought" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
