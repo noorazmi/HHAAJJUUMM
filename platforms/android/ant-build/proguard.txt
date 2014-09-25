@@ -1,3 +1,71 @@
-# view AndroidManifest.xml #generated:6
--keep class com.bitstacksolutions.IslamicBuzz { <init>(...); }
+# view res/layout/umrah.xml #generated:13
+-keep class android.support.v4.view.PagerTabStrip { <init>(...); }
+
+# view res/layout/image_detail_pager.xml #generated:18
+# view res/layout/umrah.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.eybsolution.islamic.buzz.Home { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.eybsolution.islamic.buzz.ImageDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class com.eybsolution.islamic.buzz.Splash { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:13
+-keep class islamic.buzz.sidemenu.ContentWindow { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:9
+-keep class islamic.buzz.sidemenu.LeftSideMenu { <init>(...); }
+
+# view res/layout/hajj_day_one.xml #generated:28
+# view res/layout/hajj_day_three.xml #generated:108
+# view res/layout/hajj_day_three.xml #generated:147
+# view res/layout/hajj_day_three.xml #generated:155
+# view res/layout/hajj_day_three.xml #generated:186
+# view res/layout/hajj_day_two.xml #generated:124
+# view res/layout/hajj_day_two.xml #generated:33
+# view res/layout/hajj_day_two.xml #generated:51
+# view res/layout/hajj_day_two.xml #generated:66
+# view res/layout/hajj_day_two.xml #generated:74
+# view res/layout/hajj_day_two.xml #generated:82
+# view res/layout/hajj_day_two.xml #generated:90
+# view res/layout/hajj_intro.xml #generated:109
+# view res/layout/hajj_intro.xml #generated:43
+# view res/layout/hajj_intro.xml #generated:81
+# view res/layout/hajj_tawaful_wida.xml #generated:23
+# view res/layout/hajj_tawaful_wida.xml #generated:36
+# view res/layout/umrah_ihram.xml #generated:105
+# view res/layout/umrah_ihram.xml #generated:120
+# view res/layout/umrah_ihram.xml #generated:139
+# view res/layout/umrah_ihram.xml #generated:152
+# view res/layout/umrah_ihram.xml #generated:165
+# view res/layout/umrah_ihram.xml #generated:43
+# view res/layout/umrah_ihram.xml #generated:85
+# view res/layout/umrah_sai.xml #generated:30
+# view res/layout/umrah_sai.xml #generated:76
+# view res/layout/umrah_sai.xml #generated:83
+# view res/layout/umrah_tawaf.xml #generated:26
+# view res/layout/umrah_tawaf.xml #generated:38
+# view res/layout/umrah_tawaf.xml #generated:56
+# view res/layout/umrah_tawaf.xml #generated:81
+# view res/layout/umrah_tawaf.xml #generated:89
+# view res/layout/umrah_tawaf.xml #generated:97
+-keep class islamic.buzz.views.DuaView { <init>(...); }
+
+# view res/layout/image_detail_fragment.xml #generated:28
+# view res/layout/updates_item.xml #generated:164
+-keep class islamic.buzz.views.RecyclingImageView { <init>(...); }
+
+# view res/layout/left_side_menu_item.xml #generated:10
+# view res/layout/updates_item.xml #generated:115
+# view res/layout/updates_item.xml #generated:140
+# view res/layout/updates_item.xml #generated:197
+# view res/layout/updates_item.xml #generated:20
+# view res/layout/updates_item.xml #generated:222
+# view res/layout/updates_item.xml #generated:247
+# view res/layout/updates_item.xml #generated:89
+-keep class islamic.buzz.views.RoundedImageView { <init>(...); }
 

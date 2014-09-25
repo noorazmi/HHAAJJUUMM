@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-
     <string name="app_name">Islamic Buzz</string>
     <string name="version">Version</string>
     <string name="version_value">Version name - 1.0</string>
@@ -17,12 +16,10 @@
     <string name="share">Share</string>
     <string name="comment">Comment</string>
     <string name="exit_message">Do you want to exit the application?</string>
-
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>
         <item>Hajj</item>
         <item>About</item>
     </string-array>
-
 </resources>
