@@ -484,7 +484,7 @@ public class ActionBarHelper {
 
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        if (KohlsPhoneApplication.getInstance().getAuthenticationUtils().isUserSignedIn()) {
+        if (BuzzApplication.getInstance().getAuthenticationUtils().isUserSignedIn()) {
             intent.putExtra(ConstantValues.ATTACH_MANAGE_ACCOUNT_FRAGMENT,
                     ConstantValues.ATTACH_MANAGE_ACCOUNT_FRAGMENT);
         } else {

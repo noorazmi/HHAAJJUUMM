@@ -1135,5 +1135,9 @@ public interface ConstantValues {
     public static final String PREF_CATALOG_CACHE = "PREF_CATALOG_CACHE";
 
     public static final String PREF_CMS_HOME_NAME = "PREF_CMS_PAGENAME";
+    
+    
+    public static final String APP_TAG = "HAJ_UMRAH";
+    public static final int LEFT_SIDE_MENU_WIDTH = 270;
 
 }

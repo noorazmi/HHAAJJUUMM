@@ -22,11 +22,11 @@ public class Util
 	switch (logType)
 	{
 	case LOG_TYPE_DEBUG:
-	    Log.d(Const.APP_TAG, mMessage.toString());
+	    Log.d(ConstantValues.APP_TAG, mMessage.toString());
 	    break;
 
 	case LOG_TYPE_ERROR:
-	    Log.e(Const.APP_TAG, mMessage.toString());
+	    Log.e(ConstantValues.APP_TAG, mMessage.toString());
 	    break;
 	}
 

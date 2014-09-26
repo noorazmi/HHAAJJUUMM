@@ -1,6 +1,7 @@
 
 package islamic.buzz.views;
 
+import islamic.buzz.interfaces.listeners.BottomBarDrawerListener;
 import islamic.buzz.util.UtilityMethods;
 import android.content.Context;
 import android.content.res.TypedArray;

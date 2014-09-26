@@ -57,7 +57,7 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
         UtilityMethods.clearEditTextViewFocusOnOutsideTouch(getWindow().getDecorView(), this);
         // Enable logging in crash reporting
-        KohlsPhoneApplication.getInstance().getCrashReporting().enableLogging();
+        BuzzApplication.getInstance().getCrashReporting().enableLogging();
 
     }
 
@@ -168,7 +168,7 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        KohlsPhoneApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
+        BuzzApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
         return super.dispatchTouchEvent(ev);
     }
 

@@ -36,7 +36,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
         slidingHelper.initSlidingUpLayout();
         initializeViews(getIntent().getExtras());
         // Enable logging in crash reporting
-        KohlsPhoneApplication.getInstance().getCrashReporting().enableLogging();
+        BuzzApplication.getInstance().getCrashReporting().enableLogging();
     }
 
     protected abstract void initializeViews(Bundle bundle);
@@ -101,7 +101,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        KohlsPhoneApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
+        BuzzApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
         return super.dispatchTouchEvent(ev);
     }
 }
