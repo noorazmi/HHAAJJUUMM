@@ -1,14 +1,14 @@
 
 package islamic.buzz.activities;
 
-import com.kohlsphone.R;
-import com.kohlsphone.common.util.UtilityMethods;
-import com.kohlsphone.common.value.ConstantValues;
-
+import islamic.buzz.util.ConstantValues;
+import islamic.buzz.util.UtilityMethods;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.eybsolution.islamic.buzz.R;
 
 public class WebViewActivity extends BaseActivityWithoutSlider {
     private WebView mWebView;
@@ -44,12 +44,12 @@ public class WebViewActivity extends BaseActivityWithoutSlider {
         getActionBarHelper().getItemView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                UtilityMethods.openShoppingBagActivity(WebViewActivity.this);
+                //UtilityMethods.openWebViewActivity(WebViewActivity.this);
             }
         });
     }
 
-    @Override
+    @Override 
     public void updateViewsOnSuccess(Object object) {
         // TODO Auto-generated method stub
 

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD:res/layout/hajj_day_one.xml
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
-=======
     xmlns:hajumrah="http://schemas.android.com/apk/res-auto"
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/res/layout/hajj_day_one.xml
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >

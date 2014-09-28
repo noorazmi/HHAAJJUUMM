@@ -7,12 +7,6 @@ import islamic.buzz.views.UmrahView;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD:src/islamic/buzz/fragments/UmrahViewFragment.java
-import com.eybsolution.islamic.buzz.R;
-import com.eybsolution.islamic.buzz.Home;
-
-=======
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/src/islamic/buzz/fragments/UmrahViewFragment.java
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

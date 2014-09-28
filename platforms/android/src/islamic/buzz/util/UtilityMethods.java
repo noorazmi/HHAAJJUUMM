@@ -978,37 +978,7 @@ public final class UtilityMethods {
 		return size.x;
 	}
 
-	/**
-	 * Get Value Added Icon URL
-	 * 
-	 * @param valueAddedIcons
-	 * @return
-	 */
-	public static String getValueAddedIconUrl(String valueAddedIcons) {
-
-		if (valueAddedIcons.indexOf("Online") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_ONLINE;
-		} else if (valueAddedIcons.indexOf("morecolors") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_MORE_COLORS;
-		} else if (valueAddedIcons.indexOf("bogo_1_1_D_100") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_BOGO_1_1_D_100;
-		} else if (valueAddedIcons.indexOf("bogo_1_1_P_50") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_BOGO_1_1_P_50;
-		} else if (valueAddedIcons.indexOf("bogo_1_1") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_BOGO_1_1;
-		} else if (valueAddedIcons.indexOf("bogo_2_1") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_BOGO_2_1;
-		} else if (valueAddedIcons.indexOf("BUY_1_GET_0_50_PERCENTAGE") != -1
-				|| valueAddedIcons.indexOf("BUY_1_GET_1_50_PERCENTAGE") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_BUY_1_GET_0_50_PERCENTAGE;
-		} else if (valueAddedIcons.indexOf("rebate") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_REBATE;
-		} else if (valueAddedIcons.indexOf("warning") != -1) {
-			return ConstantValues.VALUE_ADDED_ICON_WARNING;
-		}
-
-		return null;
-	}
+	
 
 	public static String removeSingleQuotes(String input) {
 		String result = input;
@@ -1338,7 +1308,6 @@ public final class UtilityMethods {
 	public static String getUserTokenString(String firstName, String lastName,
 			String email, String timeStamp) {
 		StringBuffer userTokenString = new StringBuffer();
-		userTokenString.append(ConstantValues.SALT_VALUE);
 		userTokenString.append(firstName);
 		userTokenString.append(lastName);
 		userTokenString.append(email);

@@ -1,6 +1,6 @@
 package islamic.buzz.sidemenu;
 
-import islamic.buzz.util.Const;
+import islamic.buzz.util.ConstantValues;
 import islamic.buzz.util.LogType;
 import islamic.buzz.util.Util;
 import android.content.Context;
@@ -200,7 +200,7 @@ public class ContentWindow extends LinearLayout
     // Animate the window to right to show the right menu list
     public void animateRight()
     {	
-	animate().x(Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources())).setDuration(ANIMATION_DURATION);
+	animate().x(Util.getPixels(ConstantValues.LEFT_SIDE_MENU_WIDTH, getResources())).setDuration(ANIMATION_DURATION);
     }
 
     // If the x position of the window in the parent is not zero it means the

@@ -1,9 +1,10 @@
 
 package islamic.buzz.views;
 
+import com.eybsolution.islamic.buzz.R;
+
 import islamic.buzz.interfaces.listeners.BottomBarDrawerListener;
 import islamic.buzz.util.UtilityMethods;
-import android.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;

@@ -1,13 +1,14 @@
 
 package islamic.buzz.activities;
 
+import com.eybsolution.islamic.buzz.R;
+
 import islamic.buzz.app.BuzzApplication;
 import islamic.buzz.error.UnCaughtException;
 import islamic.buzz.helpers.ActionBarHelper;
 import islamic.buzz.helpers.SlidingUpViewHelper;
 import islamic.buzz.util.UtilityMethods;
 import islamic.buzz.views.BottomBarDrawer;
-import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -100,7 +101,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        BuzzApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
+        //BuzzApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
         return super.dispatchTouchEvent(ev);
     }
 }

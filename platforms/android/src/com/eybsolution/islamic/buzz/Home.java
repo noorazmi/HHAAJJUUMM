@@ -1,9 +1,5 @@
 package com.eybsolution.islamic.buzz;
 
-<<<<<<< HEAD:src/com/eybsolution/islamic/buzz/Home.java
-
-=======
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/src/com/eybsolution/islamic/buzz/Home.java
 import islamic.buzz.sidemenu.ContentWindow;
 import islamic.buzz.sidemenu.LeftSideMenu;
 import islamic.buzz.views.AboutView;

@@ -1,6 +1,8 @@
 
 package islamic.buzz.helpers;
 
+import com.eybsolution.islamic.buzz.R;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.view.View;
@@ -14,6 +16,9 @@ import android.widget.TextView;
  * all the events on the action bar items.
  */
 public class ActionBarHelper {
+	
+	public static final int ACTION_ITEM_WEBVIEW_ACTIVITY = 7;
+	public static final int ACTION_ITEM_ERROR_ACTIVITY = 8;
 
     // Action bar of the activity.
     private ActionBar mActionBar;
@@ -81,6 +86,11 @@ public class ActionBarHelper {
     public TextView getItemViewCountView() {
         return mItemViewCount;
     }
+    
+    public void showActionBarForErrorActivity() {
+        showActionBarForSlider("", ACTION_ITEM_ERROR_ACTIVITY, false, true, true, 0);
+        mImageandText.setVisibility(View.GONE);
+    }
 
     /**
      * Shows action bar for slider.
@@ -104,6 +114,17 @@ public class ActionBarHelper {
     }
 
    
+    public void showActionBarForWebViewActivity() {
+        showActionBarForSlider("",
+                ACTION_ITEM_WEBVIEW_ACTIVITY,
+                false,
+                true,
+                true,
+                R.drawable.back_arrow);
+        // Hide shopping bag icon
+        mImageandText.setVisibility(View.GONE);
+    }
+    
     /**
      * Makes the shopping bag icon on the right hand side on the action bar
      * visible.

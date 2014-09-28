@@ -4,22 +4,19 @@
 
 package islamic.buzz.app;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
-import com.kohlsphone.BuildConfig;
-import com.kohlsphone.R;
-import com.kohlsphone.common.ui.toast.KohlsToast;
-import com.kohlsphone.common.util.ConfigurationUtils;
-import com.kohlsphone.common.util.UtilityMethods;
-import com.kohlsphone.common.util.auth.AuthUtil;
-import com.kohlsphone.common.value.CommonValues;
-import com.kohlsphone.common.value.ConstantValues;
-import com.kohlsphone.helper.preference.PreferenceHelper;
-import com.worklight.wlclient.api.WLClient;
-
+import islamic.buzz.helpers.PreferenceHelper;
+import islamic.buzz.toast.CustomToast;
+import islamic.buzz.util.AuthUtil;
+import islamic.buzz.util.ConfigurationUtils;
+import islamic.buzz.util.UtilityMethods;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+import com.eybsolution.islamic.buzz.BuildConfig;
+import com.report.crash.CrashReport;
 
 /**
  *
@@ -31,39 +28,33 @@ public class BuzzApplication extends Application {
 
     private static BuzzApplication mInstance;
 
-    private PreferenceHelper mKohlsPref;
+    private PreferenceHelper mAppPref;
 
-    private WLClient mClient;
 
     private boolean mIsClientConnect;
 
     private AuthUtil mAuthenticationUtils;
 
-    private KohlsCrashReporting mKohlsCrashReporting;
 
     private RequestQueue mRequestQueue;
 
-    private KohlsToast mKohlsToast;
+    private CustomToast mCsutomToast;
 
     private ConfigurationUtils configurationUtils = null;
 
-    private KohlsAnalytics mKohlsAnalytics;
+	private CrashReport mCrashReport;
+
 
     @Override
     public void onCreate() {
         super.onCreate();
-        // Logger.debug(TAG, "KohlsApp.onCreate was called");
 
         mInstance = this;
 
-        mKohlsPref = new PreferenceHelper(mInstance);
-        mClient = WLClient.createInstance(this);
-        // ConfigurationUtils configUtils = new ConfigurationUtils();
-        // configUtils.initAppConfig();
+        mAppPref = new PreferenceHelper(mInstance);
         mIsClientConnect = false;
         configurationUtils = new ConfigurationUtils();
         configurationUtils.initAppConfig();
-        initAppCrashReporting(getResources().getString(R.string.bugSenseKey));
     }
 
     public static BuzzApplication getInstance() {
@@ -78,37 +69,11 @@ public class BuzzApplication extends Application {
         return mInstance.getApplicationContext();
     }
 
-    /**
-     * Returns crash reporting instance.
-     * 
-     * @return a instance for CrashReporting
-     */
-    public KohlsCrashReporting getCrashReporting() {
-        return mKohlsCrashReporting;
-    }
+   
+   
 
-    /**
-     * Creates a instance of Kohls Analytics
-     * 
-     * @param mOmnitureServer
-     * @return
-     */
-    public KohlsAnalytics getAnalytics() {
-        if (mKohlsAnalytics == null) {
-            // TODO(sanchit.gupta) remove hard coded boolean value
-            mKohlsAnalytics = new KohlsAnalytics(getContext(),
-                    getKohlsPref().getOmnitureServer(),
-                    ConstantValues.OMNITURE_CONFIGURATION_RSSID,
-                    true);
-            AnalyticsPrefObject analyticsPrefObject = new AnalyticsPrefObject();
-            analyticsPrefObject.setCartStatus(CartStatus.ORIGINAL.toString());
-            getKohlsPref().saveAnalyticsPrefObject(analyticsPrefObject);
-        }
-        return mKohlsAnalytics;
-    }
-
-    public PreferenceHelper getKohlsPref() {
-        return mKohlsPref;
+    public PreferenceHelper getAppPref() {
+        return mAppPref;
     }
 
     @Override
@@ -116,13 +81,16 @@ public class BuzzApplication extends Application {
         super.onTerminate();
     }
 
-    public WLClient getWLClient() {
-        if (mClient == null) {
-            mClient = WLClient.createInstance(BuzzApplication.getContext());
-        }
-        return mClient;
+    
+    /**
+     * Returns crash reporting instance.
+     * 
+     * @return a instance for CrashReporting
+     */
+    public CrashReport getCrashReporting() {
+        return mCrashReport;
     }
-
+   
     @Override
     public void onLowMemory() {
         if (BuildConfig.DEBUG) {
@@ -158,16 +126,6 @@ public class BuzzApplication extends Application {
     }
 
     /**
-     * Initialize app crash reporting.
-     * 
-     * @param bugSenseKey bug sense key.
-     */
-    public void initAppCrashReporting(String bugSenseKey) {
-        mKohlsCrashReporting = new KohlsCrashReporting(getContext(), CommonValues.getInstance()
-                .isEnableBugSense(), bugSenseKey);
-    }
-
-    /**
      * @return The Volley Request queue, the queue will be created if it is null
      */
     public RequestQueue getRequestQueue() {
@@ -180,11 +138,11 @@ public class BuzzApplication extends Application {
         return mRequestQueue;
     }
 
-    public KohlsToast getKohlsToast() {
-        if (mKohlsToast == null) {
-            mKohlsToast = new KohlsToast(BuzzApplication.getContext());
+    public CustomToast getCustomToast() {
+        if (mCsutomToast == null) {
+            mCsutomToast = new CustomToast(BuzzApplication.getContext());
         }
-        return mKohlsToast;
+        return mCsutomToast;
     }
 
 }

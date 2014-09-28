@@ -1,8 +1,8 @@
 
 package islamic.buzz.http.client;
 
-import com.kohlsphone.common.util.Logger;
-import com.kohlsphone.common.value.ConstantValues;
+import islamic.buzz.util.ConstantValues;
+import islamic.buzz.util.Logger;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -55,14 +55,14 @@ public final class RestClient {
 
         }
 
-        if (isSignatureReqd) {
-            if (urlValue != null) {
-                urlValue = urlValue + "&"
-                        + ConstantValues.SIGNATURE_PARAMETER
-                        + "="
-                        + UrlSigner.generateKey(urlValue);
-            }
-        }
+//        if (isSignatureReqd) {
+//            if (urlValue != null) {
+//                urlValue = urlValue + "&"
+//                        + ConstantValues.SIGNATURE_PARAMETER
+//                        + "="
+//                        + UrlSigner.generateKey(urlValue);
+//            }
+//        }
         Logger.debug(TAG, "URL is : " + urlValue);
 
         URL url = null;
@@ -74,7 +74,7 @@ public final class RestClient {
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestProperty(ConstantValues.HEADER_ACCEPT,
                     ConstantValues.ACCEPT_JSON);
-            urlConnection.setRequestProperty(ConstantValues.HEADER_API_KEY, ConstantValues.API_KEY);
+            //urlConnection.setRequestProperty(ConstantValues.HEADER_API_KEY, ConstantValues.API_KEY);
             // urlConnection.setRequestProperty(AppConstants.HEADER_CHANNEL,
             // AppConstants.VALUE_MOBILE);
 
@@ -127,7 +127,7 @@ public final class RestClient {
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestProperty(ConstantValues.HEADER_ACCEPT,
                     ConstantValues.ACCEPT_JSON);
-            urlConnection.setRequestProperty(ConstantValues.HEADER_API_KEY, ConstantValues.API_KEY);
+            //urlConnection.setRequestProperty(ConstantValues.HEADER_API_KEY, ConstantValues.API_KEY);
 
             urlConnection.setRequestMethod("POST");
             urlConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");

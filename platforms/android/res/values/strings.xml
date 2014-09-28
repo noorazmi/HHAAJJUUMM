@@ -16,10 +16,20 @@
     <string name="share">Share</string>
     <string name="comment">Comment</string>
     <string name="exit_message">Do you want to exit the application?</string>
+    <string name="ok">OK</string>
+    <string name="OPEN_LOCATION_SETTINGS">Open Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>
         <item>Hajj</item>
         <item>About</item>
     </string-array>
+    
+    <!-- ################################################ Messages ############################################-->
+    <string name="errorScreen_message">Something went wrong, please restart the application, or try again after some time</string>
+    <string name="no_gps_enabled">Location Settings are disabled</string>
+    <!-- ################################################ End Messages ########################################-->
+    
 </resources>

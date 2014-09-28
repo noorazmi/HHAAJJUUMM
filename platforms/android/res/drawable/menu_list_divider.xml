@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/navigation_drawer_divider_paddingLeft"
+    android:insetRight="@dimen/navigation_drawer_text_paddingRight" >
+
+    <shape>
+        <solid android:color="@color/menu_divider" />
+
+        <corners android:radius="2.0dip" />
+    </shape>
+
+</inset>

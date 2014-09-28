@@ -1,7 +1,6 @@
 package islamic.buzz.views;
 
-import com.kohlsphone.common.util.FontUtils;
-
+import islamic.buzz.util.FontUtils;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;

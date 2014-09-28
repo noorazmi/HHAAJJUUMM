@@ -1,7 +1,7 @@
 package islamic.buzz.sidemenu;
 
 import islamic.buzz.leftmenu.LeftMenuItem;
-import islamic.buzz.util.Const;
+import islamic.buzz.util.ConstantValues;
 import islamic.buzz.util.Util;
 import islamic.buzz.views.Divider;
 
@@ -48,7 +48,7 @@ public class LeftSideMenu extends LinearLayout
 	    menuItem = new LeftMenuItem(getContext(), menuItemIcons[i], menuItemTitles[i]);
 	    menuItem.setOnClickListener(leftMenuItemClickListener);
 	    scrollViewContainer.addView(menuItem);
-	    divider = new Divider(getContext(), R.color.menu_divider, (int)Util.getPixels(Const.LEFT_SIDE_MENU_WIDTH, getResources()),2,0/*padding left*/,0/* padding right*/);
+	    divider = new Divider(getContext(), R.color.menu_divider, (int)Util.getPixels(ConstantValues.LEFT_SIDE_MENU_WIDTH, getResources()),2,0/*padding left*/,0/* padding right*/);
 	    scrollViewContainer.addView(divider);
 	}
     }

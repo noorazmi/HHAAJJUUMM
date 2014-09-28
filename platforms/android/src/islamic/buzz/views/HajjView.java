@@ -26,10 +26,6 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-<<<<<<< HEAD:src/islamic/buzz/views/HajjView.java
-import com.eybsolution.islamic.buzz.R;
-=======
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/src/islamic/buzz/views/HajjView.java
 import com.eybsolution.islamic.buzz.Home;
 import com.eybsolution.islamic.buzz.R;
 

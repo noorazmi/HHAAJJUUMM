@@ -16,5 +16,9 @@
         <attr name="is_oval" format="boolean" />
         <attr name="android:scaleType" />
     </declare-styleable>
+    
+    <declare-styleable name="BottomBarDrawer">
+        <attr name="drawerHeight" format="dimension" />
+    </declare-styleable>
 
 </resources>

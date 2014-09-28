@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD:res/layout/hajj_tawaful_wida.xml
-    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
-=======
     xmlns:hajumrah="http://schemas.android.com/apk/res-auto"
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/res/layout/hajj_tawaful_wida.xml
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 

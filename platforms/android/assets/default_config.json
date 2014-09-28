@@ -1,0 +1,22 @@
+{
+   "responseID":"125",
+   "isSuccessful":true,
+   "payload":{
+      "config":{
+         "appVersion":"v0.0.1",
+         "networktimeout":"20000",
+         "idleTimeout":"5200",
+         "signinTimeout":"36000",
+         "forceUpgrade":"false",
+         "forceUpgradeDisplayMessage":"Please update your Islamic Buzz app to have better experience.",
+         "forceUpgradeTitle":"Error",
+         "forceupgradereferenceurl":"",
+         "appMode":"debug",
+         "facebookURL":"http:\/\/www.facebook.com",
+         "twitterURL":"http:\/\/www.twitter.com",
+         "googleMapsURL":"http:\/\/maps.google.com",
+         "cacheSize":"10485760",
+         "clearCacheData":"false",
+      }
+   }
+}

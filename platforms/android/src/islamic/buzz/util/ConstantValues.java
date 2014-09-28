@@ -10,7 +10,7 @@ public interface ConstantValues {
     public static final String CONTENT_TYPE = "application/json";
 
 
-
+    public static final String EXTRA_KEY_URL = "KEY_URL";
     // Authentication grant type.
     String GRANT_TYPE_PASSWORD = "password";
 
@@ -35,7 +35,7 @@ public interface ConstantValues {
     // time when access token will be refreshed before its expires
     public static int APP_ACCESS_TOKEN_EXPIRY = 600; // 10 *60 seconds
 
-
+    String URL = "http://www.bistacksolutions.com/islamicbuzz/";
     String GEOCODE_URL = "http://maps.googleapis.com/maps/api/geocode/json";
 
 
@@ -102,6 +102,7 @@ public interface ConstantValues {
     int PRODUCT_IMAGE_LOAD = PRODUCT_IMAGE_DIALOG + 1;
 
 
+    public static final String EXTRA_KEY_SCREENNAME = "KEY_SCREENNAME";
     /*
      * Preferences Constants
      */

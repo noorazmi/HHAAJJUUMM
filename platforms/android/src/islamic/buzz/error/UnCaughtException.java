@@ -1,14 +1,15 @@
 
 package islamic.buzz.error;
 
-import com.kohlsphone.BuildConfig;
-import com.kohlsphone.common.util.Logger;
-import com.kohlsphone.framework.view.activity.ErrorScreenActivity;
+import islamic.buzz.activities.ErrorScreenActivity;
+import islamic.buzz.util.Logger;
+
+import java.lang.Thread.UncaughtExceptionHandler;
 
 import android.app.Activity;
 import android.content.Intent;
 
-import java.lang.Thread.UncaughtExceptionHandler;
+import com.eybsolution.islamic.buzz.BuildConfig;
 
 /**
  * Capture all uncaught exceptions

@@ -1,10 +1,5 @@
 package islamic.buzz.views;
 
-<<<<<<< HEAD:src/islamic/buzz/views/DuaView.java
-import com.eybsolution.islamic.buzz.R;
-
-=======
->>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/src/islamic/buzz/views/DuaView.java
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;

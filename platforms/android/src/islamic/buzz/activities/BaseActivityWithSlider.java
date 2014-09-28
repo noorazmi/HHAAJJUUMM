@@ -1,30 +1,23 @@
 
 package islamic.buzz.activities;
 
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingMenu;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingMenu.OnOpenListener;
-import com.jeremyfeinstein.slidingmenu.lib.app.WindowUtils;
-import com.kohls.analytics.CaptureAnalytics;
-import com.kohls.analytics.objects.datatypes.PageNames;
-import com.kohls.analytics.objects.datatypes.PageType;
-import com.kohls.analytics.objects.models.AnalyticsObject;
-import com.kohls.analytics.utils.AnalyticsConstants;
-import com.kohlsphone.R;
-import com.kohlsphone.common.app.KohlsPhoneApplication;
-import com.kohlsphone.common.ui.components.SlidingUpViewHelper;
-import com.kohlsphone.common.util.UtilityMethods;
-import com.kohlsphone.framework.view.component.views.BottomBarDrawer;
-import com.kohlsphone.framework.view.fragment.HamburgerListFragment;
-import com.kohlsphone.helper.actionbar.ActionBarHelper;
-import com.kohlsphone.helper.error.UnCaughtException;
-
+import islamic.buzz.app.BuzzApplication;
+import islamic.buzz.error.UnCaughtException;
+import islamic.buzz.helpers.ActionBarHelper;
+import islamic.buzz.helpers.SlidingUpViewHelper;
+import islamic.buzz.util.UtilityMethods;
+import islamic.buzz.views.BottomBarDrawer;
 import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
+
+import com.eybsolution.islamic.buzz.R;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnOpenListener;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
 
 /**
  * This is the base class for all activities
@@ -56,7 +49,7 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
         mSlidingViewHelper.initSlidingUpLayout();
 
         UtilityMethods.clearEditTextViewFocusOnOutsideTouch(getWindow().getDecorView(), this);
-        // Enable logging in crash reporting
+        // Ena ble logging in crash reporting
         BuzzApplication.getInstance().getCrashReporting().enableLogging();
 
     }
@@ -86,8 +79,8 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
         setBehindContentView(left);
         setSlidingActionBarEnabled(true);
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        HamburgerListFragment menuFragment = new HamburgerListFragment();
-        fragmentTransaction.replace("LEFT".hashCode(), menuFragment, HamburgerListFragment.TAG);
+        LeftMenuFragment menuFragment = new LeftMenuFragment();
+        fragmentTransaction.replace("LEFT".hashCode(), menuFragment, LeftMenuFragment.TAG);
         fragmentTransaction.commit();
         SlidingMenu slidingMenu = getSlidingMenu();
         slidingMenu.setMode(SlidingMenu.LEFT);
