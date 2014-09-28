@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD:res/layout/hajj_tawaful_wida.xml
+    xmlns:hajumrah="http://schemas.android.com/apk/res/com.eybsolution.islamic.buzz"
+=======
+    xmlns:hajumrah="http://schemas.android.com/apk/res-auto"
+>>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/res/layout/hajj_tawaful_wida.xml
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/umrah_heading"
+            android:text="@string/tawaful_wida"
+            android:textAllCaps="true" >
+        </TextView>
+
+        <TextView
+            style="@style/umrah_description"
+            android:text="@string/tawafulwida_my_be_performed" >
+        </TextView>
+
+        <islamic.buzz.views.DuaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            hajumrah:dua_heading="@string/dua_tawafulwida"
+            hajumrah:dua_image="@drawable/dua_tawaful_wida"
+            hajumrah:dua_meaning="@string/dua_tawafulwida_meaning"
+            hajumrah:dua_pronunciation="@string/dua_tawafulwida_pronounce" />
+
+        <TextView
+            style="@style/umrah_description"
+            android:text="@string/after_drinking_water" >
+        </TextView>
+
+        <islamic.buzz.views.DuaView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            hajumrah:dua_heading="@string/dua_after_tawafulwida"
+            hajumrah:dua_image="@drawable/dua_tawaful_wida"
+            hajumrah:dua_meaning="@string/dua_after_tawafulwida_meaning"
+            hajumrah:dua_pronunciation="@string/dua_after_tawafulwida_pronounce" />
+        
+        <TextView
+            style="@style/umrah_description"
+            android:text="@string/after_dua_make_istilam" >
+        </TextView>
+        
+         
+        <TextView
+            style="@style/umrah_description"
+            android:text="@string/masalah_if_one_returns_without_performing" >
+        </TextView>
+        
+    </LinearLayout>
+
+</ScrollView>
