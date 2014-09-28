@@ -1,6 +1,6 @@
 package islamic.buzz.views;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 
 import android.content.Context;
 import android.text.method.LinkMovementMethod;

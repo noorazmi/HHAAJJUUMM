@@ -1,6 +1,5 @@
 package com.eybsolution.islamic.buzz;
 
-import com.bitstacksolutions.R;
 
 import islamic.buzz.sidemenu.ContentWindow;
 import islamic.buzz.sidemenu.LeftSideMenu;

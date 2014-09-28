@@ -42,7 +42,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 import com.eybsolution.islamic.buzz.ImageDetailActivity;
 
 /**

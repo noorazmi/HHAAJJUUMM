@@ -33,7 +33,7 @@ import islamic.buzz.util.Util;
 
 import java.lang.ref.WeakReference;
 
-import com.bitstacksolutions.BuildConfig;
+import com.eybsolution.islamic.buzz.BuildConfig;
 
 /**
  * This class wraps up completing some arbitrary long running work when loading a bitmap to an

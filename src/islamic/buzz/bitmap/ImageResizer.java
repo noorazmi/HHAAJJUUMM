@@ -27,7 +27,7 @@ import islamic.buzz.util.Util;
 
 import java.io.FileDescriptor;
 
-import com.bitstacksolutions.BuildConfig;
+import com.eybsolution.islamic.buzz.BuildConfig;
 
 /**
  * A simple subclass of {@link ImageWorker} that resizes images from resources

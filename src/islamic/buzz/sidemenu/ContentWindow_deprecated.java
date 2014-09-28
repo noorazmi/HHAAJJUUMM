@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 
 public class ContentWindow_deprecated extends LinearLayout
 {

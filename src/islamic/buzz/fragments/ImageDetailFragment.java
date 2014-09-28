@@ -27,7 +27,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 import com.eybsolution.islamic.buzz.ImageDetailActivity;
 
 /**

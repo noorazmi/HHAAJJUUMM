@@ -1,6 +1,6 @@
 package islamic.buzz.fragments;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

@@ -2,7 +2,7 @@ package com.eybsolution.islamic.buzz;
 
 import islamic.buzz.util.AppInfo;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 
 import android.app.Activity;
 import android.content.Intent;

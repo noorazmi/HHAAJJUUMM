@@ -3,7 +3,7 @@ package islamic.buzz.views;
 
 import islamic.buzz.fragments.ImageGridFragment;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 import com.eybsolution.islamic.buzz.Home;
 
 import android.content.Context;

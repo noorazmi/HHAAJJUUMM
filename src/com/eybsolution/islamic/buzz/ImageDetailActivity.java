@@ -38,8 +38,8 @@ import android.view.View.OnClickListener;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Toast;
 
-import com.bitstacksolutions.BuildConfig;
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.BuildConfig;
+import com.eybsolution.islamic.buzz.R;
 
 public class ImageDetailActivity extends FragmentActivity implements OnClickListener
 {

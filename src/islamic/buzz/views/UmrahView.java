@@ -24,7 +24,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 import com.eybsolution.islamic.buzz.Home;
 
 public class UmrahView extends LinearLayout

@@ -33,7 +33,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 import com.eybsolution.islamic.buzz.Home;
 
 public class HajjView extends LinearLayout

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.R;
 
 public class UmrahHalaq extends Fragment
 {

@@ -35,8 +35,8 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import com.bitstacksolutions.BuildConfig;
-import com.bitstacksolutions.R;
+import com.eybsolution.islamic.buzz.BuildConfig;
+import com.eybsolution.islamic.buzz.R;
 
 /**
  * A simple subclass of {@link ImageResizer} that fetches and resizes images fetched from a URL.
