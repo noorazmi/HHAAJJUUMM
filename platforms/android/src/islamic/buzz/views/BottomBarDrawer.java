@@ -3,6 +3,7 @@ package islamic.buzz.views;
 
 import islamic.buzz.interfaces.listeners.BottomBarDrawerListener;
 import islamic.buzz.util.UtilityMethods;
+import android.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -12,8 +13,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.Transformation;
-
-import com.eybsolution.islamic.buzz.R;
 
 public class BottomBarDrawer extends ViewGroup {
 

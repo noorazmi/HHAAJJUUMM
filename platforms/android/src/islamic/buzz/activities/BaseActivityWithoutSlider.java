@@ -1,14 +1,13 @@
 
 package islamic.buzz.activities;
 
-import com.kohlsphone.R;
-import com.kohlsphone.common.app.KohlsPhoneApplication;
-import com.kohlsphone.common.ui.components.SlidingUpViewHelper;
-import com.kohlsphone.common.util.UtilityMethods;
-import com.kohlsphone.framework.view.component.views.BottomBarDrawer;
-import com.kohlsphone.helper.actionbar.ActionBarHelper;
-import com.kohlsphone.helper.error.UnCaughtException;
-
+import islamic.buzz.app.BuzzApplication;
+import islamic.buzz.error.UnCaughtException;
+import islamic.buzz.helpers.ActionBarHelper;
+import islamic.buzz.helpers.SlidingUpViewHelper;
+import islamic.buzz.util.UtilityMethods;
+import islamic.buzz.views.BottomBarDrawer;
+import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -36,7 +35,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
         slidingHelper.initSlidingUpLayout();
         initializeViews(getIntent().getExtras());
         // Enable logging in crash reporting
-        BuzzApplication.getInstance().getCrashReporting().enableLogging();
+        //BuzzApplication.getInstance().getCrashReporting().enableLogging();
     }
 
     protected abstract void initializeViews(Bundle bundle);
@@ -74,7 +73,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
 
     @Override
     protected void onResume() {
-        UtilityMethods.getFlushTimes();
+        //UtilityMethods.getFlushTimes();
         super.onResume();
 
     }

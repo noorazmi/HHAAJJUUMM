@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kohlsphone.framework.view.component.views.BottomBarDrawer
+        android:id="@+id/id_bottomBarDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        drawer:drawerHeight="60dp" >
+
+        <!-- MAIN CONTENT -->
+
+        <FrameLayout
+            android:id="@+id/content_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- SLIDING LAYOUT -->
+
+        <LinearLayout
+            android:id="@+id/id_inStoreToolsSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include layout="@layout/drawer_content" />
+        </LinearLayout>
+    </com.kohlsphone.framework.view.component.views.BottomBarDrawer>
+
+</FrameLayout>

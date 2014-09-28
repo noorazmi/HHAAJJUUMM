@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/id_inStoreTool_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_list_icon" />
+
+    <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Title"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+                android:id="@+id/id_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:text="Your content will go here inside scroll view"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

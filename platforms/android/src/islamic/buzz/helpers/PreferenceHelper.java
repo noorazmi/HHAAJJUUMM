@@ -1,18 +1,14 @@
 
 package islamic.buzz.helpers;
 
-import com.google.gson.Gson;
-import com.kohls.analytics.objects.models.AnalyticsPrefObject;
-import com.kohlsphone.common.value.ConstantValues;
-import com.kohlsphone.framework.vo.StoreLocatorVO.Payload.Store;
-import com.kohlsphone.helper.db.DBOperationsHelper;
-import com.kohlsphone.helper.db.DBTablesDef;
-
+import islamic.buzz.util.ConstantValues;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.location.Location;
 import android.text.TextUtils;
+
+import com.google.gson.Gson;
 
 /**
  * This class will manage all interactions with Shared Preferences.
@@ -78,53 +74,8 @@ public class PreferenceHelper {
         return getDefaultSharePreference().getString(ConstantValues.APP_CONFIG, null);
     }
 
-    public void saveUserStore(Store userStore) {
-        Editor editor = getDefaultSharePreference().edit();
-        String json = getGson().toJson(userStore);
-        editor.putString(ConstantValues.USER_STORE_INFO, json);
-        editor.commit();
-    }
-
-    public void removeUserStore() {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.remove(ConstantValues.USER_STORE_INFO);
-        editor.commit();
-    }
-
-    public Store getUserStore() {
-        String json = getDefaultSharePreference().getString(ConstantValues.USER_STORE_INFO, "");
-        Store userStore = getGson().fromJson(json, Store.class);
-        return userStore;
-    }
-
-    public void saveShoppingBagSubTotalAndCount(String subTotal) {
-        saveShoppingBagSubTotalAndCount(null, subTotal);
-    }
-
-    public void saveShoppingBagSubTotalAndCount(final String totalBagCount,
-            final String subTotal) {
-        DBOperationsHelper helper = new DBOperationsHelper();
-        String bagCount = null;
-        if (totalBagCount != null) {
-            bagCount = totalBagCount;
-        } else {
-            bagCount = String.valueOf(helper.count(DBTablesDef.T_SHOPPING_BAG));
-        }
-
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putString(ConstantValues.SHOPPING_BAG_SUBTOTAL, subTotal);
-        editor.putString(ConstantValues.SHOPPING_BAG_COUNT, bagCount);
-        editor.commit();
-    }
-
-    public String getShoppingBagSubTotal() {
-        return getDefaultSharePreference().getString(ConstantValues.SHOPPING_BAG_SUBTOTAL, "0");
-    }
-
-    public String getShoppingBagCount() {
-        return getDefaultSharePreference().getString(ConstantValues.SHOPPING_BAG_COUNT, "0");
-    }
-
+  
+    
     // Twiiter Preferences
 
     public boolean getTwitterAuthorizationStatus() {
@@ -177,18 +128,7 @@ public class PreferenceHelper {
             String loyaltyID) {
         long timeInSeconds = (System.currentTimeMillis() / 1000);
         Editor editor = getDefaultSharePreference().edit();
-        editor.putString(ConstantValues.PREF_ACCESS_TOKEN_KEY, accessToken);
-        editor.putString(ConstantValues.PREF_REFRESH_TOKEN_KEY, refreshToken);
-        editor.putString(ConstantValues.PREF_USERNAME_KEY, firstName);
-        editor.putString(ConstantValues.PREF_USERLASTNAME_KEY, lastName);
-        editor.putString(ConstantValues.PREF_EMAIL_KEY, emailAddress);
-        editor.putLong(ConstantValues.PREF_SIGN_IN_TIME_KEY, timeInSeconds);
-        editor.putLong(ConstantValues.PREF_EXPIRE_TIME_KEY, expireTime);
-        editor.putString(ConstantValues.PREF_DIGESTED_MSG, digestedMessage);
-        editor.putString(ConstantValues.PREF_STRING_MSG, expiryStringTime);
-        editor.putLong(ConstantValues.PREF_SECURE_TIME_KEY, timeInSeconds);
         editor.putString(ConstantValues.PREF_USERNAME_ID, userID);
-        editor.putString(ConstantValues.PREF_LOYALTY_ID, loyaltyID);
         editor.commit();
     }
 
@@ -276,16 +216,7 @@ public class PreferenceHelper {
         return getDefaultSharePreference().getString(ConstantValues.PREF_USERNAME_ID, null);
     }
 
-    public String getLoyaltyId() {
-        return getDefaultSharePreference().getString(ConstantValues.PREF_LOYALTY_ID, null);
-    }
-
-    public void setLoyaltyID(String loyaltyID) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putString(ConstantValues.PREF_LOYALTY_ID, loyaltyID);
-        editor.commit();
-    }
-
+   
     /**
      * If false means user is currently not signed in else if true means user
      * sigend in
@@ -355,143 +286,5 @@ public class PreferenceHelper {
         editor.commit();
     }
 
-    public void saveEulaPrefernces(boolean acceptLice) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putBoolean(ConstantValues.LIC_ACCEPTANCE, acceptLice);
-        acceptLic = acceptLice;
-        editor.commit();
-    }
-
-    public boolean isEulaAccepted() {
-        return getDefaultSharePreference().getBoolean(ConstantValues.LIC_ACCEPTANCE, acceptLic);
-    }
-
-    /**
-     * Returns boolean whether the application has Forsee debug enabled. - true
-     * for Forsee debug enabled - false for Forsee debug disabled
-     */
-    public boolean getIsForseeDebug() {
-        return getDefaultSharePreference().getBoolean(ConstantValues.APP_FORSEE_CONFIG, false);
-    }
-
-    public String getDigestedMessage() {
-        return getDefaultSharePreference().getString(ConstantValues.PREF_DIGESTED_MSG, null);
-    }
-
-    public String getExpiryStringTime() {
-        return getDefaultSharePreference().getString(ConstantValues.PREF_STRING_MSG, null);
-
-    }
-
-    /**
-     * Sets data into Forsee Enabling
-     */
-    public void setIsForseeDebug(boolean mForseeEnabled) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putBoolean(ConstantValues.APP_FORSEE_CONFIG, mForseeEnabled);
-        editor.commit();
-    }
-
-    public boolean isFirstScan() {
-        return getDefaultSharePreference().getBoolean(ConstantValues.PREF_FIRST_SCAN, true);
-    }
-
-    public void setIsFirstScan(boolean mIsFirstScan) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putBoolean(ConstantValues.PREF_FIRST_SCAN, mIsFirstScan);
-        editor.commit();
-    }
-
-    public void setIdleTime() {
-        long timeInSeconds = (System.currentTimeMillis() / 1000);
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putLong(ConstantValues.PREF_IDLE_TIME_KEY, timeInSeconds);
-        editor.commit();
-
-    }
-
-    public void setCacheTimeCMS(long cmsCacheTime) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putLong(ConstantValues.PREF_CMS_CACHE, cmsCacheTime);
-        editor.commit();
-    }
-
-    public long getCmsCacheTime() {
-        return getDefaultSharePreference().getLong(ConstantValues.PREF_CMS_CACHE, 0);
-    }
-
-    public void setCacheTimeCategory(long categoryCacheTime) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putLong(ConstantValues.PREF_CATEGORY_CACHE, categoryCacheTime);
-        editor.commit();
-    }
-
-    public long getCategoryCacheTime() {
-        return getDefaultSharePreference().getLong(ConstantValues.PREF_CATEGORY_CACHE, 0);
-    }
-
-    public void setCacheTimeCatalog(long catalogCacheTime) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putLong(ConstantValues.PREF_CATALOG_CACHE, catalogCacheTime);
-        editor.commit();
-    }
-
-    public long getCatalogCacheTime() {
-        return getDefaultSharePreference().getLong(ConstantValues.PREF_CATALOG_CACHE, 0);
-    }
-
-    public void setCMSPageName(String cmsPageName) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putString(ConstantValues.PREF_CMS_HOME_NAME, cmsPageName);
-        editor.commit();
-    }
-
-    public String getCMSPageName() {
-        return getDefaultSharePreference().getString(ConstantValues.PREF_CMS_HOME_NAME,
-                ConstantValues.CMS_FOR_HOME);
-
-    }
-
-    /**
-     * Save preference object to preferences
-     * 
-     * @param analyticsPrefObject
-     */
-    public void saveAnalyticsPrefObject(AnalyticsPrefObject analyticsPrefObject) {
-        Editor editor = getDefaultSharePreference().edit();
-        String json = getGson().toJson(analyticsPrefObject);
-        editor.putString(ConstantValues.ANALYTICS_PREFERENCE_OBJECT, json);
-        editor.commit();
-    }
-
-    /**
-     * Get {@link AnalyticsPrefObject} from shared pref
-     * 
-     * @return
-     */
-    public AnalyticsPrefObject getAnalyticsPrefObject() {
-        String json = getDefaultSharePreference().getString(ConstantValues.ANALYTICS_PREFERENCE_OBJECT,
-                "");
-        AnalyticsPrefObject analyticsPrefObject = getGson().fromJson(json,
-                AnalyticsPrefObject.class);
-        return analyticsPrefObject;
-    }
-
-    /**
-     * TODO Remove setOmnitureServer, getOmnitureServer, isFirstTimeLaunch &
-     * setIsFirstTimeLaunch when app goes on production.
-     * 
-     * @param URL
-     */
-    public void setOmnitureServer(String URL) {
-        Editor editor = getDefaultSharePreference().edit();
-        editor.putString(ConstantValues.PREF_OMNITURE_SERVER, URL);
-        editor.commit();
-    }
-
-    public String getOmnitureServer() {
-        return getDefaultSharePreference().getString(ConstantValues.PREF_OMNITURE_SERVER,
-                ConstantValues.OMNITURE_CONFIGURATION_TRACKING_SERVER);
-    }
-
+   
 }
