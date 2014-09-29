@@ -3,6 +3,7 @@ package islamic.buzz.activities;
 
 import islamic.buzz.app.BuzzApplication;
 import islamic.buzz.error.UnCaughtException;
+import islamic.buzz.fragments.LeftMenuFragment;
 import islamic.buzz.helpers.ActionBarHelper;
 import islamic.buzz.helpers.SlidingUpViewHelper;
 import islamic.buzz.util.UtilityMethods;
@@ -15,9 +16,9 @@ import android.view.MotionEvent;
 import android.widget.FrameLayout;
 
 import com.eybsolution.islamic.buzz.R;
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.OnOpenListener;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.app.WindowUtils;
 
 /**
  * This is the base class for all activities
@@ -90,10 +91,9 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
         slidingMenu.setFadeDegree(0.9f);
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         // Hide keyboard on showing Side pannel
-        slidingMenu.setOnOpenListener(new OnOpenListener() {
+        slidingMenu.setOnOpenListener(new SlidingMenu.OnOpenListener() {
             @Override
             public void onOpen() {
-                sendAnalyticsOnLoad();
                 UtilityMethods.hideKeyboard(BaseActivityWithSlider.this,
                         mActionBarHelper.getItemView());
             }
@@ -114,7 +114,6 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
     @Override
     protected void onResume() {
-        UtilityMethods.getFlushTimes();
         super.onResume();
     }
 
@@ -161,7 +160,6 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        BuzzApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
         return super.dispatchTouchEvent(ev);
     }
 

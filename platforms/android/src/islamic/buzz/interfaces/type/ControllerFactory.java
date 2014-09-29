@@ -1,20 +1,19 @@
 
 package islamic.buzz.interfaces.type;
 
-import islamic.buzz.activities.BaseActivityWithoutSlider;
+import islamic.buzz.controllers.HomeController;
+import islamic.buzz.fragments.HomeFragment;
 
 import java.lang.ref.WeakReference;
-
-import android.content.Context;
 
 /**
  * Factory to provide Controller instances. All dependencies will be injected by
  * this class.
  */
 public class ControllerFactory {
-//    public static IHomeController getHomeController(WeakReference<HomeFragment> fragment) {
-//        return new HomeController(fragment);
-//    }
+    public static HomeController getHomeController(WeakReference<HomeFragment> fragment) {
+        return new HomeController(fragment);
+    }
 //
 //    public static ICategoryController getCategoryController(Context context,
 //            WeakReference<HamburgerListFragment> fragment) {

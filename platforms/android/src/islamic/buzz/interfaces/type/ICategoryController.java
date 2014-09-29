@@ -1,7 +1,7 @@
 
 package islamic.buzz.interfaces.type;
 
-import com.kohlsphone.common.po.MenuCategory;
+import islamic.buzz.po.MenuCategory;
 
 import java.util.ArrayList;
 

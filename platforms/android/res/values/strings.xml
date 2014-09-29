@@ -20,6 +20,8 @@
     <string name="OPEN_LOCATION_SETTINGS">Open Settings</string>
     <string name="cancel">Cancel</string>
     <string name="home">Home</string>
+    <string name="close">Close</string>
+    <string name="api_call_failed">API call failed</string>
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>

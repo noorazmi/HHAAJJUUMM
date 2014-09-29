@@ -9,11 +9,14 @@ public interface ConstantValues {
     // Content type
     public static final String CONTENT_TYPE = "application/json";
 
-
+    public static final String EXTRA_SCREEN_TO_LOAD = "screenToLoad";
+    
     public static final String EXTRA_KEY_URL = "KEY_URL";
     // Authentication grant type.
     String GRANT_TYPE_PASSWORD = "password";
 
+    String SCREEN_TO_LOAD_KEY = "screenToLoad";
+    
     // Refresh token grant type
     String GRANT_TYPE_REFRESH_TOKEN = "refresh_token";
 

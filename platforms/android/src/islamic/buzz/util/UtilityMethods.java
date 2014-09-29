@@ -1,12 +1,35 @@
 package islamic.buzz.util;
 
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import islamic.buzz.activities.WebViewActivity;
+import islamic.buzz.app.BuzzApplication;
+import islamic.buzz.error.AppException;
+import islamic.buzz.fragments.BaseDialogFragment;
+import islamic.buzz.http.client.RestClient;
+import islamic.buzz.hybrid.HybridActivity;
+import islamic.buzz.hybrid.HybridScreen;
+import islamic.buzz.vo.GeoCoderVO;
+import islamic.buzz.vo.GeoCoderVO.GeoCodeResult;
+import islamic.buzz.vo.GeoCoderVO.GeoCodeResult.AddressComponent;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.ref.WeakReference;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -15,13 +38,11 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.location.Address;
-import android.location.Location;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -29,7 +50,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Debug;
 import android.os.ResultReceiver;
-import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -48,41 +68,10 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
-import islamic.buzz.activities.WebViewActivity;
-import islamic.buzz.app.BuzzApplication;
-import islamic.buzz.error.AppException;
-import islamic.buzz.fragments.BaseDialogFragment;
-import islamic.buzz.http.client.RestClient;
-import islamic.buzz.vo.GeoCoderVO;
-import islamic.buzz.vo.GeoCoderVO.GeoCodeResult;
-import islamic.buzz.vo.GeoCoderVO.GeoCodeResult.AddressComponent;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.TimeZone;
-import java.util.WeakHashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 /**
  * All the utility functions are defined in this class
@@ -1350,5 +1339,18 @@ public final class UtilityMethods {
 				Uri.parse((!url.startsWith("http://") && !url
 						.startsWith("https://")) ? ("http://" + url) : url)));
 	}
+	
+	/**
+     * Open shopping bag activity
+     * 
+     * @param activity
+     */
+    public static void openHybridScreen(Activity activity,
+            HybridScreen screen) {
+        Intent intent = new Intent();
+        intent.setClass(activity, HybridActivity.class);
+        intent.putExtra(ConstantValues.EXTRA_SCREEN_TO_LOAD, screen);
+        activity.startActivity(intent);
+    }
 
 }

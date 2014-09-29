@@ -39,7 +39,7 @@ public class SlidingUpViewHelper implements BottomBarDrawerListener {
     private boolean mIsActionBarHidden;
 
     private View mSearchView;
-
+    private boolean mIsExpanded;
 
     private ProgressBar mRecommendationProgressBar;
 
@@ -151,17 +151,17 @@ public class SlidingUpViewHelper implements BottomBarDrawerListener {
         mActionBarAnimOffset = mBottomBarDrawer.getExpandedHeightofDrawer() - mActionBarAnimOffset;
         mBottomBarDrawer.show();
         mBottomBarDrawer.expand();
+        mIsExpanded = true;
     }
 
+    
     /**
      * Disable Sliding layout.
      */
     public void disableSlidingLayout() {
         mBottomBarDrawer.hide();
+        mIsExpanded = false;
     }
-
-    
-
    
 
 
@@ -267,6 +267,9 @@ public class SlidingUpViewHelper implements BottomBarDrawerListener {
         mWelcomeMessage.setVisibility(View.VISIBLE);
     }
 
+    public boolean isSliderExpanded() {
+        return mIsExpanded;
+    }
     
 
 }
