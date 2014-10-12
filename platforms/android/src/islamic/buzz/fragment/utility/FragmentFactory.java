@@ -3,6 +3,7 @@ package islamic.buzz.fragment.utility;
 
 import islamic.buzz.activities.HomeActivity;
 import islamic.buzz.fragments.HomeFragment;
+import islamic.buzz.views.AboutFragment;
 
 import java.lang.ref.WeakReference;
 
@@ -37,6 +38,12 @@ public class FragmentFactory {
 
 	public static void attachHajjFragment(HomeActivity homeActivity, Bundle bundle) {
 		
+//		 HajjIntroFragment hajjIntroFragment = new HajjIntroFragment();
+//	            FragmentHelper.replaceFragmentWithDefaultAnimation(new WeakReference<Activity>(homeActivity),
+//	            		hajjIntroFragment,
+//	                    null,
+//	                    null);
+		
 	}
 
 	public static void attachUmrahFragment(HomeActivity homeActivity, Object object) {
@@ -44,7 +51,11 @@ public class FragmentFactory {
 	}
 
 	public static void attachAboutFragment(HomeActivity homeActivity, Object object) {
-		
+		 AboutFragment aboutFragment = new AboutFragment();
+         FragmentHelper.replaceFragmentWithDefaultAnimation(new WeakReference<Activity>(homeActivity),
+        		 aboutFragment,
+                 null,
+                 null);
 	}
 
 	public static void attachNamesOfAllahFragment(HomeActivity homeActivity, Object object) {

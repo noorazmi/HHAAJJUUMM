@@ -1,13 +1,11 @@
 
 package islamic.buzz.hybrid.plugins;
 
-import com.kohlsphone.BuildConfig;
-import com.kohlsphone.common.util.Logger;
-import com.kohlsphone.common.util.UtilityMethods;
-import com.kohlsphone.common.value.CommonValues;
-import com.kohlsphone.common.value.ConstantValues;
-import com.kohlsphone.framework.view.activity.HomeActivity;
-import com.kohlsphone.wl.WLActivity;
+import islamic.buzz.activities.HomeActivity;
+import islamic.buzz.util.CommonValues;
+import islamic.buzz.util.ConstantValues;
+import islamic.buzz.util.Logger;
+import islamic.buzz.util.UtilityMethods;
 
 import org.apache.cordova.CordovaActivity;
 import org.json.JSONArray;
@@ -17,6 +15,8 @@ import org.json.JSONObject;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+
+import com.eybsolution.islamic.buzz.BuildConfig;
 
 public class NativeHybridCommPlugin extends BasePlugin {
     private static final String TAG = NativeHybridCommPlugin.class.getSimpleName();
@@ -68,16 +68,16 @@ public class NativeHybridCommPlugin extends BasePlugin {
             return true;
         } else if (ACTION_PERFORM_GO_SHOPPING.equals(action)) {
             try {
-                final WLActivity activity = getWLActivity();
-                performGoShopping(activity);
-                sendSuccess();
+//                final WLActivity activity = getWLActivity();
+//                performGoShopping(activity);
+//                sendSuccess();
             } catch (Exception e) {
                 handleError(e);
             }
             return true;
         } else if (NATIVE_OPEN_DIALER.equals(action)) {
             try {
-                UtilityMethods.makeCall(getWLActivity(), args.getString(0));
+               // UtilityMethods.makeCall(getWLActivity(), args.getString(0));
                 sendSuccess();
             } catch (Exception e) {
                 handleError(e);
@@ -87,13 +87,13 @@ public class NativeHybridCommPlugin extends BasePlugin {
         return false;
     }
 
-    private WLActivity getWLActivity() throws Exception {
-        final WLActivity activity = (WLActivity) this.cordova.getActivity();
-        if (activity == null) {
-            throw new Exception("Activity instance is null");
-        }
-        return activity;
-    }
+//    private WLActivity getWLActivity() throws Exception {
+//        final WLActivity activity = (WLActivity) this.cordova.getActivity();
+//        if (activity == null) {
+//            throw new Exception("Activity instance is null");
+//        }
+//        return activity;
+//    }
 
     private void handleError(Exception e) {
         Logger.error(TAG, e.getMessage());
@@ -102,53 +102,54 @@ public class NativeHybridCommPlugin extends BasePlugin {
     }
 
     private String getScreenUrl() throws Exception {
-        final WLActivity activity = (WLActivity) this.cordova.getActivity();
-        return activity.getScreenUrl();
+//        final WLActivity activity = (WLActivity) this.cordova.getActivity();
+//        return activity.getScreenUrl();
+    	return null;
     }
 
-    public void goToHomeScreen(WLActivity activity) throws Exception {
-        performGoShopping(activity);
-    }
+//    public void goToHomeScreen(WLActivity activity) throws Exception {
+//        performGoShopping(activity);
+//    }
 
-    private void performGoShopping(final WLActivity activity) throws Exception {
-        activity.runOnUiThread(new Runnable() {
-
-            @Override
-            public void run() {
-                Intent intent = new Intent();
-                intent.setClass(activity, HomeActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                activity.startActivity(intent);
-            }
-        });
-
-        activity.endActivity();
-    }
+//    private void performGoShopping(final WLActivity activity) throws Exception {
+//        activity.runOnUiThread(new Runnable() {
+//
+//            @Override
+//            public void run() {
+//                Intent intent = new Intent();
+//                intent.setClass(activity, HomeActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                activity.startActivity(intent);
+//            }
+//        });
+//
+//        activity.endActivity();
+//    }
 
     private void setScreenTitle(final String screenTitle) throws Exception {
-        final WLActivity activity = getWLActivity();
-
-        activity.runOnUiThread(new Runnable() {
-
-            @Override
-            public void run() {
-                activity.setActionBarTitle(screenTitle);
-            }
-        });
+//        final WLActivity activity = getWLActivity();
+//
+//        activity.runOnUiThread(new Runnable() {
+//
+//            @Override
+//            public void run() {
+//                activity.setActionBarTitle(screenTitle);
+//            }
+//        });
     }
 
     private String getNativeValues() throws Exception {
         String returnObject = null;
-        JSONObject json = new JSONObject();
-        WLActivity activity = getWLActivity();
-
-        json.put(NATIVE_VAL_PLATFORM, ConstantValues.APP_PLATFORM);
-        json.put(NATIVE_VAL_DEBUG_MODE, String.valueOf(BuildConfig.DEBUG));
-        json.put(NATIVE_VAL_BUGSENSE_ENABLED,
-                String.valueOf(CommonValues.getInstance().isEnableBugSense()));
-        json.put(NATIVE_VAL_VERSION, getAppVersionNumber(activity));
-
-        returnObject = json.toString();
+//        JSONObject json = new JSONObject();
+//        WLActivity activity = getWLActivity();
+//
+//        json.put(NATIVE_VAL_PLATFORM, ConstantValues.APP_PLATFORM);
+//        json.put(NATIVE_VAL_DEBUG_MODE, String.valueOf(BuildConfig.DEBUG));
+//        json.put(NATIVE_VAL_BUGSENSE_ENABLED,
+//                String.valueOf(CommonValues.getInstance().isEnableBugSense()));
+//        json.put(NATIVE_VAL_VERSION, getAppVersionNumber(activity));
+//
+//        returnObject = json.toString();
 
         return returnObject;
     }

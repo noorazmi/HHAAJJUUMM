@@ -9,7 +9,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/menu_list_icon" />
 
-    <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+    <islamic.buzz.views.GothamBoldTextView
         android:id="@+id/id_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+            <islamic.buzz.views.GothamBoldTextView
                 android:id="@+id/id_welcome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

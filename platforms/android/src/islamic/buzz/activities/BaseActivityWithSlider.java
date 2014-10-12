@@ -1,7 +1,6 @@
 
 package islamic.buzz.activities;
 
-import islamic.buzz.app.BuzzApplication;
 import islamic.buzz.error.UnCaughtException;
 import islamic.buzz.fragments.LeftMenuFragment;
 import islamic.buzz.helpers.ActionBarHelper;
@@ -51,7 +50,7 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
         UtilityMethods.clearEditTextViewFocusOnOutsideTouch(getWindow().getDecorView(), this);
         // Ena ble logging in crash reporting
-        BuzzApplication.getInstance().getCrashReporting().enableLogging();
+       // BuzzApplication.getInstance().getCrashReporting().enableLogging();
 
     }
 

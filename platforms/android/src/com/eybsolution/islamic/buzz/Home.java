@@ -2,7 +2,7 @@ package com.eybsolution.islamic.buzz;
 
 import islamic.buzz.sidemenu.ContentWindow;
 import islamic.buzz.sidemenu.LeftSideMenu;
-import islamic.buzz.views.AboutView;
+import islamic.buzz.views.AboutFragment;
 import islamic.buzz.views.HajjView;
 import islamic.buzz.views.UmrahView;
 import islamic.buzz.views.UpdatesView;
@@ -26,7 +26,7 @@ public class Home extends FragmentActivity
     private UmrahView umrahView;
     private UpdatesView updatesView;
     private HajjView hajjView;
-    private AboutView aboutView;
+    private AboutFragment aboutView;
     private LeftSideMenu leftSideMenu;
     private View currentView;
 
@@ -160,11 +160,11 @@ public class Home extends FragmentActivity
 	    else if (menuTitle.equalsIgnoreCase(ABOUT))
 	    {
 		if(aboutView == null){
-		    aboutView = new AboutView(Home.this);
+		   // aboutView = new AboutFragment(Home.this);
 		}
 		
-		contentHolder.addView(aboutView);
-		currentView = aboutView;
+		//contentHolder.addView(aboutView);
+		//currentView = aboutView;
 		
 	    }
 

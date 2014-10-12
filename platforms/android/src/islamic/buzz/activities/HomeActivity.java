@@ -46,7 +46,7 @@ public class HomeActivity extends BaseActivityWithSlider {
     @Override
     public void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-        BuzzApplication.getInstance().setAuthenticationUtils(this);
+       // BuzzApplication.getInstance().setAuthenticationUtils(this);
 
         mActivityContext = this;
 
@@ -54,6 +54,8 @@ public class HomeActivity extends BaseActivityWithSlider {
 
     @Override
     public void initContent() {
+    	 //attachHomeFragment(null, false);
+    	 attachAboutFragment(null);
         attachActionItemListener();
     }
 
@@ -71,13 +73,13 @@ public class HomeActivity extends BaseActivityWithSlider {
      * Attach action item click listener
      */
     private void attachActionItemListener() {
-        getActionBarHelper().getItemView().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UtilityMethods.openHybridScreen((Activity) mActivityContext,
-                        HybridScreen.NAMES_OF_ALLAH);
-            }
-        });
+//        getActionBarHelper().getItemView().setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                UtilityMethods.openHybridScreen((Activity) mActivityContext,
+//                        HybridScreen.NAMES_OF_ALLAH);
+//            }
+//        });
     }
 
     /**
@@ -87,12 +89,14 @@ public class HomeActivity extends BaseActivityWithSlider {
      */
     public void attachHomeFragment(Bundle bundle,
             boolean replaceOnBackPress) {
-        if (mFragmentOnScreen != FragmentOnScreen.HOME) {
-            getActionBarHelper().showShoppinBagIcon();
-            getActionBarHelper().showShoppingBagCount();
-            FragmentFactory.attachHomeFragment(this, null, replaceOnBackPress);
-            mFragmentOnScreen = FragmentOnScreen.HOME;
-        }
+//        if (mFragmentOnScreen != FragmentOnScreen.HOME) {
+//            getActionBarHelper().showShoppinBagIcon();
+//            getActionBarHelper().showShoppingBagCount();
+//            FragmentFactory.attachHomeFragment(this, null, replaceOnBackPress);
+//            mFragmentOnScreen = FragmentOnScreen.HOME;
+//        }
+    	
+    	 FragmentFactory.attachHomeFragment(this, null, replaceOnBackPress);
     }
 
     

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="20dp" >
 
-    <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+    <islamic.buzz.views.GothamBoldTextView
         android:id="@+id/id_errorSceen_textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

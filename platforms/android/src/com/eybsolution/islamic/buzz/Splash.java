@@ -1,5 +1,6 @@
 package com.eybsolution.islamic.buzz;
 
+import islamic.buzz.activities.HomeActivity;
 import islamic.buzz.util.AppInfo;
 
 import com.eybsolution.islamic.buzz.R;
@@ -42,7 +43,8 @@ public class Splash extends Activity
 	@Override
 	public void onFinish()
 	{
-	    Intent intent = new Intent(getBaseContext(), Home.class);
+	    //Intent intent = new Intent(getBaseContext(), Home.class);
+	    Intent intent = new Intent(getBaseContext(), HomeActivity.class);
 	    startActivity(intent);
 	    finish();
 	}

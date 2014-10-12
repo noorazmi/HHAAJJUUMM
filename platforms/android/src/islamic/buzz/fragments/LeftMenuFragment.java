@@ -44,9 +44,9 @@ public class LeftMenuFragment extends BaseFragment implements
 
 	@Override
 	protected void initializeController() {
-		// mCategoryController =
-		// ControllerFactory.getCategoryController(getActivity(),
-		// new WeakReference<LeftMenuFragment>(this));
+		 mCategoryController =
+		 ControllerFactory.getCategoryController(getActivity(),
+		 new WeakReference<LeftMenuFragment>(this));
 	}
 
 	@Override
@@ -162,12 +162,12 @@ public class LeftMenuFragment extends BaseFragment implements
 					.disableSlidingLayout();
 			if (mSelectedCategory.getCatCode() == MenuCategory.CODE_HAJJ_LEVEL) {
 				((HomeActivity) getActivity())
-						.attachHelpAndContactUsFragment(null);
+						.attachHajjFragment(null);
 				// ((HomeActivity) getActivity()).hideSlider();
 			} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_UMRAH_LEVEL) {
-				((HomeActivity) getActivity()).attachListFragment(null);
+				((HomeActivity) getActivity()).attachUmrahFragment(null);
 			} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_ABOUT_LEVEL) {
-				((HomeActivity) getActivity()).attachRegistryFragment(null);
+				((HomeActivity) getActivity()).attachAboutFragment(null);
 				((HomeActivity) getActivity()).hideSlider();
 			}
 		}

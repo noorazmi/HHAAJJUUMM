@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.kohlsphone.framework.view.component.views.BottomBarDrawer
+    <islamic.buzz.views.BottomBarDrawer
         android:id="@+id/id_bottomBarDrawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,6 +33,6 @@
 
             <include layout="@layout/drawer_content" />
         </LinearLayout>
-    </com.kohlsphone.framework.view.component.views.BottomBarDrawer>
+    </islamic.buzz.views.BottomBarDrawer>
 
 </FrameLayout>

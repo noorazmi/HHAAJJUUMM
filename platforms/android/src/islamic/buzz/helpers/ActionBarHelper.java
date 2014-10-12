@@ -130,7 +130,7 @@ public class ActionBarHelper {
      * visible.
      */
     public void showShoppinBagIcon() {
-        mItemView.setVisibility(View.VISIBLE);
+       // mItemView.setVisibility(View.VISIBLE);
     }
 
     public void hideShoppingBagCount() {
@@ -138,7 +138,7 @@ public class ActionBarHelper {
     }
 
     public void showShoppingBagCount() {
-        mItemViewCount.setVisibility(View.VISIBLE);
+        //mItemViewCount.setVisibility(View.VISIBLE);
     }
 
 

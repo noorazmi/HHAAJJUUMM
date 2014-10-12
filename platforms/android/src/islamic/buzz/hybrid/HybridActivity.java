@@ -96,9 +96,9 @@ public class HybridActivity extends CordovaActivity implements IUpdateActionBarL
 			// mActionBarHelper.updateShopingBagCountAndVisibility(false);
 		}
 
-		if (isSecurePageShowing()) {
-			// KohlsPhoneApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
-		}
+//		if (isSecurePageShowing()) {
+//			// KohlsPhoneApplication.getInstance().getAuthenticationUtils().resetIdleTimer();
+//		}
 		super.onResume();
 	}
 
@@ -190,67 +190,67 @@ public class HybridActivity extends CordovaActivity implements IUpdateActionBarL
 		return super.dispatchTouchEvent(ev);
 	}
 
-	@Override
-	public void onActionReceived(String action, JSONObject data) {
-		// On Action received from Hybrid, reset idle timer
-		if (IN_ACTION_SET_ACTIONBAR.equalsIgnoreCase(action)) {
-			try {
-				if (data.has(IN_ACTION_SET_ACTIONBAR_DATA_URL)) {
-					final HybridScreen screen = HybridScreen.getScreenFromUrlPostfix(data.getString(IN_ACTION_SET_ACTIONBAR_DATA_URL));
-					if (screen != null) {
-						getActivity().runOnUiThread(new Runnable() {
-
-							@Override
-							public void run() {
-								mPageTitle = screen.getScreenTitle();
-								setActionBarTitle(mPageTitle);
-								switch (screen) {
-								case SHOPPINGBAG: {
-									mBagIconVisibilityStatus = View.VISIBLE;
-									break;
-								}
-								default: {
-									mBagIconVisibilityStatus = View.GONE;
-								}
-								}
-								setShoppingBagIconVisibility(mBagIconVisibilityStatus);
-							}
-						});
-					}
-				}
-			} catch (JSONException je) {
-				Logger.error(TAG, je.getMessage());
-			}
-		} else if (IN_ACTION_PULSE.equalsIgnoreCase(action)) {
-			Logger.debug(TAG, "Pulse from Hybrid received");
-		}
-
-	}
-
-	// Code not required
-	// @Override
-	// public Object onMessage(String id,
-	// Object data) {
-	// if (MESSAGE_ON_PAGE_FINISHED.equalsIgnoreCase(id)) {
-	// KohlsPhoneApplication.getInstance().getAuthenticationUtils().startIdleTimer(this);
-	// }
-	// return super.onMessage(id, data);
-	// }
-
-	public boolean isSecurePageShowing() {
-		if (appView == null) {
-			return false;
-		}
-
-		HybridScreen screen = HybridScreen.getScreenFromUrl(appView.getUrl());
-		// Since all pages except Shopping Bag contains PII information. All
-		// others will be treated as secure
-		if (screen != HybridScreen.NAMES_OF_ALLAH) {
-			return true;
-		}
-
-		return false;
-	}
+//	@Override
+//	public void onActionReceived(String action, JSONObject data) {
+//		// On Action received from Hybrid, reset idle timer
+//		if (IN_ACTION_SET_ACTIONBAR.equalsIgnoreCase(action)) {
+//			try {
+//				if (data.has(IN_ACTION_SET_ACTIONBAR_DATA_URL)) {
+//					final HybridScreen screen = HybridScreen.getScreenFromUrlPostfix(data.getString(IN_ACTION_SET_ACTIONBAR_DATA_URL));
+//					if (screen != null) {
+//						getActivity().runOnUiThread(new Runnable() {
+//
+//							@Override
+//							public void run() {
+//								mPageTitle = screen.getScreenTitle();
+//								setActionBarTitle(mPageTitle);
+//								switch (screen) {
+//								case SHOPPINGBAG: {
+//									mBagIconVisibilityStatus = View.VISIBLE;
+//									break;
+//								}
+//								default: {
+//									mBagIconVisibilityStatus = View.GONE;
+//								}
+//								}
+//								setShoppingBagIconVisibility(mBagIconVisibilityStatus);
+//							}
+//						});
+//					}
+//				}
+//			} catch (JSONException je) {
+//				Logger.error(TAG, je.getMessage());
+//			}
+//		} else if (IN_ACTION_PULSE.equalsIgnoreCase(action)) {
+//			Logger.debug(TAG, "Pulse from Hybrid received");
+//		}
+//
+//	}
+//
+//	// Code not required
+//	// @Override
+//	// public Object onMessage(String id,
+//	// Object data) {
+//	// if (MESSAGE_ON_PAGE_FINISHED.equalsIgnoreCase(id)) {
+//	// KohlsPhoneApplication.getInstance().getAuthenticationUtils().startIdleTimer(this);
+//	// }
+//	// return super.onMessage(id, data);
+//	// }
+//
+//	public boolean isSecurePageShowing() {
+//		if (appView == null) {
+//			return false;
+//		}
+//
+//		HybridScreen screen = HybridScreen.getScreenFromUrl(appView.getUrl());
+//		// Since all pages except Shopping Bag contains PII information. All
+//		// others will be treated as secure
+//		if (screen != HybridScreen.NAMES_OF_ALLAH) {
+//			return true;
+//		}
+//
+//		return false;
+//	}
 
 	public void setActionBarTitle(String titleText) {
 		if (mActionBarHelper == null) {
@@ -310,26 +310,26 @@ public class HybridActivity extends CordovaActivity implements IUpdateActionBarL
 
 		HybridScreen presentScreen = HybridScreen.getScreenFromUrl(appView.getUrl());
 
-		if (presentScreen != null) {
-			if (presentScreen.isMoveToShoppingBag()) {
-				BackButtonPlugin bridge = (BackButtonPlugin) appView.pluginManager.getPlugin(BACK_BUTTON_PLUGIN);
-				bridge.reportEvent();
-			} else if ((presentScreen == HybridScreen.SHOPPINGBAG) || (presentScreen == HybridScreen.EMPTY_SHOPPINGBAG) || (presentScreen == HybridScreen.MY_INFORMATION) || (presentScreen == HybridScreen.ORDER_HISTORY)) {
-				endActivity();
-			} else if (presentScreen == HybridScreen.CONFIRMATION) {
-				NativeHybridCommPlugin nhplugin = new NativeHybridCommPlugin();
-				try {
-					nhplugin.goToHomeScreen(this);
-				} catch (Exception e) {
-					e.printStackTrace();
-					Logger.error(TAG, "Unable to perform back");
-				}
-			} else {
-				performHistoryBack(appView);
-			}
-		} else {
-			performHistoryBack(appView);
-		}
+//		if (presentScreen != null) {
+//			if (presentScreen.isMoveToShoppingBag()) {
+//				BackButtonPlugin bridge = (BackButtonPlugin) appView.pluginManager.getPlugin(BACK_BUTTON_PLUGIN);
+//				bridge.reportEvent();
+//			} else if ((presentScreen == HybridScreen.SHOPPINGBAG) || (presentScreen == HybridScreen.EMPTY_SHOPPINGBAG) || (presentScreen == HybridScreen.MY_INFORMATION) || (presentScreen == HybridScreen.ORDER_HISTORY)) {
+//				endActivity();
+//			} else if (presentScreen == HybridScreen.CONFIRMATION) {
+//				NativeHybridCommPlugin nhplugin = new NativeHybridCommPlugin();
+//				try {
+//					nhplugin.goToHomeScreen(this);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//					Logger.error(TAG, "Unable to perform back");
+//				}
+//			} else {
+//				performHistoryBack(appView);
+//			}
+//		} else {
+//			performHistoryBack(appView);
+//		}
 	}
 
 	private void performHistoryBack(CordovaWebView appView) {

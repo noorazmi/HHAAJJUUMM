@@ -6,7 +6,7 @@
     android:background="@drawable/custom_toast_background_black"
     android:orientation="horizontal" >
 
-    <com.kohlsphone.framework.view.component.views.GothamBoldTextView
+    <islamic.buzz.views.GothamBoldTextView
         android:id="@+id/message_textview"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
