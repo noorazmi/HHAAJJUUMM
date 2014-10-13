@@ -25,8 +25,7 @@ import android.widget.ProgressBar;
 
 import com.eybsolution.islamic.buzz.R;
 
-public class LeftMenuFragment extends BaseFragment implements
-		OnItemClickListener, Handler.Callback {
+public class LeftMenuFragment extends BaseFragment implements OnItemClickListener, Handler.Callback {
 
 	public static final String TAG = LeftMenuFragment.class.getName();
 
@@ -44,9 +43,7 @@ public class LeftMenuFragment extends BaseFragment implements
 
 	@Override
 	protected void initializeController() {
-		 mCategoryController =
-		 ControllerFactory.getCategoryController(getActivity(),
-		 new WeakReference<LeftMenuFragment>(this));
+		mCategoryController = ControllerFactory.getCategoryController(getActivity(), new WeakReference<LeftMenuFragment>(this));
 	}
 
 	@Override
@@ -56,17 +53,14 @@ public class LeftMenuFragment extends BaseFragment implements
 	@Override
 	protected void initializeViews(Bundle savedInstanceState) {
 
-		mDrawerList = (ListView) getActivity().findViewById(
-				R.id.id_homeActivity_nav_menu_list_view);
+		mDrawerList = (ListView) getActivity().findViewById(R.id.id_homeActivity_nav_menu_list_view);
 
 	}
 
 	@Override
 	protected void loadContent() {
 
-		mDrawerAdapter = new LeftMenuListAdapter(getActivity(),
-				R.id.id_navigationDrawer_menuItemTxt,
-				mCategoryController.getRootCategory());
+		mDrawerAdapter = new LeftMenuListAdapter(getActivity(), R.id.id_navigationDrawer_menuItemTxt, mCategoryController.getRootCategory());
 		// Set the adapter for the list view
 		mDrawerList.setAdapter(mDrawerAdapter);
 		// Set the list's click listener
@@ -93,8 +87,7 @@ public class LeftMenuFragment extends BaseFragment implements
 	@Override
 	public void updateViewsOnSuccess(Object object) {
 		if (mCategoryController.getSelectedCategory() == mSelectedCategory) {
-			handleDataSetChanged(mCategoryController.getCategoriesForMenu(
-					mSelectedCategory, null, (ArrayList<MenuCategory>) object));
+			handleDataSetChanged(mCategoryController.getCategoriesForMenu(mSelectedCategory, null, (ArrayList<MenuCategory>) object));
 		}
 	}
 
@@ -117,18 +110,14 @@ public class LeftMenuFragment extends BaseFragment implements
 	}
 
 	@Override
-	public void onItemClick(AdapterView<?> adapterView, View view,
-			int position, long id) {
-		ProgressBar progressBar = (ProgressBar) view
-				.findViewById(R.id.id_navigationDrawer_progress);
+	public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+		ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.id_navigationDrawer_progress);
 
 		progressBar.setVisibility(View.VISIBLE);
 		mSelectedCategory = mDrawerAdapter.getListofCategories().get(position);
 		// If selected Category is Root Category directly update the list
-		if (mSelectedCategory != null
-				&& mSelectedCategory.getCatCode() == MenuCategory.CODE_ROOT_LEVEL) {
-			((HomeActivity) getActivity()).getSlidingViewHelper()
-					.disableSlidingLayout();
+		if (mSelectedCategory != null && mSelectedCategory.getCatCode() == MenuCategory.CODE_ROOT_LEVEL) {
+			((HomeActivity) getActivity()).getSlidingViewHelper().disableSlidingLayout();
 			// On Click to go back to the Root categories, we need to update the
 			// action bar
 			// On top item click(goto Home screen). Also clear backstack so when
@@ -145,24 +134,20 @@ public class LeftMenuFragment extends BaseFragment implements
 			// we make request to get the items
 			if (mSelectedCategory != null && mSelectedCategory.isHasChild()) {
 				mParrentCategory = mSelectedCategory.getName();
-				mCategoryController.getCategoriesForMenu(mSelectedCategory,
-						null, null);
+				mCategoryController.getCategoriesForMenu(mSelectedCategory, null, null);
 			} else {
 				// If selected Category does not have child item - close the
 				// slider and update the list to show the selected item
 				if (mSelectedCategory != null) {
-					handleDataSetChanged(mCategoryController
-							.getCategoriesForMenu(mSelectedCategory, null, null));
+					handleDataSetChanged(mCategoryController.getCategoriesForMenu(mSelectedCategory, null, null));
 				}
 			}
 		}
-		
+
 		if (mSelectedCategory != null && !mSelectedCategory.isHasChild()) {
-			((HomeActivity) getActivity()).getSlidingViewHelper()
-					.disableSlidingLayout();
+			((HomeActivity) getActivity()).getSlidingViewHelper().disableSlidingLayout();
 			if (mSelectedCategory.getCatCode() == MenuCategory.CODE_HAJJ_LEVEL) {
-				((HomeActivity) getActivity())
-						.attachHajjFragment(null);
+				((HomeActivity) getActivity()).attachHajjFragment(null);
 				// ((HomeActivity) getActivity()).hideSlider();
 			} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_UMRAH_LEVEL) {
 				((HomeActivity) getActivity()).attachUmrahFragment(null);

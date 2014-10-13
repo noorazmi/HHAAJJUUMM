@@ -1,4 +1,3 @@
-
 package islamic.buzz.interfaces.type;
 
 import islamic.buzz.controllers.CategoryControllerImpl;
@@ -15,19 +14,19 @@ import android.content.Context;
  * this class.
  */
 public class ControllerFactory {
-    public static HomeController getHomeController(WeakReference<HomeFragment> fragment) {
-        return new HomeController(fragment);
-    }
-//
-    public static ICategoryController getCategoryController(Context context,
-            WeakReference<LeftMenuFragment> fragment) {
-        return new CategoryControllerImpl(context, fragment);
-    }
-//
-//    public static IProductMatrixController
-//            getProductMatrixController(WeakReference<ProductMatrixFragment> fragment) {
-//        return new ProductMatrixControllerImpl(fragment);
-//    }
+	public static HomeController getHomeController(WeakReference<HomeFragment> fragment) {
+		return new HomeController(fragment);
+	}
 
-    
+	//
+	public static ICategoryController getCategoryController(Context context, WeakReference<LeftMenuFragment> fragment) {
+		return new CategoryControllerImpl(context, fragment);
+	}
+	//
+	// public static IProductMatrixController
+	// getProductMatrixController(WeakReference<ProductMatrixFragment> fragment)
+	// {
+	// return new ProductMatrixControllerImpl(fragment);
+	// }
+
 }

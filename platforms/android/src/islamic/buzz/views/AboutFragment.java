@@ -15,7 +15,7 @@ public class AboutFragment  extends Fragment
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-    	View view = inflater.inflate(R.layout.about, container);
+    	View view = inflater.inflate(R.layout.about, container, false);
     	TextView  eybSolutionsLinkText =(TextView) view.findViewById(R.id.id_about_eybSolutionsLinkText);
     	eybSolutionsLinkText.setMovementMethod(LinkMovementMethod.getInstance());
     	return view;

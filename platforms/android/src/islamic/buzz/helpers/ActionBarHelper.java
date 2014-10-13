@@ -57,7 +57,7 @@ public class ActionBarHelper {
     }
 
     public void initActionBarWithCustomView() {
-//        mActionBar.setIcon(R.drawable.list_icon);
+        mActionBar.setIcon(R.drawable.list_icon);
 //        mActionBar.setCustomView(R.layout.main_activity_actionbar);
 //        View customView = mActionBar.getCustomView();
 //        mListImageView = (ImageView) customView.findViewById(R.id.id_actionBar_list_icon);

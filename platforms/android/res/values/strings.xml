@@ -23,6 +23,7 @@
     <string name="menu">Menu</string>
     <string name="close">Close</string>
     <string name="api_call_failed">API call failed</string>
+    <string name="debug_settings">Debug Settings</string>
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>

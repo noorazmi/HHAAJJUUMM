@@ -5,6 +5,7 @@ import islamic.buzz.util.AppInfo;
 
 import com.eybsolution.islamic.buzz.R;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Point;
