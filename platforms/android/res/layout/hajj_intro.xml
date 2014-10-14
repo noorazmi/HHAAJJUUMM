@@ -123,13 +123,11 @@
                 style="@style/umrah_description"
                 android:text="@string/masalah_sai_of_hajj" >
             </TextView>
-            
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/now_you_will_remain" >
             </TextView>
-            
-            
         </LinearLayout>
     </ScrollView>
 

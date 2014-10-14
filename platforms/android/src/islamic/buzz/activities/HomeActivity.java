@@ -80,8 +80,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 	 */
 	public void attachHomeFragment(Bundle bundle, boolean replaceOnBackPress) {
 		if (mFragmentOnScreen != FragmentOnScreen.HOME) {
-			getActionBarHelper().showShoppinBagIcon();
-			getActionBarHelper().showShoppingBagCount();
 			FragmentFactory.attachHomeFragment(this, null, replaceOnBackPress);
 			mFragmentOnScreen = FragmentOnScreen.HOME;
 		}
@@ -116,10 +114,10 @@ public class HomeActivity extends BaseActivityWithSlider {
 
 	@Override
 	public void onBackPressed() {
-		if (getSlidingViewHelper().isSliderExpanded()) {
-			getSlidingViewHelper().disableSlidingLayout();
-			return;
-		}
+//		if (getSlidingViewHelper().isSliderExpanded()) {
+//			getSlidingViewHelper().disableSlidingLayout();
+//			return;
+//		}
 		boolean isBackHandled = false;
 
 		BaseFragment baseFrag = FragmentHelper.getFragmentonTop(new WeakReference<HomeActivity>(this));

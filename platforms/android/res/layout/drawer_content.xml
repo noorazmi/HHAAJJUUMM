@@ -33,14 +33,12 @@
                 android:id="@+id/id_welcome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="15dp"
-                android:textSize="18sp"
+                android:gravity="center"
                 android:text="Your content will go here inside scroll view"
                 android:textColor="@android:color/white"
+                android:textSize="18sp"
                 android:visibility="gone" />
-            
-            
         </LinearLayout>
     </ScrollView>
 

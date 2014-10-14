@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <TextView
                 style="@style/umrah_heading"
@@ -43,12 +43,12 @@
                 hajumrah:dua_meaning="@string/dua_facin_hajarul_aswad_meaning"
                 hajumrah:dua_pronunciation="@string/dua_facin_hajarul_aswad_pronounce" />
 
-             <TextView
-                android:layout_marginTop="20dp"
+            <TextView
                 style="@style/umrah_heading"
+                android:layout_marginTop="20dp"
                 android:text="@string/istilam"
                 android:textAllCaps="true" />
-            
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/place_both_palm" />
@@ -77,15 +77,15 @@
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/tawaf_adiya_desc" />
-		
-             <islamic.buzz.views.DuaView
+
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading="@string/dua_rabbana_atina"
                 hajumrah:dua_image="@drawable/dua_rabbana"
                 hajumrah:dua_meaning="@string/dua_rabbana_atina_meaning"
                 hajumrah:dua_pronunciation="@string/dua_rabbana_atina_pronounce" />
-            
+
             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,19 +101,19 @@
                 hajumrah:dua_image="@drawable/dua_ya_rabbal_baiti"
                 hajumrah:dua_meaning="@string/dua_ya_rabbal_baiti_meaning"
                 hajumrah:dua_pronunciation="@string/dua_ya_rabbal_baiti_pronounce" />
-        <TextView
+
+            <TextView
                 style="@style/umrah_description"
                 android:text="@string/on_completing_seventh_circuit" />
-         <TextView
+
+            <TextView
                 style="@style/umrah_description"
                 android:text="@string/in_no_place_available" />
-         
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/proceed_towards_the_well" />
-         
         </LinearLayout>
-        
     </ScrollView>
 
 </LinearLayout>

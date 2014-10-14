@@ -48,7 +48,8 @@
                 hajumrah:dua_meaning="@string/umrah_niyyat_meaning"
                 hajumrah:dua_pronunciation="@string/dua_umrah_niyyat" />
 
-            <!-- <LinearLayout style="@style/dua_container" >
+            <!--
+            <LinearLayout style="@style/dua_container" >
 
                 <TextView
                     style="@style/dua_head"
@@ -74,14 +75,14 @@
                     style="@style/dua_meaning"
                     android:text="@string/dua_after_niyyah_meaning" />
             </LinearLayout>
- -->
- 
- 			<TextView
+            -->
+
+            <TextView
                 style="@style/umrah_description"
-                android:text="@string/make_dual_after_salatul_Ihram" 
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:text="@string/make_dual_after_salatul_Ihram" >
             </TextView>
-            
+
             <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,10 +93,10 @@
 
             <TextView
                 style="@style/umrah_description"
-                android:text="@string/talbiyah_instr" 
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:text="@string/talbiyah_instr" >
             </TextView>
-            
+
             <TextView
                 style="@style/umrah_heading"
                 android:layout_marginTop="@dimen/dua_container_margin_top"

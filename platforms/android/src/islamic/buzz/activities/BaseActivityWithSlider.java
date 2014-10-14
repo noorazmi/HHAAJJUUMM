@@ -4,9 +4,7 @@ package islamic.buzz.activities;
 import islamic.buzz.error.UnCaughtException;
 import islamic.buzz.fragments.LeftMenuFragment;
 import islamic.buzz.helpers.ActionBarHelper;
-import islamic.buzz.helpers.SlidingUpViewHelper;
 import islamic.buzz.util.UtilityMethods;
-import islamic.buzz.views.BottomBarDrawer;
 import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -30,7 +28,7 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
 
     private ActionBarHelper mActionBarHelper;
 
-    private SlidingUpViewHelper mSlidingViewHelper;
+    //private SlidingUpViewHelper mSlidingViewHelper;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,11 +40,11 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
         initLeftSlidMenu();
         initContent();
         mActionBarHeight = UtilityMethods.getActionBarHeight(this);
-        mSlidingViewHelper = new SlidingUpViewHelper(((BottomBarDrawer) findViewById(R.id.id_bottomBarDrawer)),
-                this,
-                getActionBarHeight());
-
-        mSlidingViewHelper.initSlidingUpLayout();
+//        mSlidingViewHelper = new SlidingUpViewHelper(((BottomBarDrawer) findViewById(R.id.id_bottomBarDrawer)),
+//                this,
+//                getActionBarHeight());
+//
+//        mSlidingViewHelper.initSlidingUpLayout();
 
         UtilityMethods.clearEditTextViewFocusOnOutsideTouch(getWindow().getDecorView(), this);
         // Ena ble logging in crash reporting
@@ -153,9 +151,9 @@ public abstract class BaseActivityWithSlider extends SlidingActivity {
     /**
      * @return Sliding view helper
      */
-    public SlidingUpViewHelper getSlidingViewHelper() {
-        return mSlidingViewHelper;
-    }
+//    public SlidingUpViewHelper getSlidingViewHelper() {
+//        return mSlidingViewHelper;
+//    }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {

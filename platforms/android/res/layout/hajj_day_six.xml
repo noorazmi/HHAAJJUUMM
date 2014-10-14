@@ -23,6 +23,6 @@
             style="@style/umrah_description"
             android:text="@string/rami_of_the_13th_dhul_hijjah" >
         </TextView>
-
     </LinearLayout>
+
 </ScrollView>

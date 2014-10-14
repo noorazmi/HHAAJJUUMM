@@ -26,7 +26,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
+import android.app.FragmentManager;
 import android.util.Log;
 import android.widget.ImageView;
 import islamic.buzz.util.Util;
@@ -141,7 +141,7 @@ public abstract class ImageWorker {
      */
     public void addImageCache(FragmentActivity activity, String diskCacheDirectoryName) {
         mImageCacheParams = new ImageCache.ImageCacheParams(activity, diskCacheDirectoryName);
-        mImageCache = ImageCache.getInstance(activity.getSupportFragmentManager(), mImageCacheParams);
+        mImageCache = ImageCache.getInstance(activity.getFragmentManager(), mImageCacheParams);
         new CacheAsyncTask().execute(MESSAGE_INIT_DISK_CACHE);
     }
 

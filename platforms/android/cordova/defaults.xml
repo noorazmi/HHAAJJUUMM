@@ -17,16 +17,28 @@
  specific language governing permissions and limitations
  under the License.
 -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
+<widget
+    id="io.cordova.helloCordova"
+    version="2.0.0"
+    xmlns="http://www.w3.org/ns/widgets" >
 
     <!-- Preferences for Android -->
-    <preference name="loglevel" value="DEBUG" />
-    <preference name="AndroidLaunchMode" value="singleTop" />
+
+    <preference
+        name="loglevel"
+        value="DEBUG" />
+
+    <preference
+        name="AndroidLaunchMode"
+        value="singleTop" />
 
     <!-- This is required for native Android hooks -->
-    <feature name="App">
-        <param name="android-package" value="org.apache.cordova.App" />
+
+    <feature name="App" >
+
+        <param
+            name="android-package"
+            value="org.apache.cordova.App" />
     </feature>
+
 </widget>

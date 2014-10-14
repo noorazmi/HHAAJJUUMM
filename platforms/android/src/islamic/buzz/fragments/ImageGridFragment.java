@@ -90,7 +90,7 @@ public class ImageGridFragment extends Fragment implements AdapterView.OnItemCli
 	//This (second parameter:AppInfo.getScreenWidth()) parameter is important.If the size is not coming according to parameter, uninstall and reinstall the application*/
 	mImageFetcher = new ImageFetcher(getActivity(), AppInfo.getScreenWidth());	
 	mImageFetcher.setLoadingImage(R.drawable.empty_photo);
-	mImageFetcher.addImageCache(getActivity().getSupportFragmentManager(), cacheParams);
+	mImageFetcher.addImageCache(getActivity().getFragmentManager(), cacheParams);
     }
 
     @Override

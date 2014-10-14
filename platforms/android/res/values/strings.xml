@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
+
     <string name="app_name">Islamic Buzz</string>
     <string name="version">Version</string>
     <string name="version_value">Version name - 1.0</string>
@@ -24,16 +25,17 @@
     <string name="close">Close</string>
     <string name="api_call_failed">API call failed</string>
     <string name="debug_settings">Debug Settings</string>
+
     <string-array name="left_menu_titles">
         <item>Updates</item>
         <item>Umrah</item>
         <item>Hajj</item>
         <item>About</item>
     </string-array>
-    
-    <!-- ################################################ Messages ############################################-->
+
+    <!-- ################################################ Messages ############################################ -->
     <string name="errorScreen_message">Something went wrong, please restart the application, or try again after some time</string>
     <string name="no_gps_enabled">Location Settings are disabled</string>
-    <!-- ################################################ End Messages ########################################-->
-    
+    <!-- ################################################ End Messages ######################################## -->
+
 </resources>

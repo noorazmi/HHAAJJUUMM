@@ -39,7 +39,8 @@ public class FragmentFactory {
 	}
 
 	public static void attachUmrahFragment(HomeActivity homeActivity, Object object) {
-
+		AboutFragment aboutFragment = new AboutFragment();
+		FragmentHelper.replaceFragmentWithDefaultAnimation(new WeakReference<Activity>(homeActivity), aboutFragment, null, null);
 	}
 
 	public static void attachAboutFragment(HomeActivity homeActivity, Object object) {

@@ -1,19 +1,15 @@
 
 package islamic.buzz.activities;
 
-import com.eybsolution.islamic.buzz.R;
-
-import islamic.buzz.app.BuzzApplication;
 import islamic.buzz.error.UnCaughtException;
 import islamic.buzz.helpers.ActionBarHelper;
-import islamic.buzz.helpers.SlidingUpViewHelper;
-import islamic.buzz.util.UtilityMethods;
-import islamic.buzz.views.BottomBarDrawer;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import com.eybsolution.islamic.buzz.R;
 
 public abstract class BaseActivityWithoutSlider extends Activity {
 
@@ -29,11 +25,7 @@ public abstract class BaseActivityWithoutSlider extends Activity {
         View contentView = getLayoutInflater().inflate(getLayoutId(), null);
         contentLayout.addView(contentView);
         initActionBar();
-        SlidingUpViewHelper slidingHelper = new SlidingUpViewHelper(((BottomBarDrawer) findViewById(R.id.id_bottomBarDrawer)),
-                this,
-                UtilityMethods.getActionBarHeight(this));
-
-        slidingHelper.initSlidingUpLayout();
+        
         initializeViews(getIntent().getExtras());
         // Enable logging in crash reporting
         //BuzzApplication.getInstance().getCrashReporting().enableLogging();

@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <TextView
                 style="@style/umrah_heading"
@@ -69,18 +69,21 @@
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/you_must_now_proceed" />
-             <TextView
+
+            <TextView
                 style="@style/umrah_heading"
                 android:text="@string/dua_between_safa_marwah"
                 android:textAllCaps="true" />
-             <islamic.buzz.views.DuaView
+
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading=""
                 hajumrah:dua_image="@drawable/dua_between_safa_marwah_1"
                 hajumrah:dua_meaning="@string/dua_between_safa_marwah_1_meaning"
                 hajumrah:dua_pronunciation="@string/dua_between_safa_marwah_1_pronounce" />
-             <islamic.buzz.views.DuaView
+
+            <islamic.buzz.views.DuaView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 hajumrah:dua_heading=""

@@ -14,6 +14,7 @@
         style="@style/umrah_description"
         android:text="@string/ihram_impermissible_text" >
     </TextView>
+
     <TextView
         style="@style/umrah_heading"
         android:layout_marginTop="@dimen/dua_container_margin_top"

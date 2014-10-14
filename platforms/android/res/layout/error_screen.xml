@@ -10,23 +10,23 @@
         android:id="@+id/id_errorSceen_textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/id_errorSceen_ok"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="@string/errorScreen_message"
-        android:textColor="@android:color/black"
-        android:layout_centerVertical="true" 
-        android:layout_above="@+id/id_errorSceen_ok"/>
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/id_errorSceen_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/green"
+        android:gravity="center"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         android:text="@string/ok"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:gravity="center" />
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -32,12 +32,11 @@ public class MenuCategory implements Serializable {
      */
 
     // all Subcategories will be assigned the same Catcode.
-    public static final int CODE_SUBCATEGORY_LEVEL = 999;
-    public static final int CODE_ROOT_LEVEL = 0;
-    public static final int CODE_BUZZ_LEVEL = 1;
-    public static final int CODE_HAJJ_LEVEL = 2;
-    public static final int CODE_UMRAH_LEVEL = 3;
-    public static final int CODE_ABOUT_LEVEL = 4;
+    public static final int CODE_ROOT_LEVEL = 1000;
+    public static final int CODE_BUZZ_LEVEL = 1001;
+    public static final int CODE_HAJJ_LEVEL = 1002;
+    public static final int CODE_UMRAH_LEVEL = 1003;
+    public static final int CODE_ABOUT_LEVEL = 1004;
 
 
     /************

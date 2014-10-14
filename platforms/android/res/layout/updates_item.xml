@@ -14,8 +14,8 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingLeft="8dp"
-        android:paddingRight="8dp" 
-        android:visibility="gone">
+        android:paddingRight="8dp"
+        android:visibility="gone" >
 
         <islamic.buzz.views.RoundedImageView
             android:id="@+id/user_image"
@@ -184,8 +184,8 @@
         android:layout_height="wrap_content"
         android:background="#3BA57D"
         android:orientation="horizontal"
-        android:padding="5dp" 
-        android:visibility="gone">
+        android:padding="5dp"
+        android:visibility="gone" >
 
         <LinearLayout
             android:layout_width="match_parent"

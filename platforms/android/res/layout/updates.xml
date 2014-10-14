@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upates_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:id="@+id/upates_holder">
-   <!--  <ListView 
+    android:orientation="vertical" >
+
+    <!--
+         <ListView 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/info_updates_list" /> -->
-<!-- 
+        android:id="@+id/info_updates_list" />
+    -->
+    <!--
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -20,6 +23,7 @@
     <islamic.buzz.views.UpdatesView 
 >>>>>>> 345cf1d408c19da5e294ec13dbff98accb8a6700:platforms/android/res/layout/updates.xml
         android:layout_width="match_parent"
-        android:layout_height="match_parent" /> -->
+        android:layout_height="match_parent" />
+    -->
 
 </LinearLayout>

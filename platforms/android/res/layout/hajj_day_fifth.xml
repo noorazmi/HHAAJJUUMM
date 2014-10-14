@@ -29,6 +29,7 @@
                 style="@style/umrah_description"
                 android:text="@string/masalah_if_one_does_not_leave_mina" >
             </TextView>
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/important_it_is_thought" >

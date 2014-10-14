@@ -2,9 +2,12 @@
 <merger version="2" >
 
     <dataSet config="main" >
+
         <source path="/home/ankit/Git/kohls/kohls_wp_phone_app/Kohls-Phone/apps/kohls/android/native/android_libraries/KohlsCrashReporting/assets" />
     </dataSet>
+
     <dataSet config="release" >
+
         <source path="/home/ankit/Git/kohls/kohls_wp_phone_app/Kohls-Phone/apps/kohls/android/native/android_libraries/KohlsCrashReporting/build-types/release/assets" />
     </dataSet>
 

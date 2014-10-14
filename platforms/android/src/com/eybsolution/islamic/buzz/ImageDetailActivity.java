@@ -87,7 +87,7 @@ public class ImageDetailActivity extends FragmentActivity implements OnClickList
 	// The ImageFetcher takes care of loading images into our ImageView
 	// children asynchronously
 	mImageFetcher = new ImageFetcher(this, longest);
-	mImageFetcher.addImageCache(getSupportFragmentManager(), cacheParams);
+	mImageFetcher.addImageCache(getFragmentManager(), cacheParams);
 	mImageFetcher.setImageFadeIn(false);
 
 	// Set up ViewPager and backing adapter

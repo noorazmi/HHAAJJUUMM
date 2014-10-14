@@ -17,11 +17,11 @@
                 style="@style/umrah_heading"
                 android:text="@string/halaq"
                 android:textAllCaps="true" />
-            
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/upon_completion_of_sai" />
-            
+
             <TextView
                 style="@style/umrah_description"
                 android:text="@string/upon_shaving" />

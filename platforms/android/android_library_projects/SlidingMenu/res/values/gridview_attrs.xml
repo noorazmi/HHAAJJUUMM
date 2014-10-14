@@ -18,7 +18,7 @@
 
     <declare-styleable name="CostomStaggeredGridView">
         <attr name="columnNumber" format="integer" />
-        <attr name="minColumnWidth" format="dimension"/>
+        <attr name="minColumnWidth" format="dimension" />
         <attr name="drawSelectorOnTop" format="boolean" />
     </declare-styleable>
 

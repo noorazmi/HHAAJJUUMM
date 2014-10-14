@@ -40,18 +40,16 @@
             hajumrah:dua_image="@drawable/dua_tawaful_wida"
             hajumrah:dua_meaning="@string/dua_after_tawafulwida_meaning"
             hajumrah:dua_pronunciation="@string/dua_after_tawafulwida_pronounce" />
-        
+
         <TextView
             style="@style/umrah_description"
             android:text="@string/after_dua_make_istilam" >
         </TextView>
-        
-         
+
         <TextView
             style="@style/umrah_description"
             android:text="@string/masalah_if_one_returns_without_performing" >
         </TextView>
-        
     </LinearLayout>
 
 </ScrollView>

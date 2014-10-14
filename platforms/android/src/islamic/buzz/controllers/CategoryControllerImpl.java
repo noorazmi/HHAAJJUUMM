@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 import android.content.Context;
 
-import com.eybsolution.islamic.buzz.R;
-
 /**
  * CategoryController interacts with view via Handler. All the business logic of
  * getting and handling Category items is to be handled here. For a type
@@ -39,58 +37,6 @@ public class CategoryControllerImpl extends BaseControllerImpl implements ICateg
 		mFragment = fragment;
 	}
 
-	/******
-	 * This is a utility method in order to get the parent categories in the
-	 * opposite order.
-	 * 
-	 * @param childCat
-	 *            - The category should have hasParent 'true' in order to
-	 *            deliver parent Categories
-	 * @return
-	 */
-
-	private ArrayList<MenuCategory> getParentCategories(MenuCategory childCat) {
-		final ArrayList<MenuCategory> parentCategories = new ArrayList<MenuCategory>();
-
-		// loop till the childCat does not have any parent Category.
-		while (childCat != null && childCat.isHasParent()) {
-			// The type is set to BOLD, because the UI for the list needs to be
-			// BOLD for the parent categories
-			MenuCategory parentCat = childCat.getParentCat();
-			if (parentCat.getCatCode() == MenuCategory.CODE_ROOT_LEVEL) {
-				parentCat = new MenuCategory(mContext.getString(R.string.home), true, false, MenuCategory.CATEGORY_ROOT_LEVEL, null, MenuCategory.CODE_ROOT_LEVEL);
-				// Menu Text item should have gray background
-				parentCat.setType(MenuCategory.TYPE_GRAY_BACKGROUND);
-			} else {
-				parentCat.setType(MenuCategory.TYPE_BOLD);
-			}
-			parentCategories.add(parentCat);
-			childCat = childCat.getParentCat();
-		}
-
-		if (parentCategories != null) {
-			java.util.Collections.reverse(parentCategories);
-		}
-
-		return parentCategories;
-	}
-
-	/**
-	 * Utility method to get the child elements
-	 * 
-	 * @param parentCat
-	 * @return
-	 */
-	// private ArrayList<MenuCategory> getChildCategories(MenuCategory
-	// parentCat) {
-	// ArrayList<MenuCategory> childCategories = new ArrayList<MenuCategory>();
-	// if (parentCat.isHasChild() && parentCat.getResourcePath() != null) {
-	// childCategories = getCategoryData(parentCat);
-	// }
-	//
-	// return childCategories;
-	// }
-
 	/**
 	 * Utility method to get the order of menu items According to wireframes -
 	 * menuitem comprises of : 1) All Parent categories 2) Self Category 3) All
@@ -107,46 +53,7 @@ public class CategoryControllerImpl extends BaseControllerImpl implements ICateg
 	 */
 	@Override
 	public ArrayList<MenuCategory> getCategoriesForMenu(MenuCategory mainCat, ArrayList<MenuCategory> parentCat, ArrayList<MenuCategory> childCat) {
-
-		// Save the category into clicked Category
-		this.clickedCat = mainCat;
-
-		ArrayList<MenuCategory> menuCats = new ArrayList<MenuCategory>();
-
-		// If parent Category has been provided return the same back otherwise
-		// try to get the parent categories
-		if (parentCat != null) {
-			menuCats.addAll(parentCat);
-
-		} else {
-			ArrayList<MenuCategory> parentCats = getParentCategories(mainCat);
-			if (parentCats != null) {
-				menuCats.addAll(parentCats);
-			}
-		}
-
-		if (mainCat.getCatCode() == MenuCategory.CODE_ROOT_LEVEL) {
-			mainCat = new MenuCategory(mContext.getString(R.string.home), true, false, MenuCategory.CATEGORY_ROOT_LEVEL, null, MenuCategory.CODE_ROOT_LEVEL);
-		}
-		// Home needs Black highlight
-		mainCat.setType(MenuCategory.TYPE_HIGHLIGHT);
-
-		// Add self in the list
-		menuCats.add(mainCat);
-
-		// If child category has been provided, then add the same otherwise get
-		// child categories and add.
-		if (childCat != null) {
-			menuCats.addAll(childCat);
-
-		} else {
-			// ArrayList<MenuCategory> childCats = getChildCategories(mainCat);
-			// if (childCats != null) {
-			// menuCats.addAll(childCats);
-			// }
-		}
-
-		return menuCats;
+		return null;
 	}
 
 	/**
@@ -167,7 +74,7 @@ public class CategoryControllerImpl extends BaseControllerImpl implements ICateg
 	 */
 	@Override
 	public ArrayList<MenuCategory> getRootCategory() {
-		return getCategoriesForMenu(new MenuCategory(mContext.getString(R.string.home), true, false, MenuCategory.CATEGORY_ROOT_LEVEL, null, MenuCategory.CODE_ROOT_LEVEL), null, null);
+		return getCategoryData();
 	}
 
 	/**
@@ -176,18 +83,10 @@ public class CategoryControllerImpl extends BaseControllerImpl implements ICateg
 	 * @param clickedCat
 	 * @return
 	 */
-	private ArrayList<MenuCategory> getCategoryData(MenuCategory clickedCat) {
-
+	private ArrayList<MenuCategory> getCategoryData() {
 		final ArrayList<MenuCategory> mainCategories = new ArrayList<MenuCategory>();
-
 		String response = UtilityMethods.loadJSONFromAsset(mContext, "category");
 		MenuCategory mCategory = (MenuCategory) UtilityMethods.getModelFromJsonString(response, MenuCategory.class);
-		// Loop through the categories and set the Parent category
-		// to Root Level
-		for (MenuCategory category : mCategory.getCategories()) {
-			category.setParentCat(clickedCat);
-		}
-
 		mainCategories.addAll(mCategory.getCategories());
 		return mainCategories;
 
@@ -195,12 +94,10 @@ public class CategoryControllerImpl extends BaseControllerImpl implements ICateg
 
 	@Override
 	public void onSuccess(IValueObject valueObject) {
-
 	}
 
 	@Override
 	public void onFailure(Error ex) {
-
 	}
 
 	@Override
