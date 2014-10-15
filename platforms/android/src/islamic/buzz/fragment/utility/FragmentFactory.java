@@ -2,6 +2,7 @@ package islamic.buzz.fragment.utility;
 
 import islamic.buzz.activities.HomeActivity;
 import islamic.buzz.fragments.HomeFragment;
+import islamic.buzz.fragments.ImageGridFragment;
 import islamic.buzz.views.AboutFragment;
 
 import java.lang.ref.WeakReference;
@@ -14,17 +15,10 @@ import android.os.Bundle;
  */
 public class FragmentFactory {
 
-	// A bad approach will look for a better solution to this.
-	private static Bundle mLastInvokedPMPBundle;
 
-	public static void attachHomeFragment(Activity activity, Bundle bundle, boolean replaceOnBack) {
+	public static void attachHomeFragment(HomeActivity homeActivity, Bundle bundle) {
 		HomeFragment homeFragment = new HomeFragment();
-		if (replaceOnBack) {
-			FragmentHelper.replaceFragmentOnBackPress(new WeakReference<Activity>(activity), homeFragment, null, null);
-
-		} else {
-			FragmentHelper.replaceFragmentWithDefaultAnimation(new WeakReference<Activity>(activity), homeFragment, null, null);
-		}
+		FragmentHelper.replaceFragmentWithDefaultAnimation(new WeakReference<Activity>(homeActivity), homeFragment, null, null);
 	}
 
 	public static void attachHajjFragment(HomeActivity homeActivity, Bundle bundle) {

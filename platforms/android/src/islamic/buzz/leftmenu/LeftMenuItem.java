@@ -8,16 +8,14 @@ import android.widget.TextView;
 
 import com.eybsolution.islamic.buzz.R;
 
-public class LeftMenuItem extends LinearLayout
-{
-    public LeftMenuItem(Context context, int iconResId, String title)
-    {
-	super(context);
-	LayoutInflater.from(getContext()).inflate(R.layout.left_side_menu_item, this);
-	((ImageView) findViewById(R.id.menu_icon)).setImageResource(iconResId);
-	((TextView) findViewById(R.id.menu_title)).setText(title);
-	setTag(title);
-    }
+public class LeftMenuItem extends LinearLayout {
+	public LeftMenuItem(Context context, int iconResId, String title) {
+		super(context);
+		LayoutInflater.from(getContext()).inflate(R.layout.left_side_menu_item, this);
+		((ImageView) findViewById(R.id.menu_icon)).setImageResource(iconResId);
+		((TextView) findViewById(R.id.menu_title)).setText(title);
+		setTag(title);
+	}
 
 }
 

@@ -26,11 +26,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 
 	private Context mActivityContext;
 
-	private IBackPressed backPressed;
-
-	public interface IBackPressed {
-		public void backPressed();
-	}
 
 	@Override
 	public void onCreate(Bundle arg0) {
@@ -43,8 +38,8 @@ public class HomeActivity extends BaseActivityWithSlider {
 
 	@Override
 	public void initContent() {
-		attachHomeFragment(null, false);
-		// attachAboutFragment(null);
+		attachHomeFragment(null);
+		//attachAboutFragment(null);
 		attachActionItemListener();
 	}
 
@@ -78,9 +73,9 @@ public class HomeActivity extends BaseActivityWithSlider {
 	 * @param bundle
 	 *            bundle data that will be passed to the fragment.
 	 */
-	public void attachHomeFragment(Bundle bundle, boolean replaceOnBackPress) {
+	public void attachHomeFragment(Bundle bundle) {
 		if (mFragmentOnScreen != FragmentOnScreen.HOME) {
-			FragmentFactory.attachHomeFragment(this, null, replaceOnBackPress);
+			FragmentFactory.attachHomeFragment(this, bundle);
 			mFragmentOnScreen = FragmentOnScreen.HOME;
 		}
 
@@ -104,28 +99,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 	public void attachNamesOfAllahFragment(Bundle bundle) {
 		FragmentFactory.attachNamesOfAllahFragment(this, null);
 		mFragmentOnScreen = FragmentOnScreen.NAMES_OF_ALLAH;
-	}
-
-	public void setListenerBackPressed(IBackPressed backPressed) {
-		if (this.backPressed == null) {
-			this.backPressed = backPressed;
-		}
-	}
-
-	@Override
-	public void onBackPressed() {
-//		if (getSlidingViewHelper().isSliderExpanded()) {
-//			getSlidingViewHelper().disableSlidingLayout();
-//			return;
-//		}
-		boolean isBackHandled = false;
-
-		BaseFragment baseFrag = FragmentHelper.getFragmentonTop(new WeakReference<HomeActivity>(this));
-		if (baseFrag != null) {
-			isBackHandled = baseFrag.onBackPress();
-		}
-		if (!isBackHandled) {
-		}
 	}
 
 	public FragmentOnScreen getFragmentOnScreen() {
