@@ -7,16 +7,12 @@ import islamic.buzz.po.MenuCategory;
 import islamic.buzz.view.adapter.LeftMenuListAdapter;
 
 import java.lang.ref.WeakReference;
-import java.util.ArrayList;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 
 import com.eybsolution.islamic.buzz.R;
 
