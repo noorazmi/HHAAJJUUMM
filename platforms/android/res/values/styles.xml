@@ -17,7 +17,7 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
 
-        <!-- <item name="android:background">@color/app_theme</item> -->
+        <!-- <item name="android:background">@color/app_background</item> -->
         <item name="android:textColor">@android:color/white</item>
         <item name="android:windowDisablePreview">true</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
@@ -38,7 +38,7 @@
     <style name="heading_text_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/heading_text</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">bold</item>

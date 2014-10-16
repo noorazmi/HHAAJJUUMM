@@ -4,44 +4,16 @@
     android:layout_height="@dimen/navigation_drawer_listitem_height"
     android:orientation="vertical" >
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-
-        <ImageView
-            android:id="@+id/id_navigationDrawer_imageView"
-            android:layout_width="@dimen/navigation_drawer_loyaltyImage_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/menu_highlight"
-            android:minHeight="@dimen/menu_min_height"
-            android:paddingLeft="@dimen/navigation_drawer_text_paddingLeft"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/id_navigationDrawer_menuItemTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/menu_highlight"
-            android:drawablePadding="@dimen/navigation_drawer_image_padding"
-            android:gravity="center_vertical"
-            android:minHeight="@dimen/menu_min_height"
-            android:paddingLeft="@dimen/navigation_drawer_text_paddingLeft"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/navigation_drawer_text_size" />
-
-        <ProgressBar
-            android:id="@+id/id_navigationDrawer_progress"
-            style="@style/GenericProgressIndicator"
-            android:layout_gravity="right|center"
-            android:paddingRight="10dp"
-            android:visibility="gone" />
-    </FrameLayout>
-
-    <ImageView
-        android:id="@+id/id_navigationDrawer_divider"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="#FFFFFFFF"
-        android:src="@drawable/menu_list_divider" />
+    <TextView
+        android:id="@+id/id_navigationDrawer_menuItemTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_highlight"
+        android:drawablePadding="@dimen/navigation_drawer_image_padding"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/menu_min_height"
+        android:paddingLeft="@dimen/navigation_drawer_text_paddingLeft"
+        android:textColor="@color/left_menu_text"
+        android:textSize="@dimen/navigation_drawer_text_size" />
 
 </LinearLayout>

@@ -51,5 +51,9 @@
     <dimen name="menu_min_height">39dp</dimen>
     <dimen name="actionbar_icon_width">75dp</dimen>
     <dimen name="actionbar_icon_height">75dp</dimen>
+    
+    <!-- Application wide dimens values will decide the the theme of the application -->
+    <dimen name="margin_btn_heading_and_below_text">5dp</dimen>
+    
 
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="app_theme">#015c65</color>
     <color name="heading_bkg">#99bdc1</color>
     <color name="heading_umrah">#000000</color>
     <color name="dua_head_foreground">#000000</color>
@@ -23,5 +22,12 @@
     <color name="green_disabled">#c3dfaf</color>
     <color name="green">#99c976</color>
     <color name="gray_menu_background">#f0efed</color>
+    
+    <!-- Colors Related to application theme will go here -->
+    <color name="app_background">@android:color/white</color>
+    <color name="left_menu_text">@android:color/black</color>
+    <color name="divider_grey">#454545</color>
+    <color name="reading_text">#454545</color>
+    <color name="heading_text">@android:color/black</color>
 
 </resources>

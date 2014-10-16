@@ -12,8 +12,8 @@
         android:background="@android:color/white"
         android:cacheColorHint="@null"
         android:choiceMode="singleChoice"
-        android:divider="@null"
-        android:dividerHeight="0dp"
+        android:divider="@color/divider_grey"
+        android:dividerHeight="1dp"
         android:fadingEdge="none"
         android:scrollbars="@null" >
     </ListView>
