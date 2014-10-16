@@ -1,53 +1,42 @@
-package islamic.buzz.views;
+package islamic.buzz.fragments;
 
-import islamic.buzz.fragments.UmrahHalaq;
-import islamic.buzz.fragments.UmrahIhramFragment;
-import islamic.buzz.fragments.UmrahIntroFragment;
-import islamic.buzz.fragments.UmrahPriorToDepartureFragment;
-import islamic.buzz.fragments.UmrahSai;
-import islamic.buzz.fragments.UmrahTawafFragment;
 import islamic.buzz.util.LogType;
 import islamic.buzz.util.Util;
+import islamic.buzz.views.UmrahView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import android.content.Context;
-import android.content.res.Resources;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.widget.LinearLayout;
+import android.view.View;
 
 import com.eybsolution.islamic.buzz.R;
-import com.eybsolution.islamic.buzz.Home;
 
-public class UmrahView extends LinearLayout {
+public class UmrahFragment extends BaseFragment {
+
 	private ViewPager umrahViewPager;
 	private PagerAdapter umrahPageAdapter;
-	private Home homeActivity;
 	private Resources res;
 	private static final String TAG = UmrahView.class.getName();
 
-	public UmrahView(Context context) {
-		super(context, null);
-		homeActivity = (Home) context;
-		res = homeActivity.getResources();
-		LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
-		umrahViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
-		umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getFragmentManager(), getFragments());
+	@Override
+	protected void initController() {}
+
+	@Override
+	protected void initFields(Bundle bundle) {
+
+		res = getActivity().getResources();
+		umrahViewPager = (ViewPager) getFragmentView().findViewById(R.id.umrah_viewpager);
+		umrahPageAdapter = new UmrahPagerAdapter(getActivity().getFragmentManager(), getFragments());
 		umrahViewPager.setAdapter(umrahPageAdapter);
 		umrahViewPager.setOffscreenPageLimit(5);
-		// umrahViewPager.setCurrentItem(1);
-	}
 
-	public UmrahView(Context context, AttributeSet attrs) {
-		super(context, attrs);
-		LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
 	}
 
 	private List<Fragment> getFragments() {
@@ -68,7 +57,7 @@ public class UmrahView extends LinearLayout {
 		private List<Fragment> fragments;
 
 		public UmrahPagerAdapter(FragmentManager fragmentManager, List<Fragment> fragments) {
-			super(fragmentManager);
+			super(getChildFragmentManager());
 			this.fragments = fragments;
 		}
 
@@ -117,6 +106,19 @@ public class UmrahView extends LinearLayout {
 			return title;
 		}
 
+	}
+
+	@Override
+	protected int getLayoutId() {
+		return R.layout.umrah;
+	}
+
+	@Override
+	public void onClick(View v) {}
+
+	@Override
+	public boolean onBackPress() {
+		return false;
 	}
 
 }

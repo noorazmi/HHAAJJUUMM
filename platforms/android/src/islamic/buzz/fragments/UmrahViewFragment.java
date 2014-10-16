@@ -9,9 +9,9 @@ import java.util.List;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -56,7 +56,7 @@ public class UmrahViewFragment extends Fragment
     public void onResume()
     {
         super.onResume();
-        umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getSupportFragmentManager(), getFragments());
+        umrahPageAdapter = new UmrahPagerAdapter(homeActivity.getFragmentManager(), getFragments());
 	umrahViewPager.setAdapter(umrahPageAdapter);
 	umrahViewPager.setOffscreenPageLimit(6);
     }

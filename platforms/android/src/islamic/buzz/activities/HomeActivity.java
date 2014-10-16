@@ -26,7 +26,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 
 	private Context mActivityContext;
 
-
 	@Override
 	public void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
@@ -39,7 +38,7 @@ public class HomeActivity extends BaseActivityWithSlider {
 	@Override
 	public void initContent() {
 		attachHomeFragment(null);
-		//attachAboutFragment(null);
+		// attachAboutFragment(null);
 		attachActionItemListener();
 	}
 
@@ -50,8 +49,7 @@ public class HomeActivity extends BaseActivityWithSlider {
 	}
 
 	@Override
-	protected void updateActionBarViews() {
-	}
+	protected void updateActionBarViews() {}
 
 	/**
 	 * Attach action item click listener
@@ -82,23 +80,32 @@ public class HomeActivity extends BaseActivityWithSlider {
 	}
 
 	public void attachHajjFragment(Bundle bundle) {
-		FragmentFactory.attachHajjFragment(this, bundle);
-		mFragmentOnScreen = FragmentOnScreen.HAJJ;
+		if (mFragmentOnScreen != FragmentOnScreen.HAJJ) {
+			FragmentFactory.attachHajjFragment(this, bundle);
+			mFragmentOnScreen = FragmentOnScreen.HAJJ;
+		}
+
 	}
 
 	public void attachUmrahFragment(Bundle bundle) {
-		FragmentFactory.attachUmrahFragment(this, null);
-		mFragmentOnScreen = FragmentOnScreen.UMRAH;
+		if (mFragmentOnScreen != FragmentOnScreen.UMRAH) {
+			FragmentFactory.attachUmrahFragment(this, null);
+			mFragmentOnScreen = FragmentOnScreen.UMRAH;
+		}
 	}
 
 	public void attachAboutFragment(Bundle bundle) {
-		FragmentFactory.attachAboutFragment(this, null);
-		mFragmentOnScreen = FragmentOnScreen.ABOUT;
+		if (mFragmentOnScreen != FragmentOnScreen.ABOUT) {
+			FragmentFactory.attachAboutFragment(this, null);
+			mFragmentOnScreen = FragmentOnScreen.ABOUT;
+		}
 	}
 
 	public void attachNamesOfAllahFragment(Bundle bundle) {
-		FragmentFactory.attachNamesOfAllahFragment(this, null);
-		mFragmentOnScreen = FragmentOnScreen.NAMES_OF_ALLAH;
+		if (mFragmentOnScreen != FragmentOnScreen.NAMES_OF_ALLAH) {
+			FragmentFactory.attachNamesOfAllahFragment(this, null);
+			mFragmentOnScreen = FragmentOnScreen.NAMES_OF_ALLAH;
+		}
 	}
 
 	public FragmentOnScreen getFragmentOnScreen() {
@@ -114,7 +121,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 	 * android.content.Intent)
 	 */
 	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-	}
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {}
 
 }

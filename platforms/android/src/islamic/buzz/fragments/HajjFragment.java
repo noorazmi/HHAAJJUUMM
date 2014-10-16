@@ -1,56 +1,56 @@
-package islamic.buzz.views;
+package islamic.buzz.fragments;
 
-import islamic.buzz.fragments.HajjDayFifthFragment;
-import islamic.buzz.fragments.HajjDayFourFragment;
-import islamic.buzz.fragments.HajjDayOneFragment;
-import islamic.buzz.fragments.HajjDaySixthFragment;
-import islamic.buzz.fragments.HajjDayThreeFragment;
-import islamic.buzz.fragments.HajjDayTwoFragment;
-import islamic.buzz.fragments.HajjIntroFragment;
-import islamic.buzz.fragments.HajjTawafulwidaFragment;
 import islamic.buzz.util.LogType;
 import islamic.buzz.util.Util;
+import islamic.buzz.views.HajjView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import android.content.Context;
-import android.content.res.Resources;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.support.v13.app.FragmentStatePagerAdapter;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
-import com.eybsolution.islamic.buzz.Home;
 import com.eybsolution.islamic.buzz.R;
 
-public class HajjView extends LinearLayout {
+public class HajjFragment extends BaseFragment {
+
 	private ViewPager hajjViewPager;
 	private PagerAdapter hajjPageAdapter;
-	private Home homeActivity;
 	private Resources res;
 	private static final String TAG = HajjView.class.getName();
 
-	public HajjView(Context context) {
-		super(context, null);
-		homeActivity = (Home) context;
-		res = homeActivity.getResources();
-		LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
-		hajjViewPager = (ViewPager) findViewById(R.id.umrah_viewpager);
-		hajjPageAdapter = new UmrahPagerAdapter(homeActivity.getFragmentManager(), getFragments());
+	@Override
+	protected void initController() {}
+
+	@Override
+	protected void initFields(Bundle bundle) {
+
+		res = getActivity().getResources();
+		hajjViewPager = (ViewPager) getFragmentView().findViewById(R.id.umrah_viewpager);
+		hajjPageAdapter = new UmrahPagerAdapter(getActivity().getFragmentManager(), getFragments());
 		hajjViewPager.setAdapter(hajjPageAdapter);
 		hajjViewPager.setOffscreenPageLimit(6);
-		// hajjViewPager.setCurrentItem(1);
+
 	}
 
-	public HajjView(Context context, AttributeSet attrs) {
-		super(context, attrs);
-		// LayoutInflater.from(getContext()).inflate(R.layout.umrah, this);
+	@Override
+	protected int getLayoutId() {
+		return R.layout.umrah;
+	}
+
+	@Override
+	public void onClick(View v) {}
+
+	@Override
+	public boolean onBackPress() {
+		return false;
 	}
 
 	private List<Fragment> getFragments() {
@@ -68,12 +68,11 @@ public class HajjView extends LinearLayout {
 		return fList;
 	}
 
-	class UmrahPagerAdapter extends FragmentStatePagerAdapter {
-
+	private class UmrahPagerAdapter extends FragmentPagerAdapter {
 		private List<Fragment> fragments;
 
 		public UmrahPagerAdapter(FragmentManager fragmentManager, List<Fragment> fragments) {
-			super(fragmentManager);
+			super(getChildFragmentManager());
 			this.fragments = fragments;
 		}
 

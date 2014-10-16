@@ -54,19 +54,16 @@ public class LeftMenuFragment extends BaseFragment implements OnItemClickListene
 		mSelectedCategory = mDrawerAdapter.getListofCategories().get(position);
 
 		if (mSelectedCategory.getCatCode() == MenuCategory.CODE_BUZZ_LEVEL) {
-			// ((HomeActivity)
-			// getActivity()).getSlidingViewHelper().disableSlidingLayout();
 			((HomeActivity) getActivity()).attachHomeFragment(null);
 		} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_HAJJ_LEVEL) {
 			((HomeActivity) getActivity()).attachHajjFragment(null);
-			// ((HomeActivity) getActivity()).hideSlider();
 		} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_UMRAH_LEVEL) {
 			((HomeActivity) getActivity()).attachUmrahFragment(null);
 		} else if (mSelectedCategory.getCatCode() == MenuCategory.CODE_ABOUT_LEVEL) {
 			((HomeActivity) getActivity()).attachAboutFragment(null);
-			((HomeActivity) getActivity()).hideSlider();
 		}
 
+		((HomeActivity) getActivity()).hideSlider();
 	}
 
 	@Override
