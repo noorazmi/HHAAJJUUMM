@@ -16,7 +16,6 @@ import android.content.Context;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.eybsolution.islamic.buzz.BuildConfig;
-import com.report.crash.CrashReport;
 
 /**
  *
@@ -42,7 +41,6 @@ public class BuzzApplication extends Application {
 
     private ConfigurationUtils configurationUtils = null;
 
-	private CrashReport mCrashReport;
 
 
     @Override
@@ -80,17 +78,7 @@ public class BuzzApplication extends Application {
     public void onTerminate() {
         super.onTerminate();
     }
-
     
-    /**
-     * Returns crash reporting instance.
-     * 
-     * @return a instance for CrashReporting
-     */
-    public CrashReport getCrashReporting() {
-        return mCrashReport;
-    }
-   
     @Override
     public void onLowMemory() {
         if (BuildConfig.DEBUG) {

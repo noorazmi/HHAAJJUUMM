@@ -29,8 +29,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 	@Override
 	public void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
-		// BuzzApplication.getInstance().setAuthenticationUtils(this);
-
 		mActivityContext = this;
 
 	}
@@ -38,7 +36,6 @@ public class HomeActivity extends BaseActivityWithSlider {
 	@Override
 	public void initContent() {
 		attachHomeFragment(null);
-		// attachAboutFragment(null);
 		attachActionItemListener();
 	}
 
@@ -49,7 +46,9 @@ public class HomeActivity extends BaseActivityWithSlider {
 	}
 
 	@Override
-	protected void updateActionBarViews() {}
+	protected void updateActionBarViews() {
+		getActionBarHelper().showActionBarForHome();
+	}
 
 	/**
 	 * Attach action item click listener

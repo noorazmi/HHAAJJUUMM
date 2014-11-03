@@ -5,7 +5,7 @@
     android:versionName="0.0.1" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,7 +20,8 @@
         <activity
             android:name="com.eybsolution.islamic.buzz.Splash"
             android:label="@string/app_name"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +30,7 @@
         </activity>
         <activity android:name="com.eybsolution.islamic.buzz.Home" >
         </activity>
-        <activity android:name="islamic.buzz.activities.HomeActivity" >
+        <activity android:name="islamic.buzz.activities.HomeActivity" android:theme="@style/overlay_action_bar">
         </activity>
         <activity
             android:name="com.eybsolution.islamic.buzz.ImageDetailActivity"
