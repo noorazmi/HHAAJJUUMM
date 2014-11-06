@@ -1,9 +1,11 @@
 package islamic.buzz.helpers;
 
+import islamic.buzz.activities.BaseActivityWithSlider;
 import islamic.buzz.util.FontUtils;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,6 +21,7 @@ public class ActionBarHelper {
 
 	public static final int ACTION_ITEM_WEBVIEW_ACTIVITY = 7;
 	public static final int ACTION_ITEM_ERROR_ACTIVITY = 8;
+	public static final int ACTION_ITEM_HOME_ACTIVITY = 9;
 
 	// Action bar of the activity.
 	private ActionBar mActionBar;
@@ -71,7 +74,9 @@ public class ActionBarHelper {
 	}
 
 	public void showActionBarForHome() {
-
+		
+		showActionBarForSlider("", ACTION_ITEM_HOME_ACTIVITY, false, true, true, 0);
+		
 		//mListImageView.setImageDrawable(mActivity.getResources().getDrawable(R.drawable.list_icon));
 		//mAppImageView.setImageDrawable(mActivity.getResources().getDrawable(R.drawable.app_icon));
 
@@ -107,7 +112,16 @@ public class ActionBarHelper {
 	 *            action item of the action bar.
 	 */
 	private void showActionBarForSlider(String actionBarTitle, final int actionItem, boolean isShowTitle, boolean isShowAppIcon, final boolean isHomeUpEnabled, int listIconDrawableId) {
-
+		
+		 // Handles list icon click & it toggles slider of the home screen.
+        mListIconLayout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	 islamic.buzz.util.UtilityMethods.hideKeyboard(mActivity, mListIconLayout);
+                 ((BaseActivityWithSlider) mActivity).toggle();
+            }
+        });
+		
 	}
 
 	private void updateRightIcon() {
